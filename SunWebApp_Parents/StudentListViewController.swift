@@ -17,6 +17,13 @@ class StudentListViewController: UIViewController,
 		super.viewDidLoad()
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
+
+		self.navigationController?.navigationBar.topItem?.title = "Dashboard"
+
+		let backButton = UIBarButtonItem()
+		backButton.title = "Back"
+		self.navigationController?.navigationBar.backItem?.title = "back"
+		self.navigationItem.backBarButtonItem = UIBarButtonItem()
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
