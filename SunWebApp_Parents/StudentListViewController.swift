@@ -40,7 +40,7 @@ class StudentListViewController: UIViewController,
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
 
-		adminMessage.text = students.pmsg
+		adminMessage.text = students.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
 
 //		self.navigationController?.navigationBar.topItem?.title = "Dashboard"
 //
