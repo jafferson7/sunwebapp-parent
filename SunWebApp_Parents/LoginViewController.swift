@@ -8,6 +8,35 @@
 
 import UIKit
 
+struct namesArray: Decodable {
+	let id: String
+	let name: String
+}
+
+struct loginResult: Decodable {
+	var p1: String
+	var p2: String
+	var names: [namesArray]
+	var pmsg: String
+
+	private enum CodingKeys : String, CodingKey {
+		case p1
+		case p2
+		case names
+		case pmsg
+	}
+
+	init(p1: String = "",
+		p2: String = "",
+		names: [namesArray] = [],
+		pmsg: String = "") {
+		self.p1 = p1
+		self.p2 = p2
+		self.names = names
+		self.pmsg = pmsg
+	}
+}
+
 class LoginViewController: UIViewController {
 
 	@IBOutlet weak var schoolCodeTextField: UITextField!
@@ -26,24 +55,7 @@ class LoginViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 	}
 
-	var students : [loginResult] = []
-
-	struct namesArray: Decodable {
-		let id: String
-		let name: String
-	}
-
-	struct loginResult: Decodable {
-		var p1: String
-		var p2: String
-		var names: [namesArray]
-
-		private enum CodingKeys : String, CodingKey {
-			case p1
-			case p2
-			case names
-		}
-	}
+	var students : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
 
 	@IBAction func loginButtonClicked(_ sender: Any) {
 		loginURL += (schoolCodeTextField.text ?? "demo")
@@ -63,16 +75,16 @@ class LoginViewController: UIViewController {
 
 			do {
 				let decoder = JSONDecoder()
-				self.students = try decoder.decode([loginResult].self, from: data)
-				print(self.students[0].names[0].name)
+				self.students = try decoder.decode(loginResult.self, from: data)
+				print(self.students.names[0].name)
 
-				if self.students[0].p1 != "none" && self.students[0].p2 != "none" {
+				if self.students.p1 != "none" && self.students.p2 != "none" {
 					DispatchQueue.main.async {
 						UserDefaults.standard.set(self.schoolCodeTextField.text, forKey: "schoolCode")
-						UserDefaults.standard.set(self.students[0].p1 + ", " + self.students[0].p2, forKey: "name")
+						UserDefaults.standard.set(self.students.p1 + ", " + self.students.p2, forKey: "name")
 					}
 					OperationQueue.main.addOperation {
-						self.performSegue(withIdentifier: "goToStdList_", sender: self.students)
+						self.performSegue(withIdentifier: "loginSegue", sender: self.students)
 					}
 				}
 			} catch let jsonError {
@@ -94,13 +106,30 @@ class LoginViewController: UIViewController {
 //		}
 	}
 
+//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//		if segue.identifier == "goToStdList_" {
+////			let destinationController = segue.destination as! StudentListViewController
+////			destinationController.names = self.students[0].names[0].name
+//			let nav = segue.destination as! UINavigationController
+//			let destinationVC = nav.topViewController as! StudentListViewController
+////			destinationVC.userObject = userObject[String!]  // In case you are using an array or something else in the object
+//		}
+//	}
+
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "goToStdList_" {
+		if segue.identifier == "loginSegue" {
+			let barViewControllers = segue.destination as! UITabBarController
+			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
+			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
+			destinationViewController.students = self.students
 //			let destinationController = segue.destination as! StudentListViewController
-//			destinationController.names = self.students[0].names[0].name
-			let nav = segue.destination as! UINavigationController
-			let destinationVC = nav.topViewController as! StudentListViewController
-//			destinationVC.userObject = userObject[String!]  // In case you are using an array or something else in the object
+//			destinationController.names = " World Hello"
+//			let navController = self.tabBarController?.viewControllers![0] as! UINavigationController
+//			let destinationVC = navController.topViewController as! StudentListViewController
+//			destinationVC.names = " World Hello"
+//			let navController = self.tabBarController.viewControllers![0] as! UINavigationController
+//			let vc = navController.topViewController as! HomeViewController
+//			vc.templateForCell = templates
 		}
 	}
 

@@ -11,19 +11,36 @@ import UIKit
 class StudentListViewController: UIViewController,
 	UITableViewDelegate, UITableViewDataSource {
 
+	@IBOutlet weak var adminMessage: UITextView!
 	@IBOutlet weak var stdListTable: UITableView!
 
-	var names: String = ""
+	var names: String = " hello world"
 
-	struct namesArray : Decodable {
-		let id: String
-		let name: String
-	}
-	
+	var students : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
+
+//	struct namesArray: Decodable {
+//		let id: String
+//		let name: String
+//	}
+//
+//	struct loginResult: Decodable {
+//		var p1: String
+//		var p2: String
+//		var names: [namesArray]
+//
+//		private enum CodingKeys : String, CodingKey {
+//			case p1
+//			case p2
+//			case names
+//		}
+//	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
+
+		adminMessage.text = students.pmsg
 
 //		self.navigationController?.navigationBar.topItem?.title = "Dashboard"
 //
@@ -34,13 +51,13 @@ class StudentListViewController: UIViewController,
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return students.names.count
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-		cell.textLabel?.text = "Usmaan Jaffer"
-		cell.detailTextLabel?.text = "1st Grade"
+		cell.textLabel?.text = students.names[indexPath.row].name
+//		cell.detailTextLabel?.text = "1st Grade" + students[0].names[indexPath.row].name
 
 		return cell
 	}
