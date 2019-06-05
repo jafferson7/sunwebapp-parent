@@ -97,30 +97,7 @@ class LoginViewController: UIViewController {
 				print(jsonError)
 			}
 		}.resume()
-
-//		var request = URLRequest(url: loginURL)
-//		request.httpMethod = "POST"
-//
-//		let parameters = ["salt":(emailTextField.text ?? "mmjaffer@yahoo.com"), "pepper":(passwordTextField.text ?? "MJaffer")]
-//		request.setContent(with: parameters)
-//
-//		print(parameters)
-//		print(request)
-
-//		OperationQueue.main.addOperation {
-//			self.performSegue(withIdentifier: "goToStdList", sender: nil)
-//		}
 	}
-
-//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//		if segue.identifier == "goToStdList_" {
-////			let destinationController = segue.destination as! StudentListViewController
-////			destinationController.names = self.students[0].names[0].name
-//			let nav = segue.destination as! UINavigationController
-//			let destinationVC = nav.topViewController as! StudentListViewController
-////			destinationVC.userObject = userObject[String!]  // In case you are using an array or something else in the object
-//		}
-//	}
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "loginSegue" {
@@ -128,14 +105,6 @@ class LoginViewController: UIViewController {
 			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
 			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
 			destinationViewController.familyInfo = self.familyInfo
-//			let destinationController = segue.destination as! StudentListViewController
-//			destinationController.names = " World Hello"
-//			let navController = self.tabBarController?.viewControllers![0] as! UINavigationController
-//			let destinationVC = navController.topViewController as! StudentListViewController
-//			destinationVC.names = " World Hello"
-//			let navController = self.tabBarController.viewControllers![0] as! UINavigationController
-//			let vc = navController.topViewController as! HomeViewController
-//			vc.templateForCell = templates
 		}
 	}
 
