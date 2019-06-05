@@ -16,7 +16,7 @@ class StudentListViewController: UIViewController,
 
 	var names: String = " hello world"
 
-	var students : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
+	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
 
 //	struct namesArray: Decodable {
 //		let id: String
@@ -40,7 +40,7 @@ class StudentListViewController: UIViewController,
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
 
-		adminMessage.text = students.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+		adminMessage.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "") + familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "") + familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
 
 //		self.navigationController?.navigationBar.topItem?.title = "Dashboard"
 //
@@ -51,14 +51,23 @@ class StudentListViewController: UIViewController,
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return students.names.count
+		return familyInfo.names.count
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-		cell.textLabel?.text = students.names[indexPath.row].name
+		cell.textLabel?.text = familyInfo.names[indexPath.row].name
 //		cell.detailTextLabel?.text = "1st Grade" + students[0].names[indexPath.row].name
 
 		return cell
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "goToClassList" {
+			let destinationController = segue.destination as! ClassListViewController
+			destinationController.classTitle = "Quran 7"
+			let index = stdListTable.indexPathForSelectedRow?.row
+			destinationController.currStudent = familyInfo.names[index!]
+		}
 	}
 }

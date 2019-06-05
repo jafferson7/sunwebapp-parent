@@ -8,15 +8,21 @@
 
 import UIKit
 
-struct namesArray: Decodable {
+struct student: Decodable {
 	let id: String
 	let name: String
+
+	init(id: String = "0",
+		 name: String = "") {
+		self.id = id
+		self.name = name
+	}
 }
 
 struct loginResult: Decodable {
 	var p1: String
 	var p2: String
-	var names: [namesArray]
+	var names: [student]
 	var pmsg: String
 
 	private enum CodingKeys : String, CodingKey {
@@ -28,7 +34,7 @@ struct loginResult: Decodable {
 
 	init(p1: String = "",
 		p2: String = "",
-		names: [namesArray] = [],
+		names: [student] = [],
 		pmsg: String = "") {
 		self.p1 = p1
 		self.p2 = p2
@@ -55,7 +61,7 @@ class LoginViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 	}
 
-	var students : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
+	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
 
 	@IBAction func loginButtonClicked(_ sender: Any) {
 		loginURL += (schoolCodeTextField.text ?? "demo")
@@ -75,16 +81,16 @@ class LoginViewController: UIViewController {
 
 			do {
 				let decoder = JSONDecoder()
-				self.students = try decoder.decode(loginResult.self, from: data)
-				print(self.students.names[0].name)
+				self.familyInfo = try decoder.decode(loginResult.self, from: data)
+				print(self.familyInfo.names[0].name)
 
-				if self.students.p1 != "none" && self.students.p2 != "none" {
+				if self.familyInfo.p1 != "none" && self.familyInfo.p2 != "none" {
 					DispatchQueue.main.async {
 						UserDefaults.standard.set(self.schoolCodeTextField.text, forKey: "schoolCode")
-						UserDefaults.standard.set(self.students.p1 + ", " + self.students.p2, forKey: "name")
+						UserDefaults.standard.set(self.familyInfo.p1 + ", " + self.familyInfo.p2, forKey: "name")
 					}
 					OperationQueue.main.addOperation {
-						self.performSegue(withIdentifier: "loginSegue", sender: self.students)
+						self.performSegue(withIdentifier: "loginSegue", sender: self.familyInfo)
 					}
 				}
 			} catch let jsonError {
@@ -121,7 +127,7 @@ class LoginViewController: UIViewController {
 			let barViewControllers = segue.destination as! UITabBarController
 			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
 			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
-			destinationViewController.students = self.students
+			destinationViewController.familyInfo = self.familyInfo
 //			let destinationController = segue.destination as! StudentListViewController
 //			destinationController.names = " World Hello"
 //			let navController = self.tabBarController?.viewControllers![0] as! UINavigationController

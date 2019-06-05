@@ -11,13 +11,15 @@ import UIKit
 class ClassListViewController: UIViewController,
 	UITableViewDataSource, UITableViewDelegate {
 
+	var classTitle: String = "Arabic 1"
+
+	var currStudent: student = student.init(id: "0", name: "")
+
 	@IBOutlet weak var classListTableView: UITableView!
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 1
 	}
-
-
 //	@IBAction func unwindToStudentList(_ unwindSegue: UIStoryboardSegue) {
 //		let sourceViewController = unwindSegue.source
 //		let destinationViewController = StudentListViewController
@@ -28,7 +30,7 @@ class ClassListViewController: UIViewController,
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-		cell.textLabel?.text = "Arabic 1"
+		cell.textLabel?.text = classTitle
 
 		return cell
 	}
@@ -38,5 +40,7 @@ class ClassListViewController: UIViewController,
 
 		classListTableView.delegate = self
 		classListTableView.dataSource = self
+
+		navigationItem.title = currStudent.name
 	}
 }
