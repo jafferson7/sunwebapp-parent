@@ -8,26 +8,112 @@
 
 import UIKit
 
+struct gradingScaleValue: Decodable {
+	var letter: String
+	var low: String
+	var high: String
+
+	private enum CodingKeys: String, CodingKey {
+		case letter
+		case low
+		case high
+	}
+
+	init(letter: String = "",
+		 low: String = "",
+		 high: String = "") {
+		self.letter = letter
+		self.low = low
+		self.high = high
+	}
+}
+
+struct assignment: Decodable {
+	var term: String
+	var name: String
+	var weight: String
+	var points: String
+
+	private enum CodingKeys: String, CodingKey {
+		case term
+		case name
+		case weight
+		case points
+	}
+
+	init(term: String = "",
+		 name: String = "",
+		 weight: String = "",
+		 points: String = "") {
+		self.term = term
+		self.name = name
+		self.weight = weight
+		self.points = points
+	}
+}
+
+struct courseGrade: Decodable {
+	var courseCode: String
+	var courseName: String
+	var finalGrade: String
+	var grades: [String]
+	var comments: String
+
+	private enum CodingKeys: String, CodingKey {
+		case courseCode = "Ccode"
+		case courseName = "Cname"
+		case finalGrade = "FinalG"
+		case grades
+		case comments
+	}
+
+	init(courseCode: String = "",
+		 courseName: String = "",
+		 finalGrade: String = "",
+		 grades: [String] = [],
+		 comments: String = "") {
+		self.courseCode = courseCode
+		self.courseName = courseName
+		self.finalGrade = finalGrade
+		self.grades = grades
+		self.comments = comments
+	}
+}
+
+struct classList: Decodable {
+	var gradingScale: [gradingScaleValue]
+	var assignmentList: [assignment]
+	var courseGrades: [courseGrade]
+
+	private enum CodingKeys: String, CodingKey {
+		case gradingScale
+		case assignmentList = "gradeBook"
+		case courseGrades
+	}
+
+	init(gradingScale: [gradingScaleValue] = [],
+		 assignmentList: [assignment] = [],
+		 courseGrades: [courseGrade] = []) {
+		self.gradingScale = gradingScale
+		self.assignmentList = assignmentList
+		self.courseGrades = courseGrades
+	}
+}
+
 class ClassListViewController: UIViewController,
 	UITableViewDataSource, UITableViewDelegate {
+
+	var classListURL = "https://sunwebapp.com/app/GetStudentGradesiPhone.php?Scode=sdf786ic&SchoolCode="
 
 	var classTitle: String = "Class List"
 
 	var currStudent: student = student.init(id: "0", name: "")
 
+	var classes: classList = classList(gradingScale: [], assignmentList: [], courseGrades: [])
+
+	var gradingScale: [gradingScaleValue] = []
+
 	@IBOutlet weak var classListTableView: UITableView!
-
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
-	}
-
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-		cell.textLabel?.text = classTitle
-
-		return cell
-	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -36,5 +122,83 @@ class ClassListViewController: UIViewController,
 		classListTableView.dataSource = self
 
 		navigationItem.title = currStudent.name
+
+		loadClassList()
+	}
+
+	@IBAction func showGradingScale(_ sender: Any) {
+		print("gradingscale button pressed...")
+		var message = ""
+		for level in self.classes.gradingScale {
+			message += "\(level.low) - \(level.high): \(level.letter)\n"
+		}
+		let popup = UIAlertController(title: "Grading Scale", message: message, preferredStyle: .alert)
+		popup.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+		self.present(popup, animated: true, completion: nil)
+	}
+
+	func loadClassList() -> Void {
+		print("starting to load class list...")
+		classListURL += UserDefaults.standard.string(forKey: "schoolCode") ?? "demo"
+		classListURL += "&Sid=" + currStudent.id
+		guard let url = URL(string: classListURL) else {return}
+		print(url)
+
+		URLSession.shared.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print(error!.localizedDescription)
+			}
+
+			guard let data = data else {return}
+
+			do {
+				let decoder = JSONDecoder()
+				print("going to decode now...")
+				self.classes = try decoder.decode(classList.self, from: data)
+				print("decode done " + self.classes.gradingScale[0].letter)
+				DispatchQueue.main.async {
+					self.classListTableView.reloadData()
+				}
+			} catch let jsonError {
+				print(jsonError)
+			}
+		}.resume()
+	}
+
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return self.classes.courseGrades.count
+	}
+
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+		cell.textLabel?.text = self.classes.courseGrades[indexPath.row].courseCode
+
+		guard let finalGrade = Int(self.classes.courseGrades[indexPath.row].finalGrade) else {
+			print("cannot convert final grade!!!")
+			return cell
+		}
+
+		var letterGrade = ""
+
+		for level in self.classes.gradingScale {
+			guard let levelLow = Int(level.low) else { print("cannot convert low value"); return cell}
+			if finalGrade >= levelLow {
+				letterGrade = level.letter
+				break
+			}
+		}
+
+		cell.detailTextLabel?.text = self.classes.courseGrades[indexPath.row].finalGrade + " - " + letterGrade
+
+		return cell
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "goToGrades" {
+			let destinationController = segue.destination as! GradesViewController
+			destinationController.classes = self.classes
+			destinationController.classIndex = self.classListTableView.indexPathForSelectedRow?.row ?? 0
+		}
 	}
 }
