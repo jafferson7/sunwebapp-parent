@@ -19,7 +19,7 @@ class GradesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
 	@IBAction func showComments(_ sender: Any) {
 		let comment = UIAlertController(title: "Comments", message: self.classes.courseGrades[classIndex].comments, preferredStyle: .alert)
-		comment.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+		comment.addAction(UIAlertAction(title: "done", style: .default, handler: nil))
 		self.present(comment, animated: true, completion: nil)
 	}
 
