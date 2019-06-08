@@ -234,7 +234,7 @@ class ClassListViewController: UIViewController,
 		case 0:
 			return ""
 		case 1:
-			return "Total Grades"
+			return "Classes"
 		default:
 			return ""
 		}

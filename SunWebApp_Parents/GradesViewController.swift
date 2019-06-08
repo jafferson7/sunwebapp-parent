@@ -35,6 +35,14 @@ class GradesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 		return cell
 	}
 
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return "Grade Detail"
+	}
+
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 1
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
