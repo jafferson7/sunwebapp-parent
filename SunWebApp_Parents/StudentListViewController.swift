@@ -33,14 +33,54 @@ class StudentListViewController: UIViewController,
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return familyInfo.names.count
+		switch section {
+		case 0:
+			return 1
+		case 1:
+			return familyInfo.names.count
+		default:
+			return 0
+		}
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-		cell.textLabel?.text = familyInfo.names[indexPath.row].name
+		if indexPath.section == 1 {
+			cell.textLabel?.text = familyInfo.names[indexPath.row].name
+		} else if indexPath.section == 0 {
+			cell.textLabel?.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+		}
 
+		cell.accessoryType = .disclosureIndicator
 		return cell
+	}
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if indexPath.section == 0 {
+			let message = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+			let alert = UIAlertController(title: "Admin Message", message: message, preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+			self.present(alert, animated: true, completion: nil)
+		} else if indexPath.section == 1 {
+			OperationQueue.main.addOperation {
+				self.performSegue(withIdentifier: "goToClassList", sender: nil)
+			}
+		}
+	}
+
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		switch section {
+		case 0:
+			return "Admin Message"
+		case 1:
+			return "My Kids"
+		default:
+			return "Admin Message"
+		}
+	}
+
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 2
 	}
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

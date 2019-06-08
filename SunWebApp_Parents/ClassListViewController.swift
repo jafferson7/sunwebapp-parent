@@ -165,33 +165,79 @@ class ClassListViewController: UIViewController,
 		}.resume()
 	}
 
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 2
+	}
+
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.classes.courseGrades.count
+		switch section {
+		case 0:
+			return 1
+		case 1:
+			return self.classes.courseGrades.count
+		default:
+			return 0
+		}
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+		var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-		cell.textLabel?.text = self.classes.courseGrades[indexPath.row].courseCode
+		switch indexPath.section {
+		case 0:
+			cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+			cell.textLabel?.text = "Update Info"
+			cell.selectionStyle = .none
+//			tableView.style
+		case 1:
+			cell.textLabel?.text = self.classes.courseGrades[indexPath.row].courseCode
 
-		guard let finalGrade = Int(self.classes.courseGrades[indexPath.row].finalGrade) else {
-			print("cannot convert final grade!!!")
-			return cell
-		}
-
-		var letterGrade = ""
-
-		for level in self.classes.gradingScale {
-			guard let levelLow = Int(level.low) else { print("cannot convert low value"); return cell}
-			if finalGrade >= levelLow {
-				letterGrade = level.letter
-				break
+			guard let finalGrade = Int(self.classes.courseGrades[indexPath.row].finalGrade) else {
+				print("cannot convert final grade!!!")
+				return cell
 			}
+
+			var letterGrade = ""
+
+			for level in self.classes.gradingScale {
+				guard let levelLow = Int(level.low) else { print("cannot convert low value"); return cell}
+				if finalGrade >= levelLow {
+					letterGrade = level.letter
+					break
+				}
+			}
+
+			cell.detailTextLabel?.text = self.classes.courseGrades[indexPath.row].finalGrade + " - " + letterGrade
+		default:
+			cell.textLabel?.text = "Default"
 		}
 
-		cell.detailTextLabel?.text = self.classes.courseGrades[indexPath.row].finalGrade + " - " + letterGrade
-
+		cell.accessoryType = .disclosureIndicator
 		return cell
+	}
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		switch indexPath.section {
+		case 0:
+			print("UPDATE INFO")
+		case 1:
+			OperationQueue.main.addOperation {
+				self.performSegue(withIdentifier: "goToGrades", sender: nil)
+			}
+		default:
+			print("Default!!")
+		}
+	}
+
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		switch section {
+		case 0:
+			return ""
+		case 1:
+			return "Total Grades"
+		default:
+			return ""
+		}
 	}
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
