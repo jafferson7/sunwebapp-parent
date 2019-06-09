@@ -144,13 +144,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWo-Hm-MSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3430" y="2063"/>
+            <point key="canvasLocation" x="3428.985507246377" y="2062.5"/>
         </scene>
-        <!--Item-->
+        <!--Dashboard-->
         <scene sceneID="NWi-dF-K89">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="2eL-EM-FaI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iVe-OE-1U0"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="Home" selectedImage="Home" id="iVe-OE-1U0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y04-O4-mXY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -170,7 +170,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IJ8-UQ-dbR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ntA-gp-zkD">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="Home" id="ntA-gp-zkD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -238,6 +238,22 @@
             </objects>
             <point key="canvasLocation" x="2384" y="2865"/>
         </scene>
+        <!--Update Info-->
+        <scene sceneID="0Pe-5R-D2m">
+            <objects>
+                <viewController id="Kk8-UJ-0p0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C1s-Gy-4Q9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tjJ-cr-WHd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Update Info" id="o2N-Da-UHH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhC-q1-YCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4538" y="1162"/>
+        </scene>
         <!--Class List-->
         <scene sceneID="5Zc-kD-yq6">
             <objects>
@@ -300,6 +316,7 @@
                     <connections>
                         <outlet property="classListTableView" destination="9XK-ho-lD9" id="1jr-mh-olH"/>
                         <segue destination="QlT-Ay-VVF" kind="show" identifier="goToGrades" id="NJe-7D-MkL"/>
+                        <segue destination="Kk8-UJ-0p0" kind="show" id="CcT-DK-tyz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8o-AC-kWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,6 +392,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="30" height="30"/>
         <image name="LargerLogo" width="251" height="60"/>
     </resources>
 </document>
