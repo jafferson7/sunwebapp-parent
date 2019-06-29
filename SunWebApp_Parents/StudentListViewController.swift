@@ -32,6 +32,15 @@ class StudentListViewController: UIViewController,
 
 	}
 
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		switch indexPath.section {
+		case 0:
+			return 100
+		default:
+			return tableView.rowHeight
+		}
+	}
+
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		switch section {
 		case 0:
@@ -45,10 +54,12 @@ class StudentListViewController: UIViewController,
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-		if indexPath.section == 1 {
-			cell.textLabel?.text = familyInfo.names[indexPath.row].name
-		} else if indexPath.section == 0 {
+		if indexPath.section == 0 {
 			cell.textLabel?.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+			cell.textLabel?.numberOfLines = 0
+			cell.textLabel?.lineBreakMode = .byTruncatingTail
+		} else if indexPath.section == 1 {
+			cell.textLabel?.text = familyInfo.names[indexPath.row].name
 		}
 
 		cell.accessoryType = .disclosureIndicator
