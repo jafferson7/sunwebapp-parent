@@ -220,6 +220,9 @@ class ClassListViewController: UIViewController,
 		switch indexPath.section {
 		case 0:
 			print("UPDATE INFO")
+			OperationQueue.main.addOperation {
+				self.performSegue(withIdentifier: "StudentInfoViewControllerSegue", sender: nil)
+			}
 		case 1:
 			OperationQueue.main.addOperation {
 				self.performSegue(withIdentifier: "goToGrades", sender: nil)
