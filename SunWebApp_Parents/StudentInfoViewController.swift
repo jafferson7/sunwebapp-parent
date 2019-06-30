@@ -222,6 +222,43 @@ class StudentInfoViewController: FormViewController {
 		print("save stuff here")
 		print(form.validate())
 
-		
+		var saveInfoURL = "https://sunwebapp.com/app/SaveStudentInfoiPhone.php?Scode=sdf786ic&SchoolCode="
+		saveInfoURL += UserDefaults.standard.string(forKey: "schoolCode") ?? "demo"
+		saveInfoURL += "&id=" + currStudent.id
+		saveInfoURL += "&Fname=" + currStudent.firstName
+		saveInfoURL += "&Mini=" + currStudent.middleInitial
+		saveInfoURL += "&Lname=" + currStudent.lastName
+		saveInfoURL += "&grade=" + currStudent.grade
+		saveInfoURL += "&gender=" + currStudent.gender
+		saveInfoURL += "&DOB=" + currStudent.birthday
+		saveInfoURL += "&comments=" + currStudent.comments
+		saveInfoURL += "&FoodAllergies=" + currStudent.foodAllergies
+		saveInfoURL += "&HealthCondition=" + currStudent.healthCondition
+
+
+		guard let url = URL(string: saveInfoURL) else {return}
+		print(url)
+
+		URLSession.shared.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print(error!.localizedDescription)
+			}
+
+			guard let data = data else {return}
+
+			do {
+				let decoder = JSONDecoder()
+				print("going to decode now...")
+				self.currStudent.name = try decoder.decode(Dictionary<String, String>.self, from: data).first?.value ?? ""
+				print("decode done \(self.currStudent.name)")
+//				self.classes = try decoder.decode(classList.self, from: data)
+//				print("decode done " + self.classes.gradingScale[0].letter)
+//				DispatchQueue.main.async {
+//					self.classListTableView.reloadData()
+//				}
+			} catch let jsonError {
+				print(jsonError)
+			}
+			}.resume()
 	}
 }
