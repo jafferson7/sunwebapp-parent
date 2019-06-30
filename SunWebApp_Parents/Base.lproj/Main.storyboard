@@ -373,7 +373,7 @@
             </objects>
             <point key="canvasLocation" x="5506" y="1162"/>
         </scene>
-        <!--Student Info View Controller-->
+        <!--Update Info-->
         <scene sceneID="j00-GE-6oi">
             <objects>
                 <viewController id="Y60-Ol-Zll" customClass="StudentInfoViewController" customModule="SunWebApp_Parents" customModuleProvider="target" sceneMemberID="viewController">
@@ -390,6 +390,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dzc-0p-fCq"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Update Info" id="Qkf-fY-ZVE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3o7-Oc-lwF">
+                            <connections>
+                                <action selector="saveInfo:" destination="Y60-Ol-Zll" id="cgu-DR-F6e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7i-7R-8Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
