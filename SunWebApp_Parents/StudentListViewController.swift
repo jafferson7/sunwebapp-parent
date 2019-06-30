@@ -11,7 +11,6 @@ import UIKit
 class StudentListViewController: UIViewController,
 	UITableViewDelegate, UITableViewDataSource {
 
-	@IBOutlet weak var adminMessage: UITextView!
 	@IBOutlet weak var stdListTable: UITableView!
 
 	var names: String = " hello world"
@@ -26,8 +25,6 @@ class StudentListViewController: UIViewController,
 		super.viewDidLoad()
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
-
-		adminMessage.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "") // + familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "") + familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
 
 
 	}

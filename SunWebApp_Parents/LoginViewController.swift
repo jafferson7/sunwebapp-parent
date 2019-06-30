@@ -11,11 +11,54 @@ import UIKit
 struct student: Decodable {
 	let id: String
 	let name: String
+	let firstName: String
+	let middleInitial: String
+	let lastName: String
+	let grade: String
+	let gender: String
+	let birthday: String
+	let comments: String
+	let foodAllergies: String
+	let healthCondition: String
+
+//	"id":"63","name":"Mariam M Jaffer","Fname":"Mariam","MIni":"M","Lname":"Jaffer","grade":"K","gender":"F","DOB":"","Comments":"na","FoodAllergies":"na","HealthCondition":"na"
+
+	private enum CodingKeys : String, CodingKey {
+		case id
+		case name
+		case firstName = "Fname"
+		case middleInitial = "MIni"
+		case lastName = "Lname"
+		case grade = "grade"
+		case gender = "gender"
+		case birthday = "DOB"
+		case comments = "Comments"
+		case foodAllergies = "FoodAllergies"
+		case healthCondition = "HealthCondition"
+	}
 
 	init(id: String = "0",
-		 name: String = "") {
+		name: String = "",
+		firstName: String = "",
+		middleInitial: String = "",
+		lastName: String = "",
+		grade: String = "",
+		gender: String = "",
+		birthday: String = "",
+		comments: String = "",
+		foodAllergies: String = "",
+		healthCondition: String = "") {
 		self.id = id
 		self.name = name
+		self.firstName = firstName
+		self.middleInitial = middleInitial
+		self.lastName = lastName
+		self.grade = grade
+		self.gender = gender
+		self.birthday = birthday
+		self.comments = comments
+		self.foodAllergies = foodAllergies
+		self.healthCondition = healthCondition
 	}
 }
 

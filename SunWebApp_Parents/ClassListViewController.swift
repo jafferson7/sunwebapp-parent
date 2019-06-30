@@ -225,7 +225,6 @@ class ClassListViewController: UIViewController,
 			}
 		case 1:
 			OperationQueue.main.addOperation {
-				print("one")
 				self.performSegue(withIdentifier: "goToGrades", sender: nil)
 			}
 		default:
@@ -246,10 +245,15 @@ class ClassListViewController: UIViewController,
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "goToGrades" {
-			print("two")
 			let destinationController = segue.destination as! GradesViewController
 			destinationController.classes = self.classes
 			destinationController.classIndex = self.classListTableView.indexPathForSelectedRow?.row ?? 0
+		}
+		else if segue.identifier == "StudentInfoViewControllerSegue" {
+			print(self.currStudent.firstName)
+			let destinationController = segue.destination as! StudentInfoViewController
+			destinationController.currStudent = self.currStudent
+
 		}
 	}
 }
