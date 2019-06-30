@@ -41,12 +41,19 @@ class StudentInfoViewController: FormViewController {
 				row.placeholder = "Required"
 				row.value = currStudent.firstName
 				row.add(rule: RuleRequired())
+				row.validationOptions = .validatesOnChangeAfterBlurred
+			}
+			.onChange { row in
+				self.currStudent.firstName = row.value ?? ""
 			}
 
 			<<< TextRow() { row in
 				row.title = "Middle Initial"
 //				row.placeholder = ""
 				row.value = currStudent.middleInitial
+			}
+			.onChange { row in
+					self.currStudent.middleInitial = row.value ?? ""
 			}
 
 			<<< TextRow() { row in
@@ -59,6 +66,9 @@ class StudentInfoViewController: FormViewController {
 				if !row.isValid {
 					cell.titleLabel?.textColor = .red
 				}
+			}
+			.onChange { row in
+				self.currStudent.lastName = row.value ?? ""
 			}
 
 			<<< LabelRow() { row in
@@ -75,6 +85,9 @@ class StudentInfoViewController: FormViewController {
 				$0.options = ["Male", "Female"]
 				$0.value = currStudent.gender == "M" ? "Male" : "Female"
 				$0.add(rule: RuleRequired())
+			}
+			.onChange { row in
+				self.currStudent.gender = String(row.value?.prefix(1) ?? "")
 			}
 
 			<<< DateRow() {
@@ -102,6 +115,9 @@ class StudentInfoViewController: FormViewController {
 						row.section?.insert(labelRow, at: indexPath)
 					}
 				}
+			}
+			.onChange { row in
+				self.currStudent.birthday = studentBirthday.string(from: row.value ?? Date())
 			}
 
 			+++ Section("Special Instructions")
@@ -132,6 +148,9 @@ class StudentInfoViewController: FormViewController {
 					}
 				}
 			}
+			.onChange { row in
+				self.currStudent.comments = row.value ?? ""
+			}
 
 			+++ Section("Food Allergies")
 			<<< TextAreaRow("Food Allergies") {
@@ -160,6 +179,9 @@ class StudentInfoViewController: FormViewController {
 						row.section?.insert(labelRow, at: indexPath)
 					}
 				}
+			}
+			.onChange { row in
+				self.currStudent.foodAllergies = row.value ?? ""
 			}
 
 			+++ Section("Health Conditions")
@@ -190,10 +212,16 @@ class StudentInfoViewController: FormViewController {
 					}
 				}
 			}
+			.onChange { row in
+				self.currStudent.healthCondition = row.value ?? ""
+			}
+
 	}
 
 	@IBAction func saveInfo(_ sender: Any) {
 		print("save stuff here")
+		print(form.validate())
 
+		
 	}
 }

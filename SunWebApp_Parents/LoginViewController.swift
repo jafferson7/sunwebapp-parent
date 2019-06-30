@@ -10,16 +10,16 @@ import UIKit
 
 struct student: Decodable {
 	let id: String
-	let name: String
-	let firstName: String
-	let middleInitial: String
-	let lastName: String
+	var name: String
+	var firstName: String
+	var middleInitial: String
+	var lastName: String
 	let grade: String
-	let gender: String
-	let birthday: String
-	let comments: String
-	let foodAllergies: String
-	let healthCondition: String
+	var gender: String
+	var birthday: String
+	var comments: String
+	var foodAllergies: String
+	var healthCondition: String
 
 //	"id":"63","name":"Mariam M Jaffer","Fname":"Mariam","MIni":"M","Lname":"Jaffer","grade":"K","gender":"F","DOB":"","Comments":"na","FoodAllergies":"na","HealthCondition":"na"
 
