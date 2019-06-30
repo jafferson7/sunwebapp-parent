@@ -32,7 +32,8 @@ class StudentInfoViewController: FormViewController {
 			+++ Section("Student Info")
 			<<< TextRow(){ row in
 				row.title = "First Name"
-				row.placeholder = "LeBron"
+				row.placeholder = "Required"
+				row.value = "Enes"
 				row.add(rule: RuleRequired())
 			}
 
@@ -43,7 +44,8 @@ class StudentInfoViewController: FormViewController {
 
 			<<< TextRow() { row in
 				row.title = "Last Name"
-				row.placeholder = "James"
+				row.placeholder = "Required"
+				row.value = "Kanter"
 				row.add(rule: RuleRequired())
 			}
 			.cellUpdate { cell, row in
@@ -160,5 +162,7 @@ class StudentInfoViewController: FormViewController {
 	}
 
 	@IBAction func saveInfo(_ sender: Any) {
+		print("save stuff here")
+
 	}
 }
