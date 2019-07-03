@@ -16,6 +16,8 @@ class StudentInfoViewController: FormViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		navigationItem.backBarButtonItem?.title = "Back"
+
 		let studentBirthday = DateFormatter()
 		studentBirthday.dateFormat = "MM/dd/yyyy"
 //		print(studentBirthday.date(from: currStudent.birthday))
@@ -220,7 +222,15 @@ class StudentInfoViewController: FormViewController {
 
 	@IBAction func saveInfo(_ sender: Any) {
 		print("save stuff here")
-		print(form.validate())
+		let validationErrors = form.validate()
+
+		if validationErrors.count > 0 {
+			let message = "Please complete the required fields"
+			let alert = UIAlertController(title: "Missing Fields", message: message, preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+			self.present(alert, animated: true, completion: nil)
+			return
+		}
 
 		var saveInfoURL = "https://sunwebapp.com/app/SaveStudentInfoiPhone.php?Scode=sdf786ic&SchoolCode="
 		saveInfoURL += UserDefaults.standard.string(forKey: "schoolCode") ?? "demo"
@@ -251,14 +261,13 @@ class StudentInfoViewController: FormViewController {
 				print("going to decode now...")
 				self.currStudent.name = try decoder.decode(Dictionary<String, String>.self, from: data).first?.value ?? ""
 				print("decode done \(self.currStudent.name)")
-//				self.classes = try decoder.decode(classList.self, from: data)
-//				print("decode done " + self.classes.gradingScale[0].letter)
-//				DispatchQueue.main.async {
-//					self.classListTableView.reloadData()
-//				}
 			} catch let jsonError {
 				print(jsonError)
 			}
-			}.resume()
+		}.resume()
+		let message = "Save successful for \(self.currStudent.name)"
+		let alert = UIAlertController(title: "Admin Message", message: message, preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
 	}
 }

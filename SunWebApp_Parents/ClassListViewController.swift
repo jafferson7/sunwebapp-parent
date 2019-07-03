@@ -100,6 +100,42 @@ struct classList: Decodable {
 	}
 }
 
+struct message: Decodable {
+	var id: String
+	var from: String
+	var subject: String
+	var message: String
+	var attachment: String
+	var Ccode: String
+	var timestamp: String
+
+	private enum CodingKeys: String, CodingKey {
+		case id
+		case from
+		case subject
+		case message
+		case attachment
+		case Ccode
+		case timestamp
+	}
+
+	init(id: String = "",
+		 from: String = "",
+		 subject: String = "",
+		 message: String = "",
+		 attachment: String = "",
+		 Ccode: String = "",
+		 timestamp: String = "") {
+		self.id = id
+		self.from = from
+		self.subject = subject
+		self.message = message
+		self.attachment = attachment
+		self.Ccode = Ccode
+		self.timestamp = timestamp
+	}
+}
+
 class ClassListViewController: UIViewController,
 	UITableViewDataSource, UITableViewDelegate {
 
@@ -113,6 +149,8 @@ class ClassListViewController: UIViewController,
 
 	var gradingScale: [gradingScaleValue] = []
 
+	var messageList: [message] = []
+
 	@IBOutlet weak var classListTableView: UITableView!
 
 	override func viewDidLoad() {
@@ -124,6 +162,7 @@ class ClassListViewController: UIViewController,
 		navigationItem.title = currStudent.name
 
 		loadClassList()
+		loadMessages()
 	}
 
 	@IBAction func showGradingScale(_ sender: Any) {
@@ -159,6 +198,33 @@ class ClassListViewController: UIViewController,
 				DispatchQueue.main.async {
 					self.classListTableView.reloadData()
 				}
+			} catch let jsonError {
+				print(jsonError)
+			}
+		}.resume()
+	}
+
+	func loadMessages() -> Void {
+		print("loading messages...")
+		var messageURL = "https://sunwebapp.com/app/GetStudentMessagesiPhone.php?Scode=sdf786ic&SchoolCode="
+		messageURL += UserDefaults.standard.string(forKey: "schoolCode") ?? "demo"
+		messageURL += "&Sid=" + currStudent.id
+
+		guard let url = URL(string: messageURL) else {return}
+		print(url)
+
+		URLSession.shared.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print(error!.localizedDescription)
+			}
+
+			guard let data = data else {return}
+
+			do {
+				let decoder = JSONDecoder()
+				print("going to decode now...")
+				self.messageList = try decoder.decode([message].self, from: data)
+				print("decode done for messages")
 			} catch let jsonError {
 				print(jsonError)
 			}
