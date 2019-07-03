@@ -136,7 +136,7 @@ struct message: Decodable {
 	}
 }
 
-class ClassListViewController: UIViewController,
+class StudentOptionViewController: UIViewController,
 	UITableViewDataSource, UITableViewDelegate {
 
 	var classListURL = "https://sunwebapp.com/app/GetStudentGradesiPhone.php?Scode=sdf786ic&SchoolCode="

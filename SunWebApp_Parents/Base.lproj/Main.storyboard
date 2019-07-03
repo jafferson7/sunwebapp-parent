@@ -271,7 +271,7 @@
         <!--Class List-->
         <scene sceneID="5Zc-kD-yq6">
             <objects>
-                <viewController id="JLb-im-fkj" customClass="ClassListViewController" customModule="SunWebApp_Parents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JLb-im-fkj" customClass="StudentOptionViewController" customModule="SunWebApp_Parents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r9P-tL-SNU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

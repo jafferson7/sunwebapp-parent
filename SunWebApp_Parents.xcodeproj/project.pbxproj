@@ -12,7 +12,7 @@
 		7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C593BCE22C832B300082372 /* StudentInfoViewController.swift */; };
 		7C6DEE28227A1AAC00BF5681 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */; };
 		7C6DEE2A227A1D7500BF5681 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */; };
-		7C6DEE2C227A1D9300BF5681 /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE2B227A1D9300BF5681 /* ClassListViewController.swift */; };
+		7C6DEE2C227A1D9300BF5681 /* StudentOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */; };
 		7CB5083122A892C2000061E6 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5083022A892C2000061E6 /* GradesViewController.swift */; };
 		7CCAA6A622796A020059ADB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA6A522796A020059ADB3 /* AppDelegate.swift */; };
 		7CCAA6A822796A020059ADB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA6A722796A020059ADB3 /* ViewController.swift */; };
@@ -81,7 +81,7 @@
 		7C593BCE22C832B300082372 /* StudentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoViewController.swift; sourceTree = "<group>"; };
 		7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
-		7C6DEE2B227A1D9300BF5681 /* ClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
+		7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentOptionViewController.swift; sourceTree = "<group>"; };
 		7CB5083022A892C2000061E6 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		7CCAA6A222796A020059ADB3 /* SunWebApp_Parents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunWebApp_Parents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCAA6A522796A020059ADB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				7CCAA6A722796A020059ADB3 /* ViewController.swift */,
 				7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */,
 				7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */,
-				7C6DEE2B227A1D9300BF5681 /* ClassListViewController.swift */,
+				7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */,
 				7CB5083022A892C2000061E6 /* GradesViewController.swift */,
 				7C593BCE22C832B300082372 /* StudentInfoViewController.swift */,
 				7CCAA6A922796A020059ADB3 /* Main.storyboard */,
@@ -361,7 +361,7 @@
 				7CB5083122A892C2000061E6 /* GradesViewController.swift in Sources */,
 				7CCAA6AE22796A030059ADB3 /* SunWebApp_Parents.xcdatamodeld in Sources */,
 				7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */,
-				7C6DEE2C227A1D9300BF5681 /* ClassListViewController.swift in Sources */,
+				7C6DEE2C227A1D9300BF5681 /* StudentOptionViewController.swift in Sources */,
 				7CCAA6A822796A020059ADB3 /* ViewController.swift in Sources */,
 				7CCAA6A622796A020059ADB3 /* AppDelegate.swift in Sources */,
 			);

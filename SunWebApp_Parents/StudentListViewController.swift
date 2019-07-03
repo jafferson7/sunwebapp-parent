@@ -93,7 +93,7 @@ class StudentListViewController: UIViewController,
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "goToClassList" {
-			let destinationController = segue.destination as! ClassListViewController
+			let destinationController = segue.destination as! StudentOptionViewController
 //			destinationController.classTitle = "Quran 7"
 			let index = stdListTable.indexPathForSelectedRow?.row
 			destinationController.currStudent = familyInfo.names[index!]
