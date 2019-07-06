@@ -15,6 +15,8 @@ UITableViewDelegate, UITableViewDataSource {
 
 	var messageList: [message] = []
 
+	var messageIdx: Int = 0
+
 	var classes: classList = classList(gradingScale: [], assignmentList: [], courseGrades: [])
 
 	@IBOutlet weak var messageListTableView: UITableView!
@@ -68,6 +70,7 @@ UITableViewDelegate, UITableViewDataSource {
 		cell.detailTextLabel?.text = messageList[idx].timestamp
 
 		cell.accessoryType = .disclosureIndicator
+		cell.selectionStyle = .none
 
 		return cell
 	}
@@ -82,9 +85,21 @@ UITableViewDelegate, UITableViewDataSource {
 			}
 		}
 
+		messageIdx = idx
+
 		print(messageList[idx].message)
 
-		messageListTableView.cellForRow(at: indexPath)?.textLabel?.text = messageList[idx].message.htmlToString
+//		messageListTableView.cellForRow(at: indexPath)?.textLabel?.text = messageList[idx].message.htmlToString
+		OperationQueue.main.addOperation {
+			self.performSegue(withIdentifier: "goToMessageDetail", sender: nil)
+		}
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "goToMessageDetail" {
+			let destinationViewController = segue.destination as! MessageDetailViewController
+			destinationViewController.currMessage = messageList[messageIdx]
+		}
 	}
 }
 
