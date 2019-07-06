@@ -58,4 +58,8 @@ class MessageDetailViewController: UIViewController, UITableViewDelegate, UITabl
 		return UITableView.automaticDimension
 	}
 
+	func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return CGFloat.leastNormalMagnitude
+	}
+
 }
