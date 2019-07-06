@@ -151,13 +151,26 @@ class StudentOptionViewController: UIViewController,
 
 	var messageList: [message] = []
 
-	@IBOutlet weak var classListTableView: UITableView!
+	@IBOutlet weak var optionsTableView: UITableView!
+
+	func sortMessagesByCcode(this: message, that: message) -> Bool {
+		if this.Ccode == that.Ccode {
+			let dateFormatter = DateFormatter()
+			dateFormatter.dateFormat = "yyyy'-'MM'-'dd HH':'mm':'ss"
+			let thisTime = dateFormatter.date(from: this.timestamp)
+			let thatTime = dateFormatter.date(from: that.timestamp)
+			return thisTime! > thatTime!
+		}
+		return this.Ccode < that.Ccode
+	}
+
+//	func sortClassesByCcode(this: clas)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		classListTableView.delegate = self
-		classListTableView.dataSource = self
+		optionsTableView.delegate = self
+		optionsTableView.dataSource = self
 
 		navigationItem.title = currStudent.name
 
@@ -196,7 +209,7 @@ class StudentOptionViewController: UIViewController,
 				self.classes = try decoder.decode(classList.self, from: data)
 				print("decode done " + self.classes.gradingScale[0].letter)
 				DispatchQueue.main.async {
-					self.classListTableView.reloadData()
+					self.optionsTableView.reloadData()
 				}
 			} catch let jsonError {
 				print(jsonError)
@@ -240,7 +253,8 @@ class StudentOptionViewController: UIViewController,
 		case 0:
 			return 1
 		case 1:
-			return self.classes.courseGrades.count
+//			return self.classes.courseGrades.count
+			return 2 // View Grades and View Communication
 		default:
 			return 0
 		}
@@ -256,29 +270,39 @@ class StudentOptionViewController: UIViewController,
 			cell.selectionStyle = .none
 //			tableView.style
 		case 1:
-			cell.textLabel?.text = self.classes.courseGrades[indexPath.row].courseCode
-
-			guard let finalGrade = Int(self.classes.courseGrades[indexPath.row].finalGrade) else {
-				print("cannot convert final grade!!!")
-				return cell
+			cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+			switch indexPath.row {
+			case 0:
+				cell.textLabel?.text = "View Grades"
+			case 1:
+				cell.textLabel?.text = "View Communication"
+			default:
+				cell.textLabel?.text = "Default"
 			}
-
-			var letterGrade = ""
-
-			for level in self.classes.gradingScale {
-				guard let levelLow = Int(level.low) else { print("cannot convert low value"); return cell}
-				if finalGrade >= levelLow {
-					letterGrade = level.letter
-					break
-				}
-			}
-
-			cell.detailTextLabel?.text = self.classes.courseGrades[indexPath.row].finalGrade + " - " + letterGrade
+//			cell.textLabel?.text = self.classes.courseGrades[indexPath.row].courseCode
+//
+//			guard let finalGrade = Int(self.classes.courseGrades[indexPath.row].finalGrade) else {
+//				print("cannot convert final grade!!!")
+//				return cell
+//			}
+//
+//			var letterGrade = ""
+//
+//			for level in self.classes.gradingScale {
+//				guard let levelLow = Int(level.low) else { print("cannot convert low value"); return cell}
+//				if finalGrade >= levelLow {
+//					letterGrade = level.letter
+//					break
+//				}
+//			}
+//
+//			cell.detailTextLabel?.text = self.classes.courseGrades[indexPath.row].finalGrade + " - " + letterGrade
 		default:
 			cell.textLabel?.text = "Default"
 		}
 
 		cell.accessoryType = .disclosureIndicator
+		cell.selectionStyle = .none
 		return cell
 	}
 
@@ -290,8 +314,17 @@ class StudentOptionViewController: UIViewController,
 				self.performSegue(withIdentifier: "StudentInfoViewControllerSegue", sender: nil)
 			}
 		case 1:
-			OperationQueue.main.addOperation {
-				self.performSegue(withIdentifier: "goToGrades", sender: nil)
+			switch indexPath.row {
+			case 0: // view grades
+				OperationQueue.main.addOperation {
+					self.performSegue(withIdentifier: "goToGrades", sender: nil)
+				}
+			case 1: // view communication
+				OperationQueue.main.addOperation {
+					self.performSegue(withIdentifier: "goToMessages", sender: nil)
+				}
+			default:
+				print("Default!!")
 			}
 		default:
 			print("Default!!")
@@ -303,7 +336,8 @@ class StudentOptionViewController: UIViewController,
 		case 0:
 			return ""
 		case 1:
-			return "Classes"
+//			return "Classes"
+			return ""
 		default:
 			return ""
 		}
@@ -313,13 +347,19 @@ class StudentOptionViewController: UIViewController,
 		if segue.identifier == "goToGrades" {
 			let destinationController = segue.destination as! GradesViewController
 			destinationController.classes = self.classes
-			destinationController.classIndex = self.classListTableView.indexPathForSelectedRow?.row ?? 0
+			destinationController.classIndex = self.optionsTableView.indexPathForSelectedRow?.row ?? 0
 		}
 		else if segue.identifier == "StudentInfoViewControllerSegue" {
 			print(self.currStudent.firstName)
 			let destinationController = segue.destination as! StudentInfoViewController
 			destinationController.currStudent = self.currStudent
 
+		} else if segue.identifier == "goToMessages" {
+			print("Loading messages for \(self.currStudent.name)")
+			let destinationController = segue.destination as! MessageListViewController
+			destinationController.messageList = self.messageList.sorted(by: sortMessagesByCcode)
+			destinationController.currStudent = self.currStudent
+			destinationController.classes = self.classes
 		}
 	}
 }

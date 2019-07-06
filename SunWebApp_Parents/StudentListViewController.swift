@@ -52,7 +52,8 @@ class StudentListViewController: UIViewController,
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		if indexPath.section == 0 {
-			cell.textLabel?.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+//			cell.textLabel?.text = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+			cell.textLabel?.text = familyInfo.pmsg.htmlToString
 			cell.textLabel?.numberOfLines = 0
 			cell.textLabel?.lineBreakMode = .byTruncatingTail
 		} else if indexPath.section == 1 {
@@ -66,6 +67,7 @@ class StudentListViewController: UIViewController,
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if indexPath.section == 0 {
 			let message = familyInfo.pmsg.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil).replacingOccurrences(of: "&nbsp;", with: "")
+//			let message = familyInfo.pmsg.htmlToString
 			let alert = UIAlertController(title: "Admin Message", message: message, preferredStyle: .alert)
 			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 			self.present(alert, animated: true, completion: nil)

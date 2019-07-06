@@ -10,6 +10,7 @@ import UIKit
 
 struct student: Decodable {
 	let id: String
+	/// The Full name for the student
 	var name: String
 	var firstName: String
 	var middleInitial: String

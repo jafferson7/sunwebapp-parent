@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1BAB2622CD754B002AEC8C /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */; };
 		7C593BC922C8315700082372 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C593BC622C8314600082372 /* Eureka.framework */; };
 		7C593BCA22C8315700082372 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C593BC622C8314600082372 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C593BCE22C832B300082372 /* StudentInfoViewController.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		7C593BC022C8314600082372 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
 		7C593BCE22C832B300082372 /* StudentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoViewController.swift; sourceTree = "<group>"; };
 		7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */,
 				7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */,
 				7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */,
+				7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */,
 				7CB5083022A892C2000061E6 /* GradesViewController.swift */,
 				7C593BCE22C832B300082372 /* StudentInfoViewController.swift */,
 				7CCAA6A922796A020059ADB3 /* Main.storyboard */,
@@ -363,6 +366,7 @@
 				7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */,
 				7C6DEE2C227A1D9300BF5681 /* StudentOptionViewController.swift in Sources */,
 				7CCAA6A822796A020059ADB3 /* ViewController.swift in Sources */,
+				7C1BAB2622CD754B002AEC8C /* MessageListViewController.swift in Sources */,
 				7CCAA6A622796A020059ADB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
