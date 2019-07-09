@@ -151,7 +151,10 @@ class StudentOptionViewController: UIViewController,
 
 	var messageList: [message] = []
 
+	var schoolName: String = ""
+
 	@IBOutlet weak var optionsTableView: UITableView!
+	@IBOutlet weak var sNameLabel: UILabel!
 
 	func sortMessagesByCcode(this: message, that: message) -> Bool {
 		if this.Ccode == that.Ccode {
@@ -173,6 +176,8 @@ class StudentOptionViewController: UIViewController,
 		optionsTableView.dataSource = self
 
 		navigationItem.title = currStudent.name
+
+		sNameLabel.text = schoolName
 
 		loadClassList()
 		loadMessages()
@@ -360,6 +365,7 @@ class StudentOptionViewController: UIViewController,
 			destinationController.messageList = self.messageList.sorted(by: sortMessagesByCcode)
 			destinationController.currStudent = self.currStudent
 			destinationController.classes = self.classes
+			destinationController.schoolName = self.schoolName
 		}
 	}
 }

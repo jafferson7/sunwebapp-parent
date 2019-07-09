@@ -19,7 +19,10 @@ UITableViewDelegate, UITableViewDataSource {
 
 	var classes: classList = classList(gradingScale: [], assignmentList: [], courseGrades: [])
 
+	var schoolName: String = ""
+
 	@IBOutlet weak var messageListTableView: UITableView!
+	@IBOutlet weak var sNameLabel: UILabel!
 
 	func sortClassesByCcode(this: courseGrade, that:courseGrade) -> Bool {
 		return this.courseCode < that.courseCode
@@ -32,6 +35,8 @@ UITableViewDelegate, UITableViewDataSource {
 		messageListTableView.delegate = self
 
 		classes.courseGrades = classes.courseGrades.sorted(by: sortClassesByCcode)
+
+		sNameLabel.text = schoolName
 	}
 
 	func numberOfSections(in tableView: UITableView) -> Int {
@@ -99,6 +104,7 @@ UITableViewDelegate, UITableViewDataSource {
 		if segue.identifier == "goToMessageDetail" {
 			let destinationViewController = segue.destination as! MessageDetailViewController
 			destinationViewController.currMessage = messageList[messageIdx]
+			destinationViewController.schoolName = self.schoolName
 		}
 	}
 }

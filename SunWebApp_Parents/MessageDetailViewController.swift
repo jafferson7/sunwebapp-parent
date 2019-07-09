@@ -11,7 +11,10 @@ import UIKit
 
 class MessageDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+	var schoolName: String = ""
+
 	@IBOutlet weak var messageTableView: UITableView!
+	@IBOutlet weak var sNameLabel: UILabel!
 
 	var currMessage: message = message.init(id: "", from: "", subject: "", message: "", attachment: "", Ccode: "", timestamp: "")
 
@@ -20,6 +23,8 @@ class MessageDetailViewController: UIViewController, UITableViewDelegate, UITabl
 
 		messageTableView.delegate = self
 		messageTableView.dataSource = self
+
+		sNameLabel.text = schoolName
 	}
 
 
@@ -59,7 +64,7 @@ class MessageDetailViewController: UIViewController, UITableViewDelegate, UITabl
 	}
 
 	func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-		return CGFloat.leastNormalMagnitude
+		return CGFloat.leastNonzeroMagnitude
 	}
 
 }

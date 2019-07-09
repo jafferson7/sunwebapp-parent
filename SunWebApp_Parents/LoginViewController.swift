@@ -68,22 +68,26 @@ struct loginResult: Decodable {
 	var p2: String
 	var names: [student]
 	var pmsg: String
+	var schoolName: String
 
 	private enum CodingKeys : String, CodingKey {
 		case p1
 		case p2
 		case names
 		case pmsg
+		case schoolName = "Name"
 	}
 
 	init(p1: String = "",
 		p2: String = "",
 		names: [student] = [],
-		pmsg: String = "") {
+		pmsg: String = "",
+		schoolName: String = "") {
 		self.p1 = p1
 		self.p2 = p2
 		self.names = names
 		self.pmsg = pmsg
+		self.schoolName = schoolName
 	}
 }
 
@@ -105,7 +109,7 @@ class LoginViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 	}
 
-	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "")
+	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "", schoolName: "")
 
 	@IBAction func loginButtonClicked(_ sender: Any) {
 		loginURL += (schoolCodeTextField.text ?? "demo")
@@ -145,8 +149,9 @@ class LoginViewController: UIViewController {
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "loginSegue" {
-			let barViewControllers = segue.destination as! UITabBarController
-			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
+//			let barViewControllers = segue.destination as! UITabBarController
+//			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
+			let navigationViewController = segue.destination as! UINavigationController
 			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
 			destinationViewController.familyInfo = self.familyInfo
 		}

@@ -12,6 +12,7 @@ class StudentListViewController: UIViewController,
 	UITableViewDelegate, UITableViewDataSource {
 
 	@IBOutlet weak var stdListTable: UITableView!
+	@IBOutlet weak var sNameLabel: UILabel!
 
 	var names: String = " hello world"
 
@@ -26,7 +27,7 @@ class StudentListViewController: UIViewController,
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
 
-
+		sNameLabel.text = familyInfo.schoolName
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -99,6 +100,7 @@ class StudentListViewController: UIViewController,
 //			destinationController.classTitle = "Quran 7"
 			let index = stdListTable.indexPathForSelectedRow?.row
 			destinationController.currStudent = familyInfo.names[index!]
+			destinationController.schoolName = familyInfo.schoolName
 		}
 	}
 }
