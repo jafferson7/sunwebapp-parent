@@ -51,7 +51,7 @@ class GradesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
 		print(self.classes.courseGrades[classIndex].grades.count)
 		navigationItem.title = self.classes.courseGrades[classIndex].courseName
-		if self.classes.courseGrades[classIndex].comments == "" || true {
+		if self.classes.courseGrades[classIndex].comments == "" {
 			gradesToolbar.isHidden = true
 		}
 	}
