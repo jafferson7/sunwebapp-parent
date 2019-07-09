@@ -322,7 +322,7 @@ class StudentOptionViewController: UIViewController,
 			switch indexPath.row {
 			case 0: // view grades
 				OperationQueue.main.addOperation {
-					self.performSegue(withIdentifier: "goToGrades", sender: nil)
+					self.performSegue(withIdentifier: "goToGradesOverview", sender: nil)
 				}
 			case 1: // view communication
 				OperationQueue.main.addOperation {
@@ -364,6 +364,10 @@ class StudentOptionViewController: UIViewController,
 			let destinationController = segue.destination as! MessageListViewController
 			destinationController.messageList = self.messageList.sorted(by: sortMessagesByCcode)
 			destinationController.currStudent = self.currStudent
+			destinationController.classes = self.classes
+			destinationController.schoolName = self.schoolName
+		} else if segue.identifier == "goToGradesOverview" {
+			let destinationController = segue.destination as! StudentGradesViewController
 			destinationController.classes = self.classes
 			destinationController.schoolName = self.schoolName
 		}
