@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXm-cp-XCn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230" y="2063"/>
+            <point key="canvasLocation" x="228.98550724637684" y="2061.8303571428569"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="fpx-uP-HND">
@@ -216,7 +216,7 @@
         <!--Update Info-->
         <scene sceneID="j00-GE-6oi">
             <objects>
-                <viewController id="Y60-Ol-Zll" customClass="StudentInfoViewController" customModule="SunWebApp_Parents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y60-Ol-Zll" customClass="UpdateInfoViewController" customModule="SunWebApp_Parents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ym0-eF-Sb7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9XK-ho-lD9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="656"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="640"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="AtX-yW-bfA" detailTextLabel="q9W-qZ-OWw" style="IBUITableViewCellStyleValue1" id="vKe-E1-3sU">
@@ -282,16 +282,16 @@
                                 <sections/>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LargerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-O6-wAy">
-                                <rect key="frame" x="0.0" y="810" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="794" width="414" height="60"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-W1-l8A">
-                                <rect key="frame" x="20" y="781" width="374" height="21"/>
+                                <rect key="frame" x="20" y="765" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9c-KD-Iou">
-                                <rect key="frame" x="20" y="752" width="374" height="21"/>
+                                <rect key="frame" x="20" y="736" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -311,7 +311,7 @@
                             <constraint firstItem="JQk-O6-wAy" firstAttribute="top" secondItem="Tf6-W1-l8A" secondAttribute="bottom" constant="8" id="ZOq-dr-uTC"/>
                             <constraint firstItem="JQk-O6-wAy" firstAttribute="trailing" secondItem="XV7-NT-Cfi" secondAttribute="trailing" id="b5y-AJ-Hv6"/>
                             <constraint firstItem="9XK-ho-lD9" firstAttribute="leading" secondItem="XV7-NT-Cfi" secondAttribute="leading" id="ch9-iJ-5YI"/>
-                            <constraint firstItem="JQk-O6-wAy" firstAttribute="bottom" secondItem="XV7-NT-Cfi" secondAttribute="bottom" constant="8" id="enj-yn-mC2"/>
+                            <constraint firstItem="JQk-O6-wAy" firstAttribute="bottom" secondItem="XV7-NT-Cfi" secondAttribute="bottom" constant="-8" id="enj-yn-mC2"/>
                             <constraint firstItem="JQk-O6-wAy" firstAttribute="leading" secondItem="XV7-NT-Cfi" secondAttribute="leading" id="vBF-dW-5Yz"/>
                             <constraint firstItem="JQk-O6-wAy" firstAttribute="top" secondItem="Tf6-W1-l8A" secondAttribute="bottom" constant="8" id="wHB-sh-jXj"/>
                             <constraint firstItem="XV7-NT-Cfi" firstAttribute="trailing" secondItem="Tf6-W1-l8A" secondAttribute="trailing" constant="20" id="yCG-Zc-gp3"/>

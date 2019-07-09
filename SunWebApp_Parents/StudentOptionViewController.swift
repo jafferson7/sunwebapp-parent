@@ -356,7 +356,7 @@ class StudentOptionViewController: UIViewController,
 		}
 		else if segue.identifier == "StudentInfoViewControllerSegue" {
 			print(self.currStudent.firstName)
-			let destinationController = segue.destination as! StudentInfoViewController
+			let destinationController = segue.destination as! UpdateInfoViewController
 			destinationController.currStudent = self.currStudent
 
 		} else if segue.identifier == "goToMessages" {

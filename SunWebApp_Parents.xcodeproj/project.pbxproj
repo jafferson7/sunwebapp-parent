@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		7C123E6622D4632B00D80136 /* StudentGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C123E6522D4632B00D80136 /* StudentGradesViewController.swift */; };
 		7C1BAB2622CD754B002AEC8C /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */; };
+		7C2896B522D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2896B422D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift */; };
 		7C3B6C9322D04CB9007757E0 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B6C9222D04CB9007757E0 /* MessageDetailViewController.swift */; };
 		7C593BC922C8315700082372 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C593BC622C8314600082372 /* Eureka.framework */; };
 		7C593BCA22C8315700082372 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C593BC622C8314600082372 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C593BCE22C832B300082372 /* StudentInfoViewController.swift */; };
+		7C593BCF22C832B300082372 /* UpdateInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C593BCE22C832B300082372 /* UpdateInfoViewController.swift */; };
 		7C6DEE28227A1AAC00BF5681 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */; };
 		7C6DEE2A227A1D7500BF5681 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */; };
 		7C6DEE2C227A1D9300BF5681 /* StudentOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */; };
@@ -82,9 +83,10 @@
 /* Begin PBXFileReference section */
 		7C123E6522D4632B00D80136 /* StudentGradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesViewController.swift; sourceTree = "<group>"; };
 		7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		7C2896B422D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		7C3B6C9222D04CB9007757E0 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		7C593BC022C8314600082372 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
-		7C593BCE22C832B300082372 /* StudentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoViewController.swift; sourceTree = "<group>"; };
+		7C593BCE22C832B300082372 /* UpdateInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoViewController.swift; sourceTree = "<group>"; };
 		7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentOptionViewController.swift; sourceTree = "<group>"; };
@@ -180,8 +182,9 @@
 				7C1BAB2522CD754B002AEC8C /* MessageListViewController.swift */,
 				7C3B6C9222D04CB9007757E0 /* MessageDetailViewController.swift */,
 				7CB5083022A892C2000061E6 /* GradesViewController.swift */,
-				7C593BCE22C832B300082372 /* StudentInfoViewController.swift */,
+				7C593BCE22C832B300082372 /* UpdateInfoViewController.swift */,
 				7CCAA6A922796A020059ADB3 /* Main.storyboard */,
+				7C2896B422D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift */,
 				7C123E6522D4632B00D80136 /* StudentGradesViewController.swift */,
 				7CCAA6AF22796A060059ADB3 /* Assets.xcassets */,
 				7CCAA6B122796A060059ADB3 /* LaunchScreen.storyboard */,
@@ -370,7 +373,8 @@
 				7C6DEE28227A1AAC00BF5681 /* LoginViewController.swift in Sources */,
 				7CB5083122A892C2000061E6 /* GradesViewController.swift in Sources */,
 				7CCAA6AE22796A030059ADB3 /* SunWebApp_Parents.xcdatamodeld in Sources */,
-				7C593BCF22C832B300082372 /* StudentInfoViewController.swift in Sources */,
+				7C2896B522D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift in Sources */,
+				7C593BCF22C832B300082372 /* UpdateInfoViewController.swift in Sources */,
 				7C6DEE2C227A1D9300BF5681 /* StudentOptionViewController.swift in Sources */,
 				7CCAA6A822796A020059ADB3 /* ViewController.swift in Sources */,
 				7C3B6C9322D04CB9007757E0 /* MessageDetailViewController.swift in Sources */,

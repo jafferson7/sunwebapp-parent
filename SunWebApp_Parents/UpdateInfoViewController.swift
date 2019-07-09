@@ -9,7 +9,7 @@
 import Eureka
 import UIKit
 
-class StudentInfoViewController: FormViewController {
+class UpdateInfoViewController: FormViewController {
 
 	var currStudent: student = student.init(id: "0", name: "")
 
