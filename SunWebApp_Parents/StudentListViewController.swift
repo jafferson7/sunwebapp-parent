@@ -39,6 +39,7 @@ class StudentListViewController: UIViewController,
 
 				DispatchQueue.main.async {
 					self.stdListTable.reloadData()
+					self.sNameLabel.text = self.familyInfo.schoolName
 				}
 			} catch let jsonError {
 				print(jsonError)
@@ -51,18 +52,9 @@ class StudentListViewController: UIViewController,
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
 
-//		if familyInfo.schoolName == "" {
-//			downloadFamilyInfo()
-//			stdListTable.reloadData()
-//		}
-
 		downloadFamilyInfo()
 
 		sNameLabel.text = familyInfo.schoolName
-	}
-
-	override func viewDidAppear(_ animated: Bool) {
-		stdListTable.reloadData()
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

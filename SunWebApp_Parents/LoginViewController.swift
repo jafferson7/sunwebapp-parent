@@ -209,7 +209,7 @@ class LoginViewController: FormViewController {
 			} catch let jsonError {
 				print(jsonError)
 			}
-			}.resume()
+		}.resume()
 	}
 
 //	@IBAction func loginButtonClicked(_ sender: Any) {
@@ -248,15 +248,15 @@ class LoginViewController: FormViewController {
 //			}.resume()
 //	}
 
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "loginSegue" {
-			//			let barViewControllers = segue.destination as! UITabBarController
-			//			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
-			let navigationViewController = segue.destination as! UINavigationController
-			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
-			destinationViewController.familyInfo = self.familyInfo
-		}
-	}
+//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//		if segue.identifier == "loginSegue" {
+//			//			let barViewControllers = segue.destination as! UITabBarController
+//			//			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
+//			let navigationViewController = segue.destination as! UINavigationController
+//			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
+//			destinationViewController.familyInfo = self.familyInfo
+//		}
+//	}
 
 }
 
