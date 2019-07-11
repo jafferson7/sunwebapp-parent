@@ -212,7 +212,11 @@
                         <viewLayoutGuide key="safeArea" id="K1J-C0-Mkd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="fOp-Ka-NJw">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="organize" id="ZQl-5u-eQl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="ZQl-5u-eQl">
+                            <connections>
+                                <segue destination="9J6-tG-NDp" kind="show" id="UBf-26-9Pd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="sNameLabel" destination="f9r-f3-rAM" id="lKz-CF-8uG"/>
@@ -252,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3gi-JJ-7mJ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -349,7 +353,7 @@
                         <viewLayoutGuide key="safeArea" id="XV7-NT-Cfi"/>
                     </view>
                     <navigationItem key="navigationItem" title="Class List" id="Rks-bh-QXN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="qxG-7X-CeT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="qxG-7X-CeT"/>
                     </navigationItem>
                     <connections>
                         <outlet property="optionsTableView" destination="9XK-ho-lD9" id="1jr-mh-olH"/>
@@ -362,6 +366,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8o-AC-kWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4537.68115942029" y="2062.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ido-kx-aef">
+            <objects>
+                <viewController id="9J6-tG-NDp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bn6-a0-awf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btw-tO-mji">
+                                <rect key="frame" x="166" y="425.5" width="82" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="Ssx-AU-YRw" kind="showDetail" id="ctd-zH-1mp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="btw-tO-mji" firstAttribute="centerX" secondItem="Bn6-a0-awf" secondAttribute="centerX" id="6YR-nT-Fds"/>
+                            <constraint firstItem="btw-tO-mji" firstAttribute="centerY" secondItem="Bn6-a0-awf" secondAttribute="centerY" id="atT-dn-afl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DHv-cS-lkv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhT-T8-Ee8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3540.579710144928" y="2884.8214285714284"/>
         </scene>
         <!--Message List View Controller-->
         <scene sceneID="yjN-BY-qCu">
@@ -741,6 +775,7 @@
     <resources>
         <image name="Home" width="30" height="30"/>
         <image name="LargerLogo" width="251" height="60"/>
+        <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0uq-bT-Hxp"/>
