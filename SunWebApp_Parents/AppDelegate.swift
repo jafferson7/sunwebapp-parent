@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		let didLogin = UserDefaults.standard.bool(forKey: "didLogin")
+		let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		if didLogin {
+			self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "StudentListViewController");
+		} else {
+			self.window?.rootViewController = storyboard.instantiateInitialViewController()
+		}
 		return true
 	}
 

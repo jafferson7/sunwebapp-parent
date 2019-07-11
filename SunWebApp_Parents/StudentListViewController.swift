@@ -22,12 +22,47 @@ class StudentListViewController: UIViewController,
 		super.didReceiveMemoryWarning()
 	}
 
+	func downloadFamilyInfo() {
+		let url = UserDefaults.standard.url(forKey: "loginURL")!
+
+		URLSession.shared.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print(error!.localizedDescription)
+			}
+
+			guard let data = data else { return }
+
+			do {
+				let decoder = JSONDecoder()
+				self.familyInfo = try decoder.decode(loginResult.self, from: data)
+				print(self.familyInfo.names[0].name)
+
+				DispatchQueue.main.async {
+					self.stdListTable.reloadData()
+				}
+			} catch let jsonError {
+				print(jsonError)
+			}
+		}.resume()
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		stdListTable.delegate = self
 		stdListTable.dataSource = self
 
+//		if familyInfo.schoolName == "" {
+//			downloadFamilyInfo()
+//			stdListTable.reloadData()
+//		}
+
+		downloadFamilyInfo()
+
 		sNameLabel.text = familyInfo.schoolName
+	}
+
+	override func viewDidAppear(_ animated: Bool) {
+		stdListTable.reloadData()
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

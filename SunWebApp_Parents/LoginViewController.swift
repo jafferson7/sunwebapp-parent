@@ -99,6 +99,8 @@ class LoginViewController: FormViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		print(familyInfo.schoolName)
+
 		form
 			+++ Section("Login") {
 				$0.header = HeaderFooterView<EurekaLogoView>(.class)
@@ -159,6 +161,10 @@ class LoginViewController: FormViewController {
 			}
 	}
 
+//	public func getFamilyInfo() -> loginResult {
+//		return self.familyInfo
+//	}
+
 	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "", schoolName: "")
 
 	func loginButtonClicked() {
@@ -193,6 +199,8 @@ class LoginViewController: FormViewController {
 					DispatchQueue.main.async {
 						UserDefaults.standard.set(sCode?.value, forKey: "schoolCode")
 						UserDefaults.standard.set(self.familyInfo.p1 + ", " + self.familyInfo.p2, forKey: "name")
+						UserDefaults.standard.set(true, forKey: "didLogin")
+						UserDefaults.standard.set(url, forKey: "loginURL")
 					}
 					OperationQueue.main.addOperation {
 						self.performSegue(withIdentifier: "loginSegue", sender: self.familyInfo)
