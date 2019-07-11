@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Eureka
 
 struct student: Decodable {
 	let id: String
@@ -91,6 +92,167 @@ struct loginResult: Decodable {
 	}
 }
 
+class LoginViewController: FormViewController {
+
+	var loginURL = "https://sunwebapp.com/app/GetParentiPhone.php?Scode=sdf786ic&SchoolCode="
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		form
+			+++ Section("Login") {
+				$0.header = HeaderFooterView<EurekaLogoView>(.class)
+			}
+
+			<<< TextRow() { row in
+				row.title = "School Code"
+				row.placeholder = "Required"
+				row.add(rule: RuleRequired())
+				row.validationOptions = .validatesOnDemand
+				row.tag = "schoolCode"
+			}
+				.cellSetup { cell, row in
+					cell.textField.autocapitalizationType = .none
+					cell.textField.autocorrectionType = .no
+					cell.textLabel?.tintColor = .black
+			}
+
+			<<< EmailRow() { row in
+				row.title = "Email"
+				row.placeholder = "Required"
+				row.add(rule: RuleRequired())
+				row.validationOptions = .validatesOnDemand
+				row.tag = "emailRow"
+			}
+				.cellSetup { cell, row in
+					cell.textField.autocapitalizationType = .none
+					cell.textField.autocorrectionType = .no
+			}
+
+			<<< PasswordRow() { row in
+				row.title = "Password"
+				row.placeholder = "Required"
+				row.add(rule: RuleRequired())
+				row.validationOptions = .validatesOnDemand
+				row.tag = "passwordRow"
+			}
+				.cellSetup { cell, row in
+					cell.textField.autocapitalizationType = .none
+					cell.textField.autocorrectionType = .no
+			}
+
+			+++ Section()
+			<<< ButtonRow() { row in
+				row.title = "Login"
+//				rgba(46, 204, 113 ,1.0)
+				row.cell.backgroundColor = .init(red: 46 / 255.0, green: 204 / 255.0, blue: 113 / 255.0, alpha: 1.0) //.green
+				row.cell.tintColor = .white
+				}
+				.onCellSelection { cell, row in
+					self.loginButtonClicked()
+				}
+
+			<<< ButtonRow() { row in
+				row.title = "Forgot Password?"
+				row.cell.backgroundColor = .red
+				row.cell.tintColor = .white
+			}
+	}
+
+	var familyInfo : loginResult = loginResult(p1: "", p2: "", names: [], pmsg: "", schoolName: "")
+
+	func loginButtonClicked() {
+		let validationErrors = form.validate()
+		if validationErrors.count != 0 {
+			return
+		}
+		let sCode: TextRow? = form.rowBy(tag: "schoolCode")
+		let eRow: EmailRow? = form.rowBy(tag: "emailRow")
+		let pRow: PasswordRow? = form.rowBy(tag: "passwordRow")
+		loginURL += sCode?.value ?? ""
+		loginURL += "&salt=" + (eRow?.value ?? "")
+		loginURL += "&pepper=" + (pRow?.value ?? "")
+		guard let url = URL(string: loginURL) else {return}
+		loginURL = "https://sunwebapp.com/app/GetParentiPhone.php?Scode=sdf786ic&SchoolCode="
+
+		print(url)
+
+		URLSession.shared.dataTask(with: url) { (data, response, error) in
+			if error != nil {
+				print(error!.localizedDescription)
+			}
+
+			guard let data = data else { return }
+
+			do {
+				let decoder = JSONDecoder()
+				self.familyInfo = try decoder.decode(loginResult.self, from: data)
+				print(self.familyInfo.names[0].name)
+
+				if self.familyInfo.p1 != "none" && self.familyInfo.p2 != "none" {
+					DispatchQueue.main.async {
+						UserDefaults.standard.set(sCode?.value, forKey: "schoolCode")
+						UserDefaults.standard.set(self.familyInfo.p1 + ", " + self.familyInfo.p2, forKey: "name")
+					}
+					OperationQueue.main.addOperation {
+						self.performSegue(withIdentifier: "loginSegue", sender: self.familyInfo)
+					}
+				}
+			} catch let jsonError {
+				print(jsonError)
+			}
+			}.resume()
+	}
+
+//	@IBAction func loginButtonClicked(_ sender: Any) {
+//		loginURL += (schoolCodeTextField.text ?? "demo")
+//		loginURL += "&salt=" + (emailTextField.text ?? "mmjaffer@yahoo.com")
+//		loginURL += "&pepper=" + (passwordTextField.text ?? "MJaffer")
+//		guard let url = URL(string: loginURL) else {return}
+//		loginURL = "https://sunwebapp.com/app/GetParentiPhone.php?Scode=sdf786ic&SchoolCode="
+//
+//		print(url)
+//
+//		URLSession.shared.dataTask(with: url) { (data, response, error) in
+//			if error != nil {
+//				print(error!.localizedDescription)
+//			}
+//
+//			guard let data = data else { return }
+//
+//			do {
+//				let decoder = JSONDecoder()
+//				self.familyInfo = try decoder.decode(loginResult.self, from: data)
+//				print(self.familyInfo.names[0].name)
+//
+//				if self.familyInfo.p1 != "none" && self.familyInfo.p2 != "none" {
+//					DispatchQueue.main.async {
+//						UserDefaults.standard.set(self.schoolCodeTextField.text, forKey: "schoolCode")
+//						UserDefaults.standard.set(self.familyInfo.p1 + ", " + self.familyInfo.p2, forKey: "name")
+//					}
+//					OperationQueue.main.addOperation {
+//						self.performSegue(withIdentifier: "loginSegue", sender: self.familyInfo)
+//					}
+//				}
+//			} catch let jsonError {
+//				print(jsonError)
+//			}
+//			}.resume()
+//	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "loginSegue" {
+			//			let barViewControllers = segue.destination as! UITabBarController
+			//			let navigationViewController = barViewControllers.viewControllers?[0] as! UINavigationController
+			let navigationViewController = segue.destination as! UINavigationController
+			let destinationViewController = navigationViewController.topViewController as! StudentListViewController
+			destinationViewController.familyInfo = self.familyInfo
+		}
+	}
+
+}
+
+/*
 class LoginViewController: UIViewController {
 
 	@IBOutlet weak var schoolCodeTextField: UITextField!
@@ -178,6 +340,7 @@ class LoginViewController: UIViewController {
 	}
 
 }
+*/
 
 extension URLRequest {
 	/// Set body and header for x-www-form-urlencoded request

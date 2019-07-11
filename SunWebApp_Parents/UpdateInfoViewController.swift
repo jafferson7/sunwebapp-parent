@@ -55,7 +55,7 @@ class UpdateInfoViewController: FormViewController {
 				row.value = currStudent.middleInitial
 			}
 			.onChange { row in
-					self.currStudent.middleInitial = row.value ?? ""
+				self.currStudent.middleInitial = row.value ?? ""
 			}
 
 			<<< TextRow() { row in
@@ -269,5 +269,26 @@ class UpdateInfoViewController: FormViewController {
 		let alert = UIAlertController(title: "Admin Message", message: message, preferredStyle: .alert)
 		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 		self.present(alert, animated: true, completion: nil)
+	}
+}
+
+class EurekaLogoView: UIView {
+
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		let imageView = UIImageView(image: UIImage(named: "LargerLogo"))
+		imageView.frame = CGRect(x: 20, y: 15, width: 280, height: 100)
+		imageView.autoresizingMask = .flexibleWidth
+		imageView.backgroundColor = .white
+		self.frame = CGRect(x: 0, y: 0, width: 320, height: 130)
+		imageView.contentMode = .scaleAspectFit
+		let whiteBack = UIImageView.init(frame: .init(x: 0, y: 0, width: 700, height: 130))
+		whiteBack.backgroundColor = .white
+		addSubview(whiteBack)
+		addSubview(imageView)
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
 	}
 }
