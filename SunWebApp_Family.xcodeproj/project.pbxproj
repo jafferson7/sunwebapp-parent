@@ -92,6 +92,7 @@
 		7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentOptionViewController.swift; sourceTree = "<group>"; };
+		7CAE778022DA871E00AA3E4F /* SunWebApp_Family.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SunWebApp_Family.entitlements; sourceTree = "<group>"; };
 		7CB5083022A892C2000061E6 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		7CCAA6A222796A020059ADB3 /* SunWebApp_Family.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunWebApp_Family.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCAA6A522796A020059ADB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 		7CCAA6A422796A020059ADB3 /* SunWebApp_Family */ = {
 			isa = PBXGroup;
 			children = (
+				7CAE778022DA871E00AA3E4F /* SunWebApp_Family.entitlements */,
 				7CCAA6A522796A020059ADB3 /* AppDelegate.swift */,
 				7CCAA6A722796A020059ADB3 /* ViewController.swift */,
 				7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */,
@@ -286,6 +288,14 @@
 				TargetAttributes = {
 					7CCAA6A122796A020059ADB3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					7CCAA6B822796A060059ADB3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -565,14 +575,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SunWebApp_Family/SunWebApp_Family.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFU3JXMDW8;
+				DEVELOPMENT_TEAM = N8RCZ987YN;
 				INFOPLIST_FILE = SunWebApp_Family/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Family";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SunWebApp.SunWebAppFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -584,14 +595,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SunWebApp_Family/SunWebApp_Family.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFU3JXMDW8;
+				DEVELOPMENT_TEAM = N8RCZ987YN;
 				INFOPLIST_FILE = SunWebApp_Family/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Family";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SunWebApp.SunWebAppFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
