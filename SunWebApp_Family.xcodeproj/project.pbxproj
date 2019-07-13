@@ -93,7 +93,7 @@
 		7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		7C6DEE2B227A1D9300BF5681 /* StudentOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentOptionViewController.swift; sourceTree = "<group>"; };
 		7CB5083022A892C2000061E6 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
-		7CCAA6A222796A020059ADB3 /* SunWebApp_Parents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunWebApp_Parents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCAA6A222796A020059ADB3 /* SunWebApp_Family.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunWebApp_Family.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCAA6A522796A020059ADB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCAA6A722796A020059ADB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CCAA6AA22796A020059ADB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		7CCAA6AF22796A060059ADB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCAA6B222796A060059ADB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCAA6B422796A060059ADB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CCAA6B922796A060059ADB3 /* SunWebApp_ParentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunWebApp_ParentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCAA6B922796A060059ADB3 /* SunWebApp_FamilyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunWebApp_FamilyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCAA6BD22796A060059ADB3 /* SunWebApp_ParentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunWebApp_ParentsTests.swift; sourceTree = "<group>"; };
 		7CCAA6BF22796A060059ADB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CCAA6C422796A060059ADB3 /* SunWebApp_ParentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunWebApp_ParentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCAA6C422796A060059ADB3 /* SunWebApp_FamilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunWebApp_FamilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCAA6C822796A060059ADB3 /* SunWebApp_ParentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunWebApp_ParentsUITests.swift; sourceTree = "<group>"; };
 		7CCAA6CA22796A060059ADB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,14 +161,15 @@
 				7CCAA6C722796A060059ADB3 /* SunWebApp_ParentsUITests */,
 				7CCAA6A322796A020059ADB3 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
 		};
 		7CCAA6A322796A020059ADB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CCAA6A222796A020059ADB3 /* SunWebApp_Parents.app */,
-				7CCAA6B922796A060059ADB3 /* SunWebApp_ParentsTests.xctest */,
-				7CCAA6C422796A060059ADB3 /* SunWebApp_ParentsUITests.xctest */,
+				7CCAA6A222796A020059ADB3 /* SunWebApp_Family.app */,
+				7CCAA6B922796A060059ADB3 /* SunWebApp_FamilyTests.xctest */,
+				7CCAA6C422796A060059ADB3 /* SunWebApp_FamilyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7CCAA6A122796A020059ADB3 /* SunWebApp_Parents */ = {
+		7CCAA6A122796A020059ADB3 /* SunWebApp_Family */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCAA6CD22796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_Parents" */;
+			buildConfigurationList = 7CCAA6CD22796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_Family" */;
 			buildPhases = (
 				7CCAA69E22796A020059ADB3 /* Sources */,
 				7CCAA69F22796A020059ADB3 /* Frameworks */,
@@ -232,14 +233,14 @@
 			dependencies = (
 				7C593BCC22C8315700082372 /* PBXTargetDependency */,
 			);
-			name = SunWebApp_Parents;
+			name = SunWebApp_Family;
 			productName = SunWebApp_Parents;
-			productReference = 7CCAA6A222796A020059ADB3 /* SunWebApp_Parents.app */;
+			productReference = 7CCAA6A222796A020059ADB3 /* SunWebApp_Family.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7CCAA6B822796A060059ADB3 /* SunWebApp_ParentsTests */ = {
+		7CCAA6B822796A060059ADB3 /* SunWebApp_FamilyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCAA6D022796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_ParentsTests" */;
+			buildConfigurationList = 7CCAA6D022796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_FamilyTests" */;
 			buildPhases = (
 				7CCAA6B522796A060059ADB3 /* Sources */,
 				7CCAA6B622796A060059ADB3 /* Frameworks */,
@@ -250,14 +251,14 @@
 			dependencies = (
 				7CCAA6BB22796A060059ADB3 /* PBXTargetDependency */,
 			);
-			name = SunWebApp_ParentsTests;
+			name = SunWebApp_FamilyTests;
 			productName = SunWebApp_ParentsTests;
-			productReference = 7CCAA6B922796A060059ADB3 /* SunWebApp_ParentsTests.xctest */;
+			productReference = 7CCAA6B922796A060059ADB3 /* SunWebApp_FamilyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7CCAA6C322796A060059ADB3 /* SunWebApp_ParentsUITests */ = {
+		7CCAA6C322796A060059ADB3 /* SunWebApp_FamilyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCAA6D322796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_ParentsUITests" */;
+			buildConfigurationList = 7CCAA6D322796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_FamilyUITests" */;
 			buildPhases = (
 				7CCAA6C022796A060059ADB3 /* Sources */,
 				7CCAA6C122796A060059ADB3 /* Frameworks */,
@@ -268,9 +269,9 @@
 			dependencies = (
 				7CCAA6C622796A060059ADB3 /* PBXTargetDependency */,
 			);
-			name = SunWebApp_ParentsUITests;
+			name = SunWebApp_FamilyUITests;
 			productName = SunWebApp_ParentsUITests;
-			productReference = 7CCAA6C422796A060059ADB3 /* SunWebApp_ParentsUITests.xctest */;
+			productReference = 7CCAA6C422796A060059ADB3 /* SunWebApp_FamilyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7CCAA69D22796A020059ADB3 /* Build configuration list for PBXProject "SunWebApp_Parents" */;
+			buildConfigurationList = 7CCAA69D22796A020059ADB3 /* Build configuration list for PBXProject "SunWebApp_Family" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -315,9 +316,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				7CCAA6A122796A020059ADB3 /* SunWebApp_Parents */,
-				7CCAA6B822796A060059ADB3 /* SunWebApp_ParentsTests */,
-				7CCAA6C322796A060059ADB3 /* SunWebApp_ParentsUITests */,
+				7CCAA6A122796A020059ADB3 /* SunWebApp_Family */,
+				7CCAA6B822796A060059ADB3 /* SunWebApp_FamilyTests */,
+				7CCAA6C322796A060059ADB3 /* SunWebApp_FamilyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -413,12 +414,12 @@
 		};
 		7CCAA6BB22796A060059ADB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CCAA6A122796A020059ADB3 /* SunWebApp_Parents */;
+			target = 7CCAA6A122796A020059ADB3 /* SunWebApp_Family */;
 			targetProxy = 7CCAA6BA22796A060059ADB3 /* PBXContainerItemProxy */;
 		};
 		7CCAA6C622796A060059ADB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CCAA6A122796A020059ADB3 /* SunWebApp_Parents */;
+			target = 7CCAA6A122796A020059ADB3 /* SunWebApp_Family */;
 			targetProxy = 7CCAA6C522796A060059ADB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -613,7 +614,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunWebApp_Parents.app/SunWebApp_Parents";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunWebApp_Family.app/SunWebApp_Family";
 			};
 			name = Debug;
 		};
@@ -633,7 +634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunWebApp_Parents.app/SunWebApp_Parents";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunWebApp_Family.app/SunWebApp_Family";
 			};
 			name = Release;
 		};
@@ -678,7 +679,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7CCAA69D22796A020059ADB3 /* Build configuration list for PBXProject "SunWebApp_Parents" */ = {
+		7CCAA69D22796A020059ADB3 /* Build configuration list for PBXProject "SunWebApp_Family" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CCAA6CB22796A060059ADB3 /* Debug */,
@@ -687,7 +688,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCAA6CD22796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_Parents" */ = {
+		7CCAA6CD22796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_Family" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CCAA6CE22796A060059ADB3 /* Debug */,
@@ -696,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCAA6D022796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_ParentsTests" */ = {
+		7CCAA6D022796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_FamilyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CCAA6D122796A060059ADB3 /* Debug */,
@@ -705,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCAA6D322796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_ParentsUITests" */ = {
+		7CCAA6D322796A060059ADB3 /* Build configuration list for PBXNativeTarget "SunWebApp_FamilyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CCAA6D422796A060059ADB3 /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SunWebApp_Parents.xcodeproj">
+      location = "self:/Users/Usmaan/Desktop/SunWebApp_Parents/SunWebApp_Family.xcodeproj">
    </FileRef>
 </Workspace>

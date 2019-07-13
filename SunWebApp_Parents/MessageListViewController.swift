@@ -71,7 +71,7 @@ UITableViewDelegate, UITableViewDataSource {
 			}
 		}
 
-		cell.textLabel?.text = messageList[idx].subject + " __ " + messageList[idx].Ccode  // classes.courseGrades[indexPath.section].courseCode
+		cell.textLabel?.text = messageList[idx].subject // + " __ " + messageList[idx].Ccode  // classes.courseGrades[indexPath.section].courseCode
 		cell.detailTextLabel?.text = messageList[idx].timestamp
 
 		cell.accessoryType = .disclosureIndicator
