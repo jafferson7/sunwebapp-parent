@@ -156,9 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				7C593BBD22C830AF00082372 /* Submodules */,
-				7CCAA6A422796A020059ADB3 /* SunWebApp_Parents */,
-				7CCAA6BC22796A060059ADB3 /* SunWebApp_ParentsTests */,
-				7CCAA6C722796A060059ADB3 /* SunWebApp_ParentsUITests */,
+				7CCAA6A422796A020059ADB3 /* SunWebApp_Family */,
+				7CCAA6BC22796A060059ADB3 /* SunWebApp_FamilyTests */,
+				7CCAA6C722796A060059ADB3 /* SunWebApp_FamilyUITests */,
 				7CCAA6A322796A020059ADB3 /* Products */,
 			);
 			indentWidth = 2;
@@ -174,7 +174,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7CCAA6A422796A020059ADB3 /* SunWebApp_Parents */ = {
+		7CCAA6A422796A020059ADB3 /* SunWebApp_Family */ = {
 			isa = PBXGroup;
 			children = (
 				7CCAA6A522796A020059ADB3 /* AppDelegate.swift */,
@@ -195,25 +195,25 @@
 				7CCAA6B422796A060059ADB3 /* Info.plist */,
 				7CCAA6AC22796A030059ADB3 /* SunWebApp_Parents.xcdatamodeld */,
 			);
-			path = SunWebApp_Parents;
+			path = SunWebApp_Family;
 			sourceTree = "<group>";
 		};
-		7CCAA6BC22796A060059ADB3 /* SunWebApp_ParentsTests */ = {
+		7CCAA6BC22796A060059ADB3 /* SunWebApp_FamilyTests */ = {
 			isa = PBXGroup;
 			children = (
 				7CCAA6BD22796A060059ADB3 /* SunWebApp_ParentsTests.swift */,
 				7CCAA6BF22796A060059ADB3 /* Info.plist */,
 			);
-			path = SunWebApp_ParentsTests;
+			path = SunWebApp_FamilyTests;
 			sourceTree = "<group>";
 		};
-		7CCAA6C722796A060059ADB3 /* SunWebApp_ParentsUITests */ = {
+		7CCAA6C722796A060059ADB3 /* SunWebApp_FamilyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7CCAA6C822796A060059ADB3 /* SunWebApp_ParentsUITests.swift */,
 				7CCAA6CA22796A060059ADB3 /* Info.plist */,
 			);
-			path = SunWebApp_ParentsUITests;
+			path = SunWebApp_FamilyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,15 +567,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LFU3JXMDW8;
-				INFOPLIST_FILE = SunWebApp_Parents/Info.plist;
+				INFOPLIST_FILE = SunWebApp_Family/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Parents";
+				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Family";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -586,15 +586,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LFU3JXMDW8;
-				INFOPLIST_FILE = SunWebApp_Parents/Info.plist;
+				INFOPLIST_FILE = SunWebApp_Family/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Parents";
+				PRODUCT_BUNDLE_IDENTIFIER = "SunWebApp.SunWebApp-Family";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
