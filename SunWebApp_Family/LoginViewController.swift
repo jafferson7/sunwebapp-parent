@@ -8,6 +8,7 @@
 
 import UIKit
 import Eureka
+import UserNotifications
 
 struct student: Decodable {
 	let id: String
@@ -201,6 +202,12 @@ class LoginViewController: FormViewController {
 						UserDefaults.standard.set(self.familyInfo.p1 + ", " + self.familyInfo.p2, forKey: "name")
 						UserDefaults.standard.set(true, forKey: "didLogin")
 						UserDefaults.standard.set(url, forKey: "loginURL")
+
+//						UIApplication.shared.registerForRemoteNotifications()
+						print("this device is registered for remote notifications: \(UIApplication.shared.isRegisteredForRemoteNotifications)")
+						if !UIApplication.shared.isRegisteredForRemoteNotifications {
+							self.registerForPushNotifications()
+						}
 					}
 					OperationQueue.main.addOperation {
 						self.performSegue(withIdentifier: "loginSegue", sender: self.familyInfo)
@@ -210,6 +217,27 @@ class LoginViewController: FormViewController {
 				print(jsonError)
 			}
 		}.resume()
+	}
+
+	func registerForPushNotifications() {
+		UNUserNotificationCenter.current()
+			.requestAuthorization(options: [.alert, .sound, .badge]) {
+				[weak self] granted, error in
+
+				print("Permission granted: \(granted)")
+				guard granted else { return }
+				self?.getNotificationSettings()
+		}
+	}
+
+	func getNotificationSettings() {
+		UNUserNotificationCenter.current().getNotificationSettings { settings in
+			print("Notification settings: \(settings)")
+			guard settings.authorizationStatus == .authorized else { return }
+			DispatchQueue.main.async {
+				UIApplication.shared.registerForRemoteNotifications()
+			}
+		}
 	}
 
 //	@IBAction func loginButtonClicked(_ sender: Any) {
