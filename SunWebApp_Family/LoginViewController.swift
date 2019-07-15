@@ -24,8 +24,6 @@ struct student: Decodable {
 	var foodAllergies: String
 	var healthCondition: String
 
-//	"id":"63","name":"Mariam M Jaffer","Fname":"Mariam","MIni":"M","Lname":"Jaffer","grade":"K","gender":"F","DOB":"","Comments":"na","FoodAllergies":"na","HealthCondition":"na"
-
 	private enum CodingKeys : String, CodingKey {
 		case id
 		case name
@@ -113,6 +111,7 @@ class LoginViewController: FormViewController {
 				row.add(rule: RuleRequired())
 				row.validationOptions = .validatesOnDemand
 				row.tag = "schoolCode"
+				row.value = "demo" // REMOVE
 			}
 				.cellSetup { cell, row in
 					cell.textField.autocapitalizationType = .none
@@ -126,6 +125,7 @@ class LoginViewController: FormViewController {
 				row.add(rule: RuleRequired())
 				row.validationOptions = .validatesOnDemand
 				row.tag = "emailRow"
+				row.value = "mmjaffer@yahoo.com" // REMOVE
 			}
 				.cellSetup { cell, row in
 					cell.textField.autocapitalizationType = .none
@@ -138,6 +138,7 @@ class LoginViewController: FormViewController {
 				row.add(rule: RuleRequired())
 				row.validationOptions = .validatesOnDemand
 				row.tag = "passwordRow"
+				row.value = "MJaffer" // REMOVE
 			}
 				.cellSetup { cell, row in
 					cell.textField.autocapitalizationType = .none

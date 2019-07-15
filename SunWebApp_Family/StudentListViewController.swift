@@ -22,6 +22,14 @@ class StudentListViewController: UIViewController,
 		super.didReceiveMemoryWarning()
 	}
 
+	@objc func recievedNotification() -> Void {
+		print("New Communication available")
+		let alert = UIAlertController(title: "New Message", message: "A New Message is available, please check it out!", preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
+		UIApplication.shared.applicationIconBadgeNumber = 0
+	}
+
 	func downloadFamilyInfo() {
 		let url = UserDefaults.standard.url(forKey: "loginURL")!
 
@@ -47,6 +55,12 @@ class StudentListViewController: UIViewController,
 		}.resume()
 	}
 
+	override func loadView() {
+		super.loadView()
+	}
+
+	let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		stdListTable.delegate = self
@@ -55,6 +69,12 @@ class StudentListViewController: UIViewController,
 		downloadFamilyInfo()
 
 		sNameLabel.text = familyInfo.schoolName
+
+		NotificationCenter.default.addObserver(self, selector: #selector(StudentListViewController.recievedNotification), name: NSNotification.Name(rawValue: "recievedNotification"), object: nil)
+//		print(appDelegate.didRecieveNotification)
+		if appDelegate.didRecieveNotification {
+			self.recievedNotification()
+		}
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

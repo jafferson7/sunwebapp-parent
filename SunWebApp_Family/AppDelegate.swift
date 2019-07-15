@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	var didRecieveNotification: Bool = false
+
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
@@ -25,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			registerForPushNotifications()
 		} else {
 			self.window?.rootViewController = storyboard.instantiateInitialViewController()
+		}
+
+		let notificationOption = launchOptions?[.remoteNotification]
+
+		if let notification = notificationOption as? [String: AnyObject], let aps = notification["aps"] as? [String: AnyObject] {
+//			print(aps["alert"])
+			self.recievedNotification()
 		}
 
 		return true
@@ -101,6 +110,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - User Notifications Register for notification
 
+	func recievedNotification() {
+		NotificationCenter.default.post(name: NSNotification.Name(rawValue: "recievedNotification"), object: self)
+		self.didRecieveNotification = true
+	}
+
 	func registerForPushNotifications() {
 		UNUserNotificationCenter.current()
 			.requestAuthorization(options: [.alert, .sound, .badge]) {
@@ -124,8 +138,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(
 		_ application: UIApplication,
-		didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-		) {
+		didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 		let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
 		let token = tokenParts.joined()
 		print("Device Token: \(token)")
@@ -136,6 +149,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		didFailToRegisterForRemoteNotificationsWithError error: Error) {
 		print("Failed to register: \(error)")
 	}
+
+	func application(
+		_ application: UIApplication,
+		didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+		fetchCompletionHandler completionHandler:
+		@escaping (UIBackgroundFetchResult) -> Void
+		) {
+		guard let aps = userInfo["aps"] as? [String: AnyObject] else {
+			completionHandler(.failed)
+			return
+		}
+
+		self.recievedNotification()
+
+		print("payload = \(userInfo)")
+		print("aps = \(aps)")
+		print("title = \(String(describing: aps["alert"]))")
+	}
+
 
 }
 
