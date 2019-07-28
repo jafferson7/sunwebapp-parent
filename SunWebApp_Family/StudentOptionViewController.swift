@@ -137,7 +137,7 @@ struct message: Decodable {
 }
 
 class StudentOptionViewController: UIViewController,
-	UITableViewDataSource, UITableViewDelegate {
+	UITableViewDataSource, UITableViewDelegate, refreshDataDelegate {
 
 	var classListURL = "https://sunwebapp.com/app/GetStudentGradesiPhone.php?Scode=sdf786ic&SchoolCode="
 
@@ -152,6 +152,8 @@ class StudentOptionViewController: UIViewController,
 	var messageList: [message] = []
 
 	var schoolName: String = ""
+
+	weak var delegate: refreshDataDelegate?
 
 	@IBOutlet weak var optionsTableView: UITableView!
 	@IBOutlet weak var sNameLabel: UILabel!
@@ -181,6 +183,39 @@ class StudentOptionViewController: UIViewController,
 
 		loadClassList()
 		loadMessages()
+
+		optionsTableView.deleteSections(.init(integer: .zero), with: .none) // remove update info section
+	}
+
+	override func viewWillDisappear(_ animated: Bool) {
+		print("goodbye view____________________________________")
+		delegate?.downloadFamilyInfo()
+	}
+
+	func downloadFamilyInfo() {
+		print("DOWNLOAD FAMILY DATA")
+//		let url = UserDefaults.standard.url(forKey: "loginURL")!
+//
+//		URLSession.shared.dataTask(with: url) { (data, response, error) in
+//			if error != nil {
+//				print(error!.localizedDescription)
+//			}
+//
+//			guard let data = data else { return }
+//
+//			do {
+//				let decoder = JSONDecoder()
+//				self.familyInfo = try decoder.decode(loginResult.self, from: data)
+//				print(self.familyInfo.names[0].name)
+//
+//				DispatchQueue.main.async {
+//					self.stdListTable.reloadData()
+//					self.sNameLabel.text = self.familyInfo.schoolName
+//				}
+//			} catch let jsonError {
+//				print(jsonError)
+//			}
+//			}.resume()
 	}
 
 	@IBAction func showGradingScale(_ sender: Any) {
@@ -349,6 +384,7 @@ class StudentOptionViewController: UIViewController,
 	}
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		print(segue.identifier)
 		if segue.identifier == "goToGrades" {
 			let destinationController = segue.destination as! GradesViewController
 			destinationController.classes = self.classes

@@ -13,6 +13,8 @@ class UpdateInfoViewController: FormViewController {
 
 	var currStudent: student = student.init(id: "0", name: "")
 
+	weak var delegate: refreshDataDelegate? = nil
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -217,7 +219,11 @@ class UpdateInfoViewController: FormViewController {
 			.onChange { row in
 				self.currStudent.healthCondition = row.value ?? ""
 			}
+	}
 
+	override func viewWillDisappear(_ animated: Bool) {
+		print("requesting the previous view controller to redownload family info")
+		delegate?.downloadFamilyInfo()
 	}
 
 	@IBAction func saveInfo(_ sender: Any) {
@@ -266,7 +272,7 @@ class UpdateInfoViewController: FormViewController {
 			}
 		}.resume()
 		let message = "Save successful for \(self.currStudent.name)"
-		let alert = UIAlertController(title: "Admin Message", message: message, preferredStyle: .alert)
+		let alert = UIAlertController(title: "Success!", message: message, preferredStyle: .alert)
 		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 		self.present(alert, animated: true, completion: nil)
 	}

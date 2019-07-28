@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol refreshDataDelegate: class {
+	func downloadFamilyInfo()
+}
+
 class StudentListViewController: UIViewController,
-	UITableViewDelegate, UITableViewDataSource {
+	UITableViewDelegate, UITableViewDataSource, refreshDataDelegate {
 
 	@IBOutlet weak var stdListTable: UITableView!
 	@IBOutlet weak var sNameLabel: UILabel!
@@ -31,6 +35,7 @@ class StudentListViewController: UIViewController,
 	}
 
 	func downloadFamilyInfo() {
+		print("DOWNLOAD FAMILY DATA")
 		let url = UserDefaults.standard.url(forKey: "loginURL")!
 
 		URLSession.shared.dataTask(with: url) { (data, response, error) in
