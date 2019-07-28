@@ -1,0 +1,6 @@
+framework module Pods_SunWebApp_FamilyUITests {
+  umbrella header "Pods-SunWebApp_FamilyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
