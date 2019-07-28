@@ -28,20 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7C593BC522C8314600082372 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C593BC022C8314600082372 /* Eureka.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
-			remoteInfo = Eureka;
-		};
-		7C593BC722C8314600082372 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C593BC022C8314600082372 /* Eureka.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
-			remoteInfo = EurekaTests;
-		};
 		7CCAA6BA22796A060059ADB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7CCAA69A22796A020059ADB3 /* Project object */;
@@ -64,7 +50,6 @@
 		7C2896B422D4FAC80026D7F6 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		7C39E07522D7FCB500E1D400 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7C3B6C9222D04CB9007757E0 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
-		7C593BC022C8314600082372 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
 		7C593BCE22C832B300082372 /* UpdateInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoViewController.swift; sourceTree = "<group>"; };
 		7C6DEE27227A1AAC00BF5681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C6DEE29227A1D7500BF5681 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
@@ -112,27 +97,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C593BBD22C830AF00082372 /* Submodules */ = {
-			isa = PBXGroup;
-			children = (
-				7C593BC022C8314600082372 /* Eureka.xcodeproj */,
-			);
-			path = Submodules;
-			sourceTree = "<group>";
-		};
-		7C593BC122C8314600082372 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7C593BC622C8314600082372 /* Eureka.framework */,
-				7C593BC822C8314600082372 /* EurekaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7CCAA69922796A020059ADB3 = {
 			isa = PBXGroup;
 			children = (
-				7C593BBD22C830AF00082372 /* Submodules */,
 				7CCAA6A422796A020059ADB3 /* SunWebApp_Family */,
 				7CCAA6BC22796A060059ADB3 /* SunWebApp_FamilyTests */,
 				7CCAA6C722796A060059ADB3 /* SunWebApp_FamilyUITests */,
@@ -292,12 +259,6 @@
 			mainGroup = 7CCAA69922796A020059ADB3;
 			productRefGroup = 7CCAA6A322796A020059ADB3 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7C593BC122C8314600082372 /* Products */;
-					ProjectRef = 7C593BC022C8314600082372 /* Eureka.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7CCAA6A122796A020059ADB3 /* SunWebApp_Family */,
@@ -306,23 +267,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7C593BC622C8314600082372 /* Eureka.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Eureka.framework;
-			remoteRef = 7C593BC522C8314600082372 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7C593BC822C8314600082372 /* EurekaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EurekaTests.xctest;
-			remoteRef = 7C593BC722C8314600082372 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7CCAA6A022796A020059ADB3 /* Resources */ = {
