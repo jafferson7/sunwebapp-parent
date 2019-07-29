@@ -3,469 +3,459 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08637327A1B947F786E7329849498723 /* MultipleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B8166BC6A87523CE058D034D18C67 /* MultipleSelectorViewController.swift */; };
-		0D8D9D97B5BA992AF39EA51E29397696 /* PushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155285692E2DAA1420A2E51677B6F1D0 /* PushRow.swift */; };
-		15F74B5BDF56882973149D4476657F0E /* Pods-SunWebApp_Family-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF36393DCC6A114FBDC586C04F73F7C1 /* Pods-SunWebApp_Family-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18CDD1F0E7F9AA25ECADC1320626B124 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BFC85F0D6DF545F185679C4D391691 /* CellType.swift */; };
-		1BDAE6D08597702E349B622257E4A2FF /* RuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E03AA1C05FB0E31B55441FE555371 /* RuleRequired.swift */; };
-		1D435DE1CE2DEF015DDF0D37C4E10BA9 /* Eureka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 342F084FD8C22544BA562D1279B976C1 /* Eureka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DD807D03399E4F871565246D8874B0B /* Eureka.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83002A53929A677FF12E0A8E67CA4F0C /* Eureka.bundle */; };
-		21121B22EBCBD4494F10CC036DBAC5D7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3ED0090CDE140B9F5482B56BA14E5 /* Cell.swift */; };
-		21471B7A2110C28F32CD0D42ABC28BE2 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED1B59F0036500720DDECB9CDAC09F /* StepperRow.swift */; };
-		225E72D019C290EAD753289664341309 /* DateInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BDED4328E643538408E03D3EAA4DD /* DateInlineRow.swift */; };
-		23525A665BD566E4A4F71C44D3DD4309 /* DecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4C44D23C403B03322FD08A3C34C94 /* DecimalFormatter.swift */; };
-		252D9DB2EAE189341EC7E3EB65D95D2B /* TriplePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8676277AD4D13D13C3DF53D50F63C6 /* TriplePickerRow.swift */; };
-		29E99B95C0873C9B046C70941A3FA0C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		2A0BE72DA673C1EF4880FF2AFA6AB577 /* CheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5D1F949862FE13887C2A380B450C4 /* CheckRow.swift */; };
-		2CA1807EDAA168F3F3CA6B5CB51CC19D /* PickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF18CC077162BFFCE1D89DB3184C120 /* PickerInputRow.swift */; };
-		3002845D97318B9AE3F68614AC4B0BCB /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958FA6C2A60CB5D135AE0A640521E69 /* SwitchRow.swift */; };
-		3402ED47211B1F8780FC165F5EEDF4B5 /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA8DB9664EEE99799B5DC3D8FC9B60 /* ListCheckRow.swift */; };
-		34E6D14CEB75E0069E29F353473A35D7 /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02038BDC7B713918C22FF0E7D4D2123 /* RowControllerType.swift */; };
-		375D5ACFA1C5A4A8D96955FBD8723069 /* SelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507AFAD1F80FBDD2791BB4798D1D66F /* SelectorRow.swift */; };
-		3A3F708957DBC08B69F5EE0F8BEE4413 /* AlertOptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8068018935D84973A94EA1C93B85C5 /* AlertOptionsRow.swift */; };
-		3D3AF0255DAF9598CC2F1107BC146CB2 /* SelectableRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5DA490810255A14338F3B08F4AC1F /* SelectableRowType.swift */; };
-		3E9920611F38EDE5BC6231623EBBB64D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
-		418B42828CA24A3F5F05AF586833C37A /* PopoverSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63AA885AC40CFF985C8270FD927D5 /* PopoverSelectorRow.swift */; };
-		457CA31810922EEB9AB4DD59823A41E6 /* SelectorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87F975B922A3CE15A421932A39277C9 /* SelectorAlertController.swift */; };
-		465FF044922BD97CDD8E0DAE430F3987 /* BaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E758D4A7C95A1CFD99940196CE0B9 /* BaseRow.swift */; };
-		46B49C7D57358FFD621D1990A399CAD4 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF44DF8593D5BBBE4B6E5D1471C8D81 /* DatePickerRow.swift */; };
-		47A31CCD70A8B86F77CB958C70ADCCF1 /* PickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E4C6AB599A608229E2717C95E84EB /* PickerRow.swift */; };
-		4D1601EB46373C91C3D44E5C4F05A0F4 /* ActionSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B1FB13368EFBF95B86014ACC0B2A59 /* ActionSheetRow.swift */; };
-		57B70D0DE2FA74B951C29B34562D6757 /* RuleClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F2D0ED022769217CC5BBC6071E6E7 /* RuleClosure.swift */; };
-		57C0E428F2673D823D8B8C8FD8D54871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		5A24CB2C1453B843171D05D8E749A341 /* ButtonRowWithPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AA766BD3D6044EA997108678CB088 /* ButtonRowWithPresent.swift */; };
-		5A9D7717087024CD71CA46FB9EFAAF22 /* SwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A1E04DB33CC15AFCCF08F1F2B3982A /* SwipeActions.swift */; };
-		5C14D21739F81BFCB29843B1FE5F581A /* Pods-SunWebApp_FamilyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D60BE9E851B11D0CF6B50DEF7D680A /* Pods-SunWebApp_FamilyTests-dummy.m */; };
-		5CC8ED15DEF52B555388CB621B6FAD6B /* Pods-SunWebApp_FamilyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F409F91646C48E349B58AABC3398E3EC /* Pods-SunWebApp_FamilyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F09DB3E8490E6DAA9C569A8DBD2C99A /* RowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEB68BBF753A44160D0C24AAD42147 /* RowProtocols.swift */; };
-		602F654E1858A3739DAFAE5F4F6FB855 /* RuleRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05553478EA64E74383DF1938510F36F7 /* RuleRegExp.swift */; };
-		6109CBAC0E43B87563BF7016B73B8593 /* MultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C284782F5E2ED8E3DAB5F0B4FE35C3 /* MultipleSelectorRow.swift */; };
-		63A966C679EF7B0B72F0B5B4B540CAA0 /* RuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E254025BE5EEB1EC620062AFFE2B71 /* RuleLength.swift */; };
-		662CC2772C3A840B267B1D2E6CACD975 /* AlertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD08972E5E318FEDEC8DA6ACBBDF5DB0 /* AlertRow.swift */; };
-		6925E50E1B809B77612081A00D2C015B /* DateInlineFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A48E9C20244B518A9683CAEC39F762 /* DateInlineFieldRow.swift */; };
-		6F7610DD59294A94104EBE3E788C052A /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367B83EFC7A1C9582D27F38174AB393 /* RowType.swift */; };
-		74AAC441F8314AAB593DAD04D14FADB1 /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A08900BB5A362633BF51E2BC83503 /* DateFieldRow.swift */; };
-		753CD57C0B07DBFBD0D76B426E4E7AE3 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32D31903264E4CFCC865DFDD9B3585 /* SelectorViewController.swift */; };
-		7C51BB243F554835925B51187FF525C4 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26669852C9DEBAD70B79B7E63A2D61D /* HeaderFooterView.swift */; };
-		7DC79BDD0CED3EA51E57194938634505 /* DateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C422AFEE82711289D6C9B9CC11D9 /* DateRow.swift */; };
-		7F57665798811D1A71A775369AB48170 /* LabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654F45C777836D6BA3CAE7B2B2EA4716 /* LabelRow.swift */; };
-		83B777AB8FA653317065A81693549AC9 /* RuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D0B5F77BD59291A5B1237A8DD9745 /* RuleURL.swift */; };
-		86425FCF0DF324CDEAEC7842765D0C8D /* TextAreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB760306352A15CE732C588AFC44F8B6 /* TextAreaRow.swift */; };
-		891B2E38E6A9585B0B778E64462210DC /* Pods-SunWebApp_FamilyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 766773C462AA494510B6130F9C6291A5 /* Pods-SunWebApp_FamilyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		908CCE3DD0ADFE66CA6B32E48824A245 /* DoublePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A2C6970A5421851052BAB137B93FC /* DoublePickerRow.swift */; };
-		9514A8C18319295695EE5764B6878DDD /* Pods-SunWebApp_Family-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DA19E850DFBBF81D3766277E67F2C /* Pods-SunWebApp_Family-dummy.m */; };
-		9BFD3CF198EC9ADF123706F2479F58CF /* SelectableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D2B2EC7DD8FFCFFA455A79320A638 /* SelectableSection.swift */; };
-		A1BA9894EF0F7F09DE290CCAF1ECD042 /* TriplePickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC5A3D15408272E158A4ED4E5CD172 /* TriplePickerInputRow.swift */; };
-		A29DF40C66286906A823F9560BA6B93E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1262EAE414D5214C2893C1BBCB4E7FE /* Helpers.swift */; };
-		A2C2A3E3F0656F66DADA3993DF6181DA /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A739D31E091685DEA0BFAD4BB3D2C02 /* ButtonRow.swift */; };
-		A5A8303F3BD06DDC92BF2D47C93A7FCB /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B7D3CB65386D66CFDEFE2E925B762 /* PresenterRowType.swift */; };
-		A722D0D3C4CD2B8A351546B4B7CC3E95 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE55E736763F71B4F8A7FAA1E6264C /* Protocols.swift */; };
-		A7B3C701A152192D0200EC6C1AD5279F /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D24CF9C544C97749984D50502834A22 /* Core.swift */; };
-		A817A212A87442330FB8F4ABAF0E4C7A /* GenericMultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F19FCD775A4FD86D25F113C3000F5B /* GenericMultipleSelectorRow.swift */; };
-		B378A8D88E49C93C8CE11D70321860CD /* DoublePickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FE8161341C21549F713D48535D17 /* DoublePickerInputRow.swift */; };
-		B4A325D4D94AFC074CC4E01139DA6821 /* FieldsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9192F97DF075A2D0CBB5786E4F3C8E2A /* FieldsRow.swift */; };
-		B87B03EA84451302590C233256F79C3B /* RuleRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E4C54BEBB36A9B0E50F3D2D04DFE7 /* RuleRange.swift */; };
-		BD550738B5CDF7F224E22F7865FE2B62 /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77BAD13D407D81790813238915942F3 /* NavigationAccessoryView.swift */; };
-		BF8499F0F58825DB24BFF9FF9B6E65E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		C2BA9731A0A8BB0DD928DE9917F2BBF2 /* RuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E437A6D9074C204A8DF36F15AC919 /* RuleEmail.swift */; };
-		C3C3C4940860F001DB6326E7876811BA /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D78CA366D6D5043590FFE7723CD914 /* SegmentedRow.swift */; };
-		C75EC2691A9124A3FA3CA3FB58276168 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE09BDDDEC782A4FD9C549D52E3AD0 /* Row.swift */; };
-		CC2678F317C5E091A7ED92CBA0FA48CF /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF04E6334F6E1C8A419F1C5E0B1726D6 /* FieldRow.swift */; };
-		CDB8009489DFDF3486E130AE34D74522 /* InlineRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E188BEE6FFDE0EEBB8B289199DAE6 /* InlineRowType.swift */; };
-		CEFFB8B19E87A32D6EC785DE66D490D6 /* PickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448DC13042DD2CF9E69F578C0B260E9 /* PickerInlineRow.swift */; };
-		D71C1A85A92B23EF9F872D7F2064B4CB /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1170CDC11B9F66CD3CFB0459B2BD7 /* Eureka-dummy.m */; };
-		DCF157055DBC3BEC0B04D68C371EBBB0 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E56D3D4FA0907C7B2C2935DC8B0EC /* Operators.swift */; };
-		E2CA5248AC5825DB73D130D73B80F926 /* Pods-SunWebApp_FamilyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 229822FDB0DE6A55FA4C38A4102FD36B /* Pods-SunWebApp_FamilyUITests-dummy.m */; };
-		F13627AD5E5536F7AB95E3EB88DA9B41 /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73115D59C31C0AEB9186E153398074DC /* OptionsRow.swift */; };
-		F33D0BCA099427EA28619B0B075C837B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F383DB485838D5EF712DC271421B8E4 /* Validation.swift */; };
-		F46DD1636E93617504F2953AD607D698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		F8269A7CC409F07D46388E5580366DDB /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF248E301E906741E4EA3A86E3CB9340 /* Section.swift */; };
-		F91B6DDEBF1645F7B4EDF96580BCBC5E /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B8CAD0B96E63D5651E4154D59F0E6 /* RuleEqualsToRow.swift */; };
-		FC8D8DC7CA836D7E10E05BBFA959A24A /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EBF14BA7D6D9FA59E4CD04F18C44F8 /* Form.swift */; };
-		FEC3C521E7FB03989F082031EB79EFAD /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345D2068A557055E0EB41B583036B6D /* SliderRow.swift */; };
+		0224D121BECAB2E8F3BEF04201D4E094 /* RowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A7C006DB68A240B97EC746085FEDA /* RowProtocols.swift */; };
+		022F27838A7229356F7AD2D2F54C34F1 /* ButtonRowWithPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5604AFADE2E65EF20F1C77ED3C16E0 /* ButtonRowWithPresent.swift */; };
+		0A3458656BB1C37BED2C984ED138DAD3 /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB34B03D46701D848085B66360B8154 /* NavigationAccessoryView.swift */; };
+		0BBD607C7E77C61B8E618103F30B811D /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 919A970399F3360408375B2D859078F0 /* Eureka-dummy.m */; };
+		0C4F18415DC10B01D4C0FF60A36D6809 /* SelectableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A04E4CFE9AD473928C015CE808EBE /* SelectableSection.swift */; };
+		10693D69118D7F3DADCAE693FD2661B2 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94CF7C4F9C4A8BB18E2A220B71F92D2 /* ButtonRow.swift */; };
+		1403D058DB3B385BC1FDBD887A4E9DDB /* ActionSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DE7DE3494F98F336B79E40E6398DB /* ActionSheetRow.swift */; };
+		16142049712E34206202C05264DBC66F /* PickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36174C53A47F23E289766C564D77AD75 /* PickerInputRow.swift */; };
+		199C393B0B93CFFCBA319836C9AD3BEF /* AlertOptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24865A456D870BB9701998973095C /* AlertOptionsRow.swift */; };
+		1C4380F9A81F8ECB1343957E57373BB8 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770A7623A8022415C25C54EE0622865 /* Core.swift */; };
+		21FD4D317464B14DC1D71431310E42B0 /* DateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE2D3C7965E93074E0F19A5642A406 /* DateRow.swift */; };
+		2749A87DBECE3BC423A86D7160B928E7 /* Eureka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 659082A0EE23A3A569859405941F8A2A /* Eureka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EFD2106770EC72E71FC8A6605C58EDF /* Pods-SunWebApp_Family-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9495B5C89F0FA62C2B951D836E9F28 /* Pods-SunWebApp_Family-dummy.m */; };
+		2F44B1C3CFDE6A8A0952AB3BAD6CC5BD /* SelectableRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0ED92C78EFE137EC3C1147366E5A3 /* SelectableRowType.swift */; };
+		3A0E2EB03E8956699AAA830BF1EDA198 /* BaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FB23A8C1C71E46CFA624C8400E3110 /* BaseRow.swift */; };
+		42BDA64CEF25936A4D9E1DB68DDB5E80 /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C8E5626DB227145EBE0D7E7C000A48 /* RuleEqualsToRow.swift */; };
+		42C8D74438F4D62F40D6E47F12905E3D /* Pods-SunWebApp_Family-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F15C57D296A8111BFDE3CBDE0866784 /* Pods-SunWebApp_Family-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		433228CBBA87EA97A4631457A05D7927 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780FCD0F2B0E651443C65AB87F4AD2E1 /* Section.swift */; };
+		45D6B4B702A58F2892E178BEB8B5A7E4 /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA25BC9D2D05CC083CD99E029E99E0 /* FieldRow.swift */; };
+		46AA44AAF04A799BCE087F3691F21AFF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CC6C30D80102242B857FA3D1BE718 /* Row.swift */; };
+		47F43B2798A4E4EFCBE0664BC597BF76 /* RuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D87A88BC875B0050E1A657F80DF24 /* RuleEmail.swift */; };
+		48C0093C6E65DC1D814BABF712D85A4E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA41BCE464248C0EED80CB6BD053AC /* Validation.swift */; };
+		4E31481DBB529F0532A87C1201C19959 /* RuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E07032D5328D495A3AE01B6BCC4FF6 /* RuleRequired.swift */; };
+		50DC9191BD434B4FC4BD00FDFB2031AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		50E2B9CEA7B0B100D46BB03F890ACD0B /* RuleRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEC9031E0A455E4F4DD30F91B97E819 /* RuleRange.swift */; };
+		50FEA3AED9D73240616823FF0C7DA6EA /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D676884F30F3AFA1590699735525D /* ListCheckRow.swift */; };
+		51F17AFA8608E24BC1B1BD25BF43E43A /* GenericMultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1FEDCAC39B1C14454B2F7AB79E85F /* GenericMultipleSelectorRow.swift */; };
+		51F887F91AE4AD0EBD757834033CDCEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		556C04B9F5950BB9C33ED9AC9E0E582D /* MultipleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C9E01813D9B2342AAEAD7DC8344FD /* MultipleSelectorViewController.swift */; };
+		5784A6245646464E602E8A0EF385724E /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E38AAAB229972C984CD912A549DB5A5 /* RowControllerType.swift */; };
+		5A9B3C952DAF0C010507BF196D97CE83 /* Pods-SunWebApp_FamilyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9745F06CB2AC37DD1B444A970E45B2 /* Pods-SunWebApp_FamilyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1C974798FD3758C1FA555CDBBBF1A2 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38000EE61C80A640E217A521ACE859 /* Form.swift */; };
+		61122AD05E2E3456468A743367919F86 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9863E43F7112CF1E554BD6D3566A5E8 /* Operators.swift */; };
+		6200C1F50A86238071BB19D383D24A4A /* TriplePickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2C0103A1227534B0540A53C761F8E /* TriplePickerInputRow.swift */; };
+		63563AC430435FDBF2DF0900713B03A7 /* CheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F4BE7F3B0E4BC164D60E2563A3C03 /* CheckRow.swift */; };
+		657B55F28C4BDC2F057B0362BFCFD5B5 /* SelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1B246671BE6C8243BD3DB968A1D15 /* SelectorRow.swift */; };
+		68B2F2988A3DAFBAE4466807C2D33551 /* Pods-SunWebApp_FamilyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6DB12AA575764EBCE01530100EA284 /* Pods-SunWebApp_FamilyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD48D16F94B692032F7A8880EBFB552 /* MultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7B1566F164E3524B92B211A9691E7 /* MultipleSelectorRow.swift */; };
+		70275F71BD44B31E751B30B26908005A /* DateInlineFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB470313774B5D663445878F1E588D4 /* DateInlineFieldRow.swift */; };
+		72C6EF82AD008B1F715DBCDEF85057A9 /* FieldsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EEEBBDAB8B6F0775FC0D18FA3B493 /* FieldsRow.swift */; };
+		753A706EF830D2B910615ECD1883B976 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426907A5CBB5B65E36932553802E92A /* Helpers.swift */; };
+		7641B9C8B2C53CAADDEED65040BF5D7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		7D41156F88899B779A46A90BF8C4EAEB /* TextAreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985ADFAF5DB1A25637CA056F4FBA631E /* TextAreaRow.swift */; };
+		7F838A9EE6B8D5236C86B50DD1C3C9E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		807B560FBF7B3CA748B2860401CD7DE4 /* RuleRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B8548D783B5909A76EDAD28BCD0737 /* RuleRegExp.swift */; };
+		880792C5150895A89D36C386978A5660 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862F49E40963FA5F87A55F45E465834 /* Cell.swift */; };
+		8AD08F5A10C61E8692117C649C53DA3F /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA203806FDFB1A1C6BA63180596801CE /* DateFieldRow.swift */; };
+		8B1F12AFB26309F2CC1B0884A849D854 /* Pods-SunWebApp_FamilyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F38CE8175837FAE1C691E04B4AFB31CA /* Pods-SunWebApp_FamilyTests-dummy.m */; };
+		8DAA63F788A3AF70C911F34722696BA2 /* DoublePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D15FEE999015D2EAD1785692FDD602 /* DoublePickerRow.swift */; };
+		8E55873C68650428EEA9368C626F9019 /* PickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3B0A9D8C14B8DBA0F0F57B7867D65 /* PickerInlineRow.swift */; };
+		8EC09B8AB158F8A9F9DBC1F9367A49A9 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BA2DE5E2882772653E474E4439165 /* CellType.swift */; };
+		9024D17F199BAD49063F3884A4C8CB94 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B970305F2D404865BB30FA2EA93BB32 /* RowType.swift */; };
+		93658B50B10FB4677626DA0F0679B2EE /* PopoverSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C115702CDA241B679CB48E5BE7B3 /* PopoverSelectorRow.swift */; };
+		937B62E19FADB0B6967B77AFF4FE89F8 /* DoublePickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070112AF23A1373A0075AD4BBB5532B /* DoublePickerInputRow.swift */; };
+		9450A15D43A97C5022CC8FF413209E22 /* SelectorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF523BCF9665F3DA4387C0C0AE99CA /* SelectorAlertController.swift */; };
+		95951126A0530AA12C587FAF50FD9497 /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D08A0D37A48BF6EC85370113994CC /* PresenterRowType.swift */; };
+		98780764041BEA997A77724C06C8299C /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034096FBDF397A07EFA899902D725A92 /* HeaderFooterView.swift */; };
+		98F7DB48D9818E33C803CC35ABCEBF29 /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00D5651147BF84BC44B3EB0D326796 /* OptionsRow.swift */; };
+		A1AA41858D8D2D1FA720C8AE6F8100D4 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F905D1152DA8FFDCCA52394AD18AF /* DatePickerRow.swift */; };
+		A329996E130F5B177C6CC8A52EA2EC77 /* InlineRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D098445A2D942896D07A4AC0CD951 /* InlineRowType.swift */; };
+		A408AC62E1B5AA530CB080191592D1D6 /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E849197C0A5BE4D1AB9E5660CFB1C8F /* SegmentedRow.swift */; };
+		A52B2526DC9324A5AD9D4D667AC7B890 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CB3262669FCA310A07E7527B0C11 /* StepperRow.swift */; };
+		A855A25564679F14AD2258E301461C22 /* Pods-SunWebApp_FamilyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C0EAE3E3F8DBE0528C4620E2661F0 /* Pods-SunWebApp_FamilyUITests-dummy.m */; };
+		AA60814619AF458475CF0A779F9C732A /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DBCAFADC302BF35CF891041870BB2 /* SwitchRow.swift */; };
+		AF5FD79CC433F64092E726FB31615978 /* DateInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01521AC9C0B4D506C96FD0CA6C1E65 /* DateInlineRow.swift */; };
+		B019D57D8D53A20C817653F6D7FD65BD /* PushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5392D2F6F807980B7816607A9F5FA8BB /* PushRow.swift */; };
+		B2345084A5156070B490993932A0C3B8 /* RuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2E1CB729B027CE50136E927C63D88 /* RuleLength.swift */; };
+		BB4625522EE26C889AD12F0A5032E894 /* PickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339D5E8F07A272AFFEF5BA00A77CC4 /* PickerRow.swift */; };
+		C78CAB152D6FE02FF968478C75A3D38A /* LabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DAC8F33FF488902BDECC2028BD136 /* LabelRow.swift */; };
+		C975EADD24D1D107DF010C29F7B7F0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		CC905B619FFDFC7AD0F92E00843FCB1B /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315CB3C35F6C2EA6B79BB0D993F6A15B /* SelectorViewController.swift */; };
+		CD4FD7223DD8582266FE150F4938A52C /* RuleClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02349F1F8910272C1B115AD3B8153C32 /* RuleClosure.swift */; };
+		DCADFB2CBD765A7C2AA616D610EBAC3E /* TriplePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4B711A63558B0CE6A90FF532B9150 /* TriplePickerRow.swift */; };
+		E35368424AD8EB00ACF5F51377AC53C4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B2F43F569678E544CF26A2193E76D /* Protocols.swift */; };
+		E82F729B7306AE1E7B9CD761E7FD4C43 /* Eureka.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 454DFF8AFA4B7C081CE54CF59A7584A1 /* Eureka.bundle */; };
+		EBE35CB01E172041490718F3CDA17863 /* DecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A5B3BC0BB6D94FC6FF32BA1159C36 /* DecimalFormatter.swift */; };
+		EE47AF285C504BBB4741E221D4866E64 /* RuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFB3BE96A6B7F5E089DE9D3AB18572 /* RuleURL.swift */; };
+		F76ED548B7A2B9EDEB308D4B52C41967 /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A7E47733F6DCCFCE4542AA7B743C1 /* SliderRow.swift */; };
+		FC2228334A37CC494639B1B072842A33 /* AlertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D94B0516605B3FE2F98F3E2CC3164F /* AlertRow.swift */; };
+		FE3D5F1469168AD7A23703795674D259 /* SwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA96D6D6DB00B6672D5E9F237198D91 /* SwipeActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B559606FCF8F464554C75ECAD5002E5 /* PBXContainerItemProxy */ = {
+		1BF31F53C20E03D4D01A2E32E61B62A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8571B15B5FD07FB985D6BC10C2F15CC8;
+			remoteGlobalIDString = 34E35D53F764682EB1C9A74FFEA9B7C0;
 			remoteInfo = "Pods-SunWebApp_Family";
 		};
-		3CAC5F78BF16399E62E5F1EDD51D7F57 /* PBXContainerItemProxy */ = {
+		757FD17E71F004EEB24C9D67535269A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8571B15B5FD07FB985D6BC10C2F15CC8;
+			remoteGlobalIDString = 34E35D53F764682EB1C9A74FFEA9B7C0;
 			remoteInfo = "Pods-SunWebApp_Family";
 		};
-		D0DB8CCA131375A1C881027D0F0DA463 /* PBXContainerItemProxy */ = {
+		97A74D040E1368AE38338661E37FB679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2D491F85C2F0E31F5BB90876BEEB149;
+			remoteGlobalIDString = 88BE8BE7A2FE6CED4193CCD8FF3CBEF7;
 			remoteInfo = Eureka;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00AF7CDABE611A60BBC50EBACEB65996 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		05553478EA64E74383DF1938510F36F7 /* RuleRegExp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRegExp.swift; path = Source/Validations/RuleRegExp.swift; sourceTree = "<group>"; };
-		09B4C44D23C403B03322FD08A3C34C94 /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
-		0AEE09BDDDEC782A4FD9C549D52E3AD0 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
-		0D18BEE7285FD8A64280B3919DE035B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1010337D09AB5C0EBF4736B98184D5C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10AE36B322ACF2A64E0D1EB8CFE924C8 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		130A08900BB5A362633BF51E2BC83503 /* DateFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFieldRow.swift; path = Source/Rows/Common/DateFieldRow.swift; sourceTree = "<group>"; };
-		155285692E2DAA1420A2E51677B6F1D0 /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
-		15E60B2B58B09C6ADE5C7414DD80486D /* Pods-SunWebApp_Family-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_Family-frameworks.sh"; sourceTree = "<group>"; };
-		1CF18CC077162BFFCE1D89DB3184C120 /* PickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInputRow.swift; path = Source/Rows/PickerInputRow.swift; sourceTree = "<group>"; };
-		1D24CF9C544C97749984D50502834A22 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = Source/Core/Core.swift; sourceTree = "<group>"; };
-		1E0E437A6D9074C204A8DF36F15AC919 /* RuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEmail.swift; path = Source/Validations/RuleEmail.swift; sourceTree = "<group>"; };
-		1F2CDF4BF5FD187F801A9E648DFFD918 /* Pods-SunWebApp_FamilyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyTests.release.xcconfig"; sourceTree = "<group>"; };
-		229822FDB0DE6A55FA4C38A4102FD36B /* Pods-SunWebApp_FamilyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_FamilyUITests-dummy.m"; sourceTree = "<group>"; };
-		2345D2068A557055E0EB41B583036B6D /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
-		2448DC13042DD2CF9E69F578C0B260E9 /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
-		24F1170CDC11B9F66CD3CFB0459B2BD7 /* Eureka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Eureka-dummy.m"; sourceTree = "<group>"; };
-		29BFC85F0D6DF545F185679C4D391691 /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
-		2C19E910EB3F02C0C4B6783B9BC19D47 /* Pods-SunWebApp_FamilyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_FamilyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C8A0F48D21490EE1CD0CC73CE25295D /* Pods-SunWebApp_FamilyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_FamilyUITests-resources.sh"; sourceTree = "<group>"; };
-		2C9B7D3CB65386D66CFDEFE2E925B762 /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
-		2CB8C422AFEE82711289D6C9B9CC11D9 /* DateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRow.swift; path = Source/Rows/DateRow.swift; sourceTree = "<group>"; };
-		2D8E4C6AB599A608229E2717C95E84EB /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
-		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		342F084FD8C22544BA562D1279B976C1 /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
-		34EB65EF2D084CDADBDDBE0B74154D4D /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
-		3C8D0B5F77BD59291A5B1237A8DD9745 /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
-		3E2B8CAD0B96E63D5651E4154D59F0E6 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = "<group>"; };
-		3EDA8DB9664EEE99799B5DC3D8FC9B60 /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
-		3EED1B59F0036500720DDECB9CDAC09F /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
-		41C284782F5E2ED8E3DAB5F0B4FE35C3 /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
-		438E188BEE6FFDE0EEBB8B289199DAE6 /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
-		535284F6CF19040BBFFB3F60EEBBC687 /* Pods-SunWebApp_FamilyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_FamilyUITests-frameworks.sh"; sourceTree = "<group>"; };
-		5425BB4213A29B04E4EDFC1AAB3B405B /* Pods-SunWebApp_FamilyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_FamilyTests-frameworks.sh"; sourceTree = "<group>"; };
-		550AD817AA9A2C65227A2121EC8F55BF /* Pods-SunWebApp_Family.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_Family.debug.xcconfig"; sourceTree = "<group>"; };
-		5699163AF3082434DC248EDF63FAFCAA /* Pods-SunWebApp_FamilyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_FamilyUITests.modulemap"; sourceTree = "<group>"; };
-		5849005064DA8B0E66460BF523FBE650 /* Pods_SunWebApp_Family.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_Family.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5929C0C3E96FB95C338D68BA1E6E7134 /* Pods-SunWebApp_FamilyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_FamilyTests-resources.sh"; sourceTree = "<group>"; };
-		5ED5DA490810255A14338F3B08F4AC1F /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
-		5F383DB485838D5EF712DC271421B8E4 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
-		61B1F7AC6757E24A2B27BEAA533C5DAA /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
-		637F2D0ED022769217CC5BBC6071E6E7 /* RuleClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = "<group>"; };
-		647E4C54BEBB36A9B0E50F3D2D04DFE7 /* RuleRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = "<group>"; };
-		654F45C777836D6BA3CAE7B2B2EA4716 /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
-		659552360BC4B1086B8B928FCBE234B7 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6A1E758D4A7C95A1CFD99940196CE0B9 /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
-		6B1BDED4328E643538408E03D3EAA4DD /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
-		6CA3ED0090CDE140B9F5482B56BA14E5 /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
-		6DEA05FF7527611D4A30B4AA6FF60E38 /* Pods-SunWebApp_FamilyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		715B8166BC6A87523CE058D034D18C67 /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
-		73115D59C31C0AEB9186E153398074DC /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
-		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		75DE55E736763F71B4F8A7FAA1E6264C /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
-		766773C462AA494510B6130F9C6291A5 /* Pods-SunWebApp_FamilyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_FamilyUITests-umbrella.h"; sourceTree = "<group>"; };
-		76F19FCD775A4FD86D25F113C3000F5B /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
-		786A2C6970A5421851052BAB137B93FC /* DoublePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoublePickerRow.swift; path = Source/Rows/DoublePickerRow.swift; sourceTree = "<group>"; };
-		7A8068018935D84973A94EA1C93B85C5 /* AlertOptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertOptionsRow.swift; path = Source/Rows/Common/AlertOptionsRow.swift; sourceTree = "<group>"; };
-		7E812D6EC95193E9E5B924DA3D40BA81 /* Pods-SunWebApp_Family-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_Family-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83002A53929A677FF12E0A8E67CA4F0C /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
-		8367B83EFC7A1C9582D27F38174AB393 /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
-		83945F07C664B26AB67C28B7B8651F15 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		878E56D3D4FA0907C7B2C2935DC8B0EC /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
-		8C30F6BF05F8905A6E754B089F943CD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9192F97DF075A2D0CBB5786E4F3C8E2A /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95021041519515C0E3666FE8AB65B187 /* Pods-SunWebApp_Family-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_Family-acknowledgements.plist"; sourceTree = "<group>"; };
-		9507AFAD1F80FBDD2791BB4798D1D66F /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
-		9A739D31E091685DEA0BFAD4BB3D2C02 /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
-		9DEEB68BBF753A44160D0C24AAD42147 /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
-		A02038BDC7B713918C22FF0E7D4D2123 /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
-		A0EC5A3D15408272E158A4ED4E5CD172 /* TriplePickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriplePickerInputRow.swift; path = Source/Rows/TriplePickerInputRow.swift; sourceTree = "<group>"; };
-		A504FE8161341C21549F713D48535D17 /* DoublePickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoublePickerInputRow.swift; path = Source/Rows/DoublePickerInputRow.swift; sourceTree = "<group>"; };
-		A7D78CA366D6D5043590FFE7723CD914 /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
-		ACF44DF8593D5BBBE4B6E5D1471C8D81 /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
-		AEF844E89383FC770C529557EDECD016 /* Pods-SunWebApp_FamilyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_FamilyTests.modulemap"; sourceTree = "<group>"; };
-		AF04E6334F6E1C8A419F1C5E0B1726D6 /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
-		AFE5D1F949862FE13887C2A380B450C4 /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
-		B3FEF25BE8418D945EDD6A0FBD1D0F91 /* Pods-SunWebApp_Family.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_Family.release.xcconfig"; sourceTree = "<group>"; };
-		B77BAD13D407D81790813238915942F3 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
-		B87F975B922A3CE15A421932A39277C9 /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
-		BB91F40A6F11BBEA043CE49FC887CEC9 /* Pods-SunWebApp_FamilyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_FamilyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF36393DCC6A114FBDC586C04F73F7C1 /* Pods-SunWebApp_Family-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_Family-umbrella.h"; sourceTree = "<group>"; };
-		C26D2B2EC7DD8FFCFFA455A79320A638 /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
-		C2A48E9C20244B518A9683CAEC39F762 /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
-		C4D7AA160E89C8560D2CEFEA9EAF3791 /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Eureka.modulemap; sourceTree = "<group>"; };
-		C958FA6C2A60CB5D135AE0A640521E69 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
-		CB50A3EE19A5637BF97F1F03381446FE /* Pods-SunWebApp_FamilyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D21E03AA1C05FB0E31B55441FE555371 /* RuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRequired.swift; path = Source/Validations/RuleRequired.swift; sourceTree = "<group>"; };
-		D2D63AA885AC40CFF985C8270FD927D5 /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
-		D45DA19E850DFBBF81D3766277E67F2C /* Pods-SunWebApp_Family-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_Family-dummy.m"; sourceTree = "<group>"; };
-		D5353C122E4B38EB23C0B9DB62B4BEC0 /* Pods-SunWebApp_Family-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_Family-resources.sh"; sourceTree = "<group>"; };
-		D5D60BE9E851B11D0CF6B50DEF7D680A /* Pods-SunWebApp_FamilyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_FamilyTests-dummy.m"; sourceTree = "<group>"; };
-		D7B1FB13368EFBF95B86014ACC0B2A59 /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
-		D7EBF14BA7D6D9FA59E4CD04F18C44F8 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
-		DAC9F0BC85EFC9CBD2815CF934B7DBB2 /* Pods_SunWebApp_FamilyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_FamilyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB760306352A15CE732C588AFC44F8B6 /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
-		DD08972E5E318FEDEC8DA6ACBBDF5DB0 /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
-		DD8676277AD4D13D13C3DF53D50F63C6 /* TriplePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriplePickerRow.swift; path = Source/Rows/TriplePickerRow.swift; sourceTree = "<group>"; };
-		DDEFC5EC916C64FB270FA9B811D28928 /* Pods-SunWebApp_Family.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_Family.modulemap"; sourceTree = "<group>"; };
-		E26669852C9DEBAD70B79B7E63A2D61D /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
-		E8E254025BE5EEB1EC620062AFFE2B71 /* RuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleLength.swift; path = Source/Validations/RuleLength.swift; sourceTree = "<group>"; };
-		EA08F366A7B2D931102D2E91A1567154 /* Pods_SunWebApp_FamilyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_FamilyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF32D31903264E4CFCC865DFDD9B3585 /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
-		F1262EAE414D5214C2893C1BBCB4E7FE /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
-		F409F91646C48E349B58AABC3398E3EC /* Pods-SunWebApp_FamilyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_FamilyTests-umbrella.h"; sourceTree = "<group>"; };
-		F5A1E04DB33CC15AFCCF08F1F2B3982A /* SwipeActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActions.swift; path = Source/Core/SwipeActions.swift; sourceTree = "<group>"; };
-		F64AA766BD3D6044EA997108678CB088 /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
-		F833C49E044B170FAF261BED5D19CF54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF248E301E906741E4EA3A86E3CB9340 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
+		00CFB3BE96A6B7F5E089DE9D3AB18572 /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
+		0189129CD9B3FE7CD92D27E992C75DD7 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		01DF523BCF9665F3DA4387C0C0AE99CA /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
+		02349F1F8910272C1B115AD3B8153C32 /* RuleClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = "<group>"; };
+		034096FBDF397A07EFA899902D725A92 /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
+		069211410BFCEB007DC9169CF5BE2580 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0770A7623A8022415C25C54EE0622865 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = Source/Core/Core.swift; sourceTree = "<group>"; };
+		082977F3777A7D434AB35C357B487F83 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBAF5A9126C137B87B1B602457582D1 /* Pods_SunWebApp_FamilyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_FamilyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		160DBCAFADC302BF35CF891041870BB2 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		19BA25BC9D2D05CC083CD99E029E99E0 /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
+		1AA1FEDCAC39B1C14454B2F7AB79E85F /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
+		1AEF07747771919044D38B0085552B3B /* Pods-SunWebApp_Family.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_Family.modulemap"; sourceTree = "<group>"; };
+		1B6DB12AA575764EBCE01530100EA284 /* Pods-SunWebApp_FamilyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_FamilyTests-umbrella.h"; sourceTree = "<group>"; };
+		1BE1B246671BE6C8243BD3DB968A1D15 /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
+		1C9A7B4C923DB94FACE4AA1ADB4D2EAC /* Pods-SunWebApp_Family-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_Family-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D1F68FD383B464B276149AE8400F0CD /* Pods-SunWebApp_Family-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunWebApp_Family-frameworks.sh"; sourceTree = "<group>"; };
+		1F38000EE61C80A640E217A521ACE859 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
+		22D4B711A63558B0CE6A90FF532B9150 /* TriplePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriplePickerRow.swift; path = Source/Rows/TriplePickerRow.swift; sourceTree = "<group>"; };
+		23D94B0516605B3FE2F98F3E2CC3164F /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
+		2C72C72BF95833C8C8F02113DB3487F1 /* Pods-SunWebApp_Family.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_Family.release.xcconfig"; sourceTree = "<group>"; };
+		2DB470313774B5D663445878F1E588D4 /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
+		2DB521C4A207061FB196E42E461070B7 /* Pods_SunWebApp_Family.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_Family.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		305DE7DE3494F98F336B79E40E6398DB /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		315CB3C35F6C2EA6B79BB0D993F6A15B /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
+		358259597A8DC69F32443D50072C0B76 /* Pods-SunWebApp_FamilyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		36174C53A47F23E289766C564D77AD75 /* PickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInputRow.swift; path = Source/Rows/PickerInputRow.swift; sourceTree = "<group>"; };
+		3D9495B5C89F0FA62C2B951D836E9F28 /* Pods-SunWebApp_Family-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_Family-dummy.m"; sourceTree = "<group>"; };
+		3F15C57D296A8111BFDE3CBDE0866784 /* Pods-SunWebApp_Family-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_Family-umbrella.h"; sourceTree = "<group>"; };
+		412F905D1152DA8FFDCCA52394AD18AF /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		454DFF8AFA4B7C081CE54CF59A7584A1 /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
+		477F4BE7F3B0E4BC164D60E2563A3C03 /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
+		496061D5F7E30392E41706CE20A4AABC /* Pods-SunWebApp_FamilyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4BC2E1CB729B027CE50136E927C63D88 /* RuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleLength.swift; path = Source/Validations/RuleLength.swift; sourceTree = "<group>"; };
+		4E849197C0A5BE4D1AB9E5660CFB1C8F /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
+		514D676884F30F3AFA1590699735525D /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
+		5392D2F6F807980B7816607A9F5FA8BB /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
+		5862F49E40963FA5F87A55F45E465834 /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
+		5E38AAAB229972C984CD912A549DB5A5 /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
+		5EA96D6D6DB00B6672D5E9F237198D91 /* SwipeActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActions.swift; path = Source/Core/SwipeActions.swift; sourceTree = "<group>"; };
+		5EB34B03D46701D848085B66360B8154 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
+		5FA2B2B0EAF5FBEC1B92B5674BC8AE37 /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Eureka.modulemap; sourceTree = "<group>"; };
+		61B2C0103A1227534B0540A53C761F8E /* TriplePickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriplePickerInputRow.swift; path = Source/Rows/TriplePickerInputRow.swift; sourceTree = "<group>"; };
+		659082A0EE23A3A569859405941F8A2A /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
+		6AEC9031E0A455E4F4DD30F91B97E819 /* RuleRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = "<group>"; };
+		6B5604AFADE2E65EF20F1C77ED3C16E0 /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
+		6B970305F2D404865BB30FA2EA93BB32 /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
+		6DBA41BCE464248C0EED80CB6BD053AC /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
+		70DC2A8FD1DE81F1B283C4CF8C8F010A /* Pods-SunWebApp_FamilyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_FamilyTests.modulemap"; sourceTree = "<group>"; };
+		73D15FEE999015D2EAD1785692FDD602 /* DoublePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoublePickerRow.swift; path = Source/Rows/DoublePickerRow.swift; sourceTree = "<group>"; };
+		7695B489D43CCEF6B8CBCF6CAF3F2B19 /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
+		77B8548D783B5909A76EDAD28BCD0737 /* RuleRegExp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRegExp.swift; path = Source/Validations/RuleRegExp.swift; sourceTree = "<group>"; };
+		780FCD0F2B0E651443C65AB87F4AD2E1 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
+		785479E416BF569163B980D5376D0B66 /* Pods-SunWebApp_Family-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_Family-Info.plist"; sourceTree = "<group>"; };
+		7E9A7E47733F6DCCFCE4542AA7B743C1 /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
+		7EA7CB3262669FCA310A07E7527B0C11 /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
+		802EEEBBDAB8B6F0775FC0D18FA3B493 /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
+		80F24865A456D870BB9701998973095C /* AlertOptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertOptionsRow.swift; path = Source/Rows/Common/AlertOptionsRow.swift; sourceTree = "<group>"; };
+		8147A42497197F69CC1B4F6F8B634A84 /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
+		886C9E01813D9B2342AAEAD7DC8344FD /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
+		8EE039022F66B04D0BAF967B642134E2 /* Pods-SunWebApp_FamilyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_FamilyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9070112AF23A1373A0075AD4BBB5532B /* DoublePickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoublePickerInputRow.swift; path = Source/Rows/DoublePickerInputRow.swift; sourceTree = "<group>"; };
+		919A970399F3360408375B2D859078F0 /* Eureka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Eureka-dummy.m"; sourceTree = "<group>"; };
+		923949086132E6D1D1CC83F206ADC68B /* Pods-SunWebApp_FamilyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SunWebApp_FamilyUITests.modulemap"; sourceTree = "<group>"; };
+		93339D5E8F07A272AFFEF5BA00A77CC4 /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
+		946A7C006DB68A240B97EC746085FEDA /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
+		949F89584DACD392F08F38186BB1CB62 /* Pods-SunWebApp_Family-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_Family-acknowledgements.markdown"; sourceTree = "<group>"; };
+		985ADFAF5DB1A25637CA056F4FBA631E /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
+		98E0ED92C78EFE137EC3C1147366E5A3 /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
+		99FB23A8C1C71E46CFA624C8400E3110 /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
+		9ACA45DB0804D33DF406629C5FD0C5A9 /* Pods-SunWebApp_FamilyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D085F9547E75768BCE740834FD84628 /* Pods-SunWebApp_Family.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_Family.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EB3C115702CDA241B679CB48E5BE7B3 /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
+		A16A5B3BC0BB6D94FC6FF32BA1159C36 /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
+		A37D8D227017D91CAB32906552CF09DB /* Eureka-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Eureka-Info.plist"; sourceTree = "<group>"; };
+		A426907A5CBB5B65E36932553802E92A /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
+		B72D08A0D37A48BF6EC85370113994CC /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
+		B8C8E5626DB227145EBE0D7E7C000A48 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = "<group>"; };
+		B9863E43F7112CF1E554BD6D3566A5E8 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
+		BDDC4B0CB6CAFBE623AD8DA7B166E739 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunWebApp_FamilyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF03B1B1C4367AA0CEDE1A5F28117F09 /* Pods-SunWebApp_FamilyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyTests-Info.plist"; sourceTree = "<group>"; };
+		CB01521AC9C0B4D506C96FD0CA6C1E65 /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
+		CC7D87A88BC875B0050E1A657F80DF24 /* RuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEmail.swift; path = Source/Validations/RuleEmail.swift; sourceTree = "<group>"; };
+		CCC3B0A9D8C14B8DBA0F0F57B7867D65 /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
+		CD942D96CAEDE7CE80A3A5E5DE65CAE3 /* Pods_SunWebApp_FamilyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWebApp_FamilyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA951B9180EDE9A78815E54D2352320 /* Pods-SunWebApp_FamilyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunWebApp_FamilyUITests-Info.plist"; sourceTree = "<group>"; };
+		D11A04E4CFE9AD473928C015CE808EBE /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
+		D23D098445A2D942896D07A4AC0CD951 /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
+		D94CF7C4F9C4A8BB18E2A220B71F92D2 /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
+		DA203806FDFB1A1C6BA63180596801CE /* DateFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFieldRow.swift; path = Source/Rows/Common/DateFieldRow.swift; sourceTree = "<group>"; };
+		DC1CC6C30D80102242B857FA3D1BE718 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
+		DCAE2D3C7965E93074E0F19A5642A406 /* DateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRow.swift; path = Source/Rows/DateRow.swift; sourceTree = "<group>"; };
+		E4A7B1566F164E3524B92B211A9691E7 /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
+		EA9745F06CB2AC37DD1B444A970E45B2 /* Pods-SunWebApp_FamilyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunWebApp_FamilyUITests-umbrella.h"; sourceTree = "<group>"; };
+		ED06199A4035890F68AD5B450D803E76 /* Pods-SunWebApp_FamilyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunWebApp_FamilyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F38CE8175837FAE1C691E04B4AFB31CA /* Pods-SunWebApp_FamilyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_FamilyTests-dummy.m"; sourceTree = "<group>"; };
+		F4E07032D5328D495A3AE01B6BCC4FF6 /* RuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRequired.swift; path = Source/Validations/RuleRequired.swift; sourceTree = "<group>"; };
+		F50C0EAE3E3F8DBE0528C4620E2661F0 /* Pods-SunWebApp_FamilyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunWebApp_FamilyUITests-dummy.m"; sourceTree = "<group>"; };
+		F63B2F43F569678E544CF26A2193E76D /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
+		F83DAC8F33FF488902BDECC2028BD136 /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
+		F84BA2DE5E2882772653E474E4439165 /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
+		FB00D5651147BF84BC44B3EB0D326796 /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07DCA605F85BB7B97508DC0A96DFCDAA /* Frameworks */ = {
+		5744ADCE5313511012F97B1DD31EE940 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8499F0F58825DB24BFF9FF9B6E65E5 /* Foundation.framework in Frameworks */,
-				3E9920611F38EDE5BC6231623EBBB64D /* UIKit.framework in Frameworks */,
+				50DC9191BD434B4FC4BD00FDFB2031AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA74442548112FC87507568B4FD885DF /* Frameworks */ = {
+		975B7DD5926DC47DA511255E4BA83526 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C0E428F2673D823D8B8C8FD8D54871 /* Foundation.framework in Frameworks */,
+				51F887F91AE4AD0EBD757834033CDCEA /* Foundation.framework in Frameworks */,
+				7641B9C8B2C53CAADDEED65040BF5D7F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6BC1EBB3EE67D70352917F3292B883E /* Frameworks */ = {
+		9853E1725199072438499F81D15A4005 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46DD1636E93617504F2953AD607D698 /* Foundation.framework in Frameworks */,
+				C975EADD24D1D107DF010C29F7B7F0EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8AAAC7435539FA03166CE84B5FA2A91 /* Frameworks */ = {
+		D3F192A29775C04BDC54835E40B0EF10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E99B95C0873C9B046C70941A3FA0C5 /* Foundation.framework in Frameworks */,
+				7F838A9EE6B8D5236C86B50DD1C3C9E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
+		13A41D8223E6842F23ADF1FC64508086 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
-				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		2233AAF0BED5FF0B64279EF83221452C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FBA3A3B45363B08A0965D2AE41352D01 /* Pods-SunWebApp_Family */,
-				99F015458604CB0076655BB28B3B3427 /* Pods-SunWebApp_FamilyTests */,
-				7BFFD11F13D0EF5B0030B6515AC61C58 /* Pods-SunWebApp_FamilyUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		33836890FF4802C85C5BD7B0DF885D2F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				83002A53929A677FF12E0A8E67CA4F0C /* Eureka.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06CDD10DE71306278CF89108B3036DFD /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		57C6AF786E26D1E58B1B7270732468F9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4D7AA160E89C8560D2CEFEA9EAF3791 /* Eureka.modulemap */,
-				34EB65EF2D084CDADBDDBE0B74154D4D /* Eureka.xcconfig */,
-				24F1170CDC11B9F66CD3CFB0459B2BD7 /* Eureka-dummy.m */,
-				61B1F7AC6757E24A2B27BEAA533C5DAA /* Eureka-prefix.pch */,
-				342F084FD8C22544BA562D1279B976C1 /* Eureka-umbrella.h */,
-				8C30F6BF05F8905A6E754B089F943CD2 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Eureka";
-			sourceTree = "<group>";
-		};
-		5B9A715FD32763211089F9068A1DEFC5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				10AE36B322ACF2A64E0D1EB8CFE924C8 /* Eureka.framework */,
-				5849005064DA8B0E66460BF523FBE650 /* Pods_SunWebApp_Family.framework */,
-				DAC9F0BC85EFC9CBD2815CF934B7DBB2 /* Pods_SunWebApp_FamilyTests.framework */,
-				EA08F366A7B2D931102D2E91A1567154 /* Pods_SunWebApp_FamilyUITests.framework */,
+				082977F3777A7D434AB35C357B487F83 /* Eureka.framework */,
+				2DB521C4A207061FB196E42E461070B7 /* Pods_SunWebApp_Family.framework */,
+				0BBAF5A9126C137B87B1B602457582D1 /* Pods_SunWebApp_FamilyTests.framework */,
+				CD942D96CAEDE7CE80A3A5E5DE65CAE3 /* Pods_SunWebApp_FamilyUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BFFD11F13D0EF5B0030B6515AC61C58 /* Pods-SunWebApp_FamilyUITests */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F833C49E044B170FAF261BED5D19CF54 /* Info.plist */,
-				5699163AF3082434DC248EDF63FAFCAA /* Pods-SunWebApp_FamilyUITests.modulemap */,
-				BB91F40A6F11BBEA043CE49FC887CEC9 /* Pods-SunWebApp_FamilyUITests-acknowledgements.markdown */,
-				CB50A3EE19A5637BF97F1F03381446FE /* Pods-SunWebApp_FamilyUITests-acknowledgements.plist */,
-				229822FDB0DE6A55FA4C38A4102FD36B /* Pods-SunWebApp_FamilyUITests-dummy.m */,
-				535284F6CF19040BBFFB3F60EEBBC687 /* Pods-SunWebApp_FamilyUITests-frameworks.sh */,
-				2C8A0F48D21490EE1CD0CC73CE25295D /* Pods-SunWebApp_FamilyUITests-resources.sh */,
-				766773C462AA494510B6130F9C6291A5 /* Pods-SunWebApp_FamilyUITests-umbrella.h */,
-				00AF7CDABE611A60BBC50EBACEB65996 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */,
-				83945F07C664B26AB67C28B7B8651F15 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4574DD2CF6B2F911C6EA0B3A85C33B68 /* Pods-SunWebApp_FamilyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				923949086132E6D1D1CC83F206ADC68B /* Pods-SunWebApp_FamilyUITests.modulemap */,
+				8EE039022F66B04D0BAF967B642134E2 /* Pods-SunWebApp_FamilyUITests-acknowledgements.markdown */,
+				358259597A8DC69F32443D50072C0B76 /* Pods-SunWebApp_FamilyUITests-acknowledgements.plist */,
+				F50C0EAE3E3F8DBE0528C4620E2661F0 /* Pods-SunWebApp_FamilyUITests-dummy.m */,
+				CEA951B9180EDE9A78815E54D2352320 /* Pods-SunWebApp_FamilyUITests-Info.plist */,
+				EA9745F06CB2AC37DD1B444A970E45B2 /* Pods-SunWebApp_FamilyUITests-umbrella.h */,
+				0189129CD9B3FE7CD92D27E992C75DD7 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */,
+				BDDC4B0CB6CAFBE623AD8DA7B166E739 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */,
 			);
 			name = "Pods-SunWebApp_FamilyUITests";
 			path = "Target Support Files/Pods-SunWebApp_FamilyUITests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		6418B6DC580B5EE7F387F481A66AFF5F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				E3B19EF096E18080CC737C76B02CEC7B /* Pods */,
-				5B9A715FD32763211089F9068A1DEFC5 /* Products */,
-				2233AAF0BED5FF0B64279EF83221452C /* Targets Support Files */,
+				F1A3DD07597D0352C61D5D8A86857177 /* Pods-SunWebApp_Family */,
+				A9D02740B78760ED352DD1B35EAB1C56 /* Pods-SunWebApp_FamilyTests */,
+				4574DD2CF6B2F911C6EA0B3A85C33B68 /* Pods-SunWebApp_FamilyUITests */,
 			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		942FF6834CB81AFF3E4428FA1E663EEB /* Eureka */ = {
+		691427DEFBAC28D3CB15F4535F3845CA /* Eureka */ = {
 			isa = PBXGroup;
 			children = (
-				D7B1FB13368EFBF95B86014ACC0B2A59 /* ActionSheetRow.swift */,
-				7A8068018935D84973A94EA1C93B85C5 /* AlertOptionsRow.swift */,
-				DD08972E5E318FEDEC8DA6ACBBDF5DB0 /* AlertRow.swift */,
-				6A1E758D4A7C95A1CFD99940196CE0B9 /* BaseRow.swift */,
-				9A739D31E091685DEA0BFAD4BB3D2C02 /* ButtonRow.swift */,
-				F64AA766BD3D6044EA997108678CB088 /* ButtonRowWithPresent.swift */,
-				6CA3ED0090CDE140B9F5482B56BA14E5 /* Cell.swift */,
-				29BFC85F0D6DF545F185679C4D391691 /* CellType.swift */,
-				AFE5D1F949862FE13887C2A380B450C4 /* CheckRow.swift */,
-				1D24CF9C544C97749984D50502834A22 /* Core.swift */,
-				130A08900BB5A362633BF51E2BC83503 /* DateFieldRow.swift */,
-				C2A48E9C20244B518A9683CAEC39F762 /* DateInlineFieldRow.swift */,
-				6B1BDED4328E643538408E03D3EAA4DD /* DateInlineRow.swift */,
-				ACF44DF8593D5BBBE4B6E5D1471C8D81 /* DatePickerRow.swift */,
-				2CB8C422AFEE82711289D6C9B9CC11D9 /* DateRow.swift */,
-				09B4C44D23C403B03322FD08A3C34C94 /* DecimalFormatter.swift */,
-				A504FE8161341C21549F713D48535D17 /* DoublePickerInputRow.swift */,
-				786A2C6970A5421851052BAB137B93FC /* DoublePickerRow.swift */,
-				AF04E6334F6E1C8A419F1C5E0B1726D6 /* FieldRow.swift */,
-				9192F97DF075A2D0CBB5786E4F3C8E2A /* FieldsRow.swift */,
-				D7EBF14BA7D6D9FA59E4CD04F18C44F8 /* Form.swift */,
-				76F19FCD775A4FD86D25F113C3000F5B /* GenericMultipleSelectorRow.swift */,
-				E26669852C9DEBAD70B79B7E63A2D61D /* HeaderFooterView.swift */,
-				F1262EAE414D5214C2893C1BBCB4E7FE /* Helpers.swift */,
-				438E188BEE6FFDE0EEBB8B289199DAE6 /* InlineRowType.swift */,
-				654F45C777836D6BA3CAE7B2B2EA4716 /* LabelRow.swift */,
-				3EDA8DB9664EEE99799B5DC3D8FC9B60 /* ListCheckRow.swift */,
-				41C284782F5E2ED8E3DAB5F0B4FE35C3 /* MultipleSelectorRow.swift */,
-				715B8166BC6A87523CE058D034D18C67 /* MultipleSelectorViewController.swift */,
-				B77BAD13D407D81790813238915942F3 /* NavigationAccessoryView.swift */,
-				878E56D3D4FA0907C7B2C2935DC8B0EC /* Operators.swift */,
-				73115D59C31C0AEB9186E153398074DC /* OptionsRow.swift */,
-				2448DC13042DD2CF9E69F578C0B260E9 /* PickerInlineRow.swift */,
-				1CF18CC077162BFFCE1D89DB3184C120 /* PickerInputRow.swift */,
-				2D8E4C6AB599A608229E2717C95E84EB /* PickerRow.swift */,
-				D2D63AA885AC40CFF985C8270FD927D5 /* PopoverSelectorRow.swift */,
-				2C9B7D3CB65386D66CFDEFE2E925B762 /* PresenterRowType.swift */,
-				75DE55E736763F71B4F8A7FAA1E6264C /* Protocols.swift */,
-				155285692E2DAA1420A2E51677B6F1D0 /* PushRow.swift */,
-				0AEE09BDDDEC782A4FD9C549D52E3AD0 /* Row.swift */,
-				A02038BDC7B713918C22FF0E7D4D2123 /* RowControllerType.swift */,
-				9DEEB68BBF753A44160D0C24AAD42147 /* RowProtocols.swift */,
-				8367B83EFC7A1C9582D27F38174AB393 /* RowType.swift */,
-				637F2D0ED022769217CC5BBC6071E6E7 /* RuleClosure.swift */,
-				1E0E437A6D9074C204A8DF36F15AC919 /* RuleEmail.swift */,
-				3E2B8CAD0B96E63D5651E4154D59F0E6 /* RuleEqualsToRow.swift */,
-				E8E254025BE5EEB1EC620062AFFE2B71 /* RuleLength.swift */,
-				647E4C54BEBB36A9B0E50F3D2D04DFE7 /* RuleRange.swift */,
-				05553478EA64E74383DF1938510F36F7 /* RuleRegExp.swift */,
-				D21E03AA1C05FB0E31B55441FE555371 /* RuleRequired.swift */,
-				3C8D0B5F77BD59291A5B1237A8DD9745 /* RuleURL.swift */,
-				FF248E301E906741E4EA3A86E3CB9340 /* Section.swift */,
-				A7D78CA366D6D5043590FFE7723CD914 /* SegmentedRow.swift */,
-				5ED5DA490810255A14338F3B08F4AC1F /* SelectableRowType.swift */,
-				C26D2B2EC7DD8FFCFFA455A79320A638 /* SelectableSection.swift */,
-				B87F975B922A3CE15A421932A39277C9 /* SelectorAlertController.swift */,
-				9507AFAD1F80FBDD2791BB4798D1D66F /* SelectorRow.swift */,
-				EF32D31903264E4CFCC865DFDD9B3585 /* SelectorViewController.swift */,
-				2345D2068A557055E0EB41B583036B6D /* SliderRow.swift */,
-				3EED1B59F0036500720DDECB9CDAC09F /* StepperRow.swift */,
-				F5A1E04DB33CC15AFCCF08F1F2B3982A /* SwipeActions.swift */,
-				C958FA6C2A60CB5D135AE0A640521E69 /* SwitchRow.swift */,
-				DB760306352A15CE732C588AFC44F8B6 /* TextAreaRow.swift */,
-				A0EC5A3D15408272E158A4ED4E5CD172 /* TriplePickerInputRow.swift */,
-				DD8676277AD4D13D13C3DF53D50F63C6 /* TriplePickerRow.swift */,
-				5F383DB485838D5EF712DC271421B8E4 /* Validation.swift */,
-				33836890FF4802C85C5BD7B0DF885D2F /* Resources */,
-				57C6AF786E26D1E58B1B7270732468F9 /* Support Files */,
+				305DE7DE3494F98F336B79E40E6398DB /* ActionSheetRow.swift */,
+				80F24865A456D870BB9701998973095C /* AlertOptionsRow.swift */,
+				23D94B0516605B3FE2F98F3E2CC3164F /* AlertRow.swift */,
+				99FB23A8C1C71E46CFA624C8400E3110 /* BaseRow.swift */,
+				D94CF7C4F9C4A8BB18E2A220B71F92D2 /* ButtonRow.swift */,
+				6B5604AFADE2E65EF20F1C77ED3C16E0 /* ButtonRowWithPresent.swift */,
+				5862F49E40963FA5F87A55F45E465834 /* Cell.swift */,
+				F84BA2DE5E2882772653E474E4439165 /* CellType.swift */,
+				477F4BE7F3B0E4BC164D60E2563A3C03 /* CheckRow.swift */,
+				0770A7623A8022415C25C54EE0622865 /* Core.swift */,
+				DA203806FDFB1A1C6BA63180596801CE /* DateFieldRow.swift */,
+				2DB470313774B5D663445878F1E588D4 /* DateInlineFieldRow.swift */,
+				CB01521AC9C0B4D506C96FD0CA6C1E65 /* DateInlineRow.swift */,
+				412F905D1152DA8FFDCCA52394AD18AF /* DatePickerRow.swift */,
+				DCAE2D3C7965E93074E0F19A5642A406 /* DateRow.swift */,
+				A16A5B3BC0BB6D94FC6FF32BA1159C36 /* DecimalFormatter.swift */,
+				9070112AF23A1373A0075AD4BBB5532B /* DoublePickerInputRow.swift */,
+				73D15FEE999015D2EAD1785692FDD602 /* DoublePickerRow.swift */,
+				19BA25BC9D2D05CC083CD99E029E99E0 /* FieldRow.swift */,
+				802EEEBBDAB8B6F0775FC0D18FA3B493 /* FieldsRow.swift */,
+				1F38000EE61C80A640E217A521ACE859 /* Form.swift */,
+				1AA1FEDCAC39B1C14454B2F7AB79E85F /* GenericMultipleSelectorRow.swift */,
+				034096FBDF397A07EFA899902D725A92 /* HeaderFooterView.swift */,
+				A426907A5CBB5B65E36932553802E92A /* Helpers.swift */,
+				D23D098445A2D942896D07A4AC0CD951 /* InlineRowType.swift */,
+				F83DAC8F33FF488902BDECC2028BD136 /* LabelRow.swift */,
+				514D676884F30F3AFA1590699735525D /* ListCheckRow.swift */,
+				E4A7B1566F164E3524B92B211A9691E7 /* MultipleSelectorRow.swift */,
+				886C9E01813D9B2342AAEAD7DC8344FD /* MultipleSelectorViewController.swift */,
+				5EB34B03D46701D848085B66360B8154 /* NavigationAccessoryView.swift */,
+				B9863E43F7112CF1E554BD6D3566A5E8 /* Operators.swift */,
+				FB00D5651147BF84BC44B3EB0D326796 /* OptionsRow.swift */,
+				CCC3B0A9D8C14B8DBA0F0F57B7867D65 /* PickerInlineRow.swift */,
+				36174C53A47F23E289766C564D77AD75 /* PickerInputRow.swift */,
+				93339D5E8F07A272AFFEF5BA00A77CC4 /* PickerRow.swift */,
+				9EB3C115702CDA241B679CB48E5BE7B3 /* PopoverSelectorRow.swift */,
+				B72D08A0D37A48BF6EC85370113994CC /* PresenterRowType.swift */,
+				F63B2F43F569678E544CF26A2193E76D /* Protocols.swift */,
+				5392D2F6F807980B7816607A9F5FA8BB /* PushRow.swift */,
+				DC1CC6C30D80102242B857FA3D1BE718 /* Row.swift */,
+				5E38AAAB229972C984CD912A549DB5A5 /* RowControllerType.swift */,
+				946A7C006DB68A240B97EC746085FEDA /* RowProtocols.swift */,
+				6B970305F2D404865BB30FA2EA93BB32 /* RowType.swift */,
+				02349F1F8910272C1B115AD3B8153C32 /* RuleClosure.swift */,
+				CC7D87A88BC875B0050E1A657F80DF24 /* RuleEmail.swift */,
+				B8C8E5626DB227145EBE0D7E7C000A48 /* RuleEqualsToRow.swift */,
+				4BC2E1CB729B027CE50136E927C63D88 /* RuleLength.swift */,
+				6AEC9031E0A455E4F4DD30F91B97E819 /* RuleRange.swift */,
+				77B8548D783B5909A76EDAD28BCD0737 /* RuleRegExp.swift */,
+				F4E07032D5328D495A3AE01B6BCC4FF6 /* RuleRequired.swift */,
+				00CFB3BE96A6B7F5E089DE9D3AB18572 /* RuleURL.swift */,
+				780FCD0F2B0E651443C65AB87F4AD2E1 /* Section.swift */,
+				4E849197C0A5BE4D1AB9E5660CFB1C8F /* SegmentedRow.swift */,
+				98E0ED92C78EFE137EC3C1147366E5A3 /* SelectableRowType.swift */,
+				D11A04E4CFE9AD473928C015CE808EBE /* SelectableSection.swift */,
+				01DF523BCF9665F3DA4387C0C0AE99CA /* SelectorAlertController.swift */,
+				1BE1B246671BE6C8243BD3DB968A1D15 /* SelectorRow.swift */,
+				315CB3C35F6C2EA6B79BB0D993F6A15B /* SelectorViewController.swift */,
+				7E9A7E47733F6DCCFCE4542AA7B743C1 /* SliderRow.swift */,
+				7EA7CB3262669FCA310A07E7527B0C11 /* StepperRow.swift */,
+				5EA96D6D6DB00B6672D5E9F237198D91 /* SwipeActions.swift */,
+				160DBCAFADC302BF35CF891041870BB2 /* SwitchRow.swift */,
+				985ADFAF5DB1A25637CA056F4FBA631E /* TextAreaRow.swift */,
+				61B2C0103A1227534B0540A53C761F8E /* TriplePickerInputRow.swift */,
+				22D4B711A63558B0CE6A90FF532B9150 /* TriplePickerRow.swift */,
+				6DBA41BCE464248C0EED80CB6BD053AC /* Validation.swift */,
+				868BF181A4A1B2B53DC0419C7681711F /* Resources */,
+				702E37E4141A9A1A31CEED94EDA54F39 /* Support Files */,
 			);
 			path = Eureka;
 			sourceTree = "<group>";
 		};
-		99F015458604CB0076655BB28B3B3427 /* Pods-SunWebApp_FamilyTests */ = {
+		702E37E4141A9A1A31CEED94EDA54F39 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D18BEE7285FD8A64280B3919DE035B6 /* Info.plist */,
-				AEF844E89383FC770C529557EDECD016 /* Pods-SunWebApp_FamilyTests.modulemap */,
-				2C19E910EB3F02C0C4B6783B9BC19D47 /* Pods-SunWebApp_FamilyTests-acknowledgements.markdown */,
-				6DEA05FF7527611D4A30B4AA6FF60E38 /* Pods-SunWebApp_FamilyTests-acknowledgements.plist */,
-				D5D60BE9E851B11D0CF6B50DEF7D680A /* Pods-SunWebApp_FamilyTests-dummy.m */,
-				5425BB4213A29B04E4EDFC1AAB3B405B /* Pods-SunWebApp_FamilyTests-frameworks.sh */,
-				5929C0C3E96FB95C338D68BA1E6E7134 /* Pods-SunWebApp_FamilyTests-resources.sh */,
-				F409F91646C48E349B58AABC3398E3EC /* Pods-SunWebApp_FamilyTests-umbrella.h */,
-				659552360BC4B1086B8B928FCBE234B7 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */,
-				1F2CDF4BF5FD187F801A9E648DFFD918 /* Pods-SunWebApp_FamilyTests.release.xcconfig */,
+				5FA2B2B0EAF5FBEC1B92B5674BC8AE37 /* Eureka.modulemap */,
+				8147A42497197F69CC1B4F6F8B634A84 /* Eureka.xcconfig */,
+				919A970399F3360408375B2D859078F0 /* Eureka-dummy.m */,
+				A37D8D227017D91CAB32906552CF09DB /* Eureka-Info.plist */,
+				7695B489D43CCEF6B8CBCF6CAF3F2B19 /* Eureka-prefix.pch */,
+				659082A0EE23A3A569859405941F8A2A /* Eureka-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Eureka";
+			sourceTree = "<group>";
+		};
+		868BF181A4A1B2B53DC0419C7681711F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				454DFF8AFA4B7C081CE54CF59A7584A1 /* Eureka.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9D02740B78760ED352DD1B35EAB1C56 /* Pods-SunWebApp_FamilyTests */ = {
+			isa = PBXGroup;
+			children = (
+				70DC2A8FD1DE81F1B283C4CF8C8F010A /* Pods-SunWebApp_FamilyTests.modulemap */,
+				ED06199A4035890F68AD5B450D803E76 /* Pods-SunWebApp_FamilyTests-acknowledgements.markdown */,
+				496061D5F7E30392E41706CE20A4AABC /* Pods-SunWebApp_FamilyTests-acknowledgements.plist */,
+				F38CE8175837FAE1C691E04B4AFB31CA /* Pods-SunWebApp_FamilyTests-dummy.m */,
+				BF03B1B1C4367AA0CEDE1A5F28117F09 /* Pods-SunWebApp_FamilyTests-Info.plist */,
+				1B6DB12AA575764EBCE01530100EA284 /* Pods-SunWebApp_FamilyTests-umbrella.h */,
+				069211410BFCEB007DC9169CF5BE2580 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */,
+				9ACA45DB0804D33DF406629C5FD0C5A9 /* Pods-SunWebApp_FamilyTests.release.xcconfig */,
 			);
 			name = "Pods-SunWebApp_FamilyTests";
 			path = "Target Support Files/Pods-SunWebApp_FamilyTests";
 			sourceTree = "<group>";
 		};
-		E3B19EF096E18080CC737C76B02CEC7B /* Pods */ = {
+		B7D414D27C633E5D85DFB64E04F4C2D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				942FF6834CB81AFF3E4428FA1E663EEB /* Eureka */,
+				691427DEFBAC28D3CB15F4535F3845CA /* Eureka */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FBA3A3B45363B08A0965D2AE41352D01 /* Pods-SunWebApp_Family */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				1010337D09AB5C0EBF4736B98184D5C4 /* Info.plist */,
-				DDEFC5EC916C64FB270FA9B811D28928 /* Pods-SunWebApp_Family.modulemap */,
-				7E812D6EC95193E9E5B924DA3D40BA81 /* Pods-SunWebApp_Family-acknowledgements.markdown */,
-				95021041519515C0E3666FE8AB65B187 /* Pods-SunWebApp_Family-acknowledgements.plist */,
-				D45DA19E850DFBBF81D3766277E67F2C /* Pods-SunWebApp_Family-dummy.m */,
-				15E60B2B58B09C6ADE5C7414DD80486D /* Pods-SunWebApp_Family-frameworks.sh */,
-				D5353C122E4B38EB23C0B9DB62B4BEC0 /* Pods-SunWebApp_Family-resources.sh */,
-				BF36393DCC6A114FBDC586C04F73F7C1 /* Pods-SunWebApp_Family-umbrella.h */,
-				550AD817AA9A2C65227A2121EC8F55BF /* Pods-SunWebApp_Family.debug.xcconfig */,
-				B3FEF25BE8418D945EDD6A0FBD1D0F91 /* Pods-SunWebApp_Family.release.xcconfig */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B7D414D27C633E5D85DFB64E04F4C2D6 /* Pods */,
+				13A41D8223E6842F23ADF1FC64508086 /* Products */,
+				6418B6DC580B5EE7F387F481A66AFF5F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F1A3DD07597D0352C61D5D8A86857177 /* Pods-SunWebApp_Family */ = {
+			isa = PBXGroup;
+			children = (
+				1AEF07747771919044D38B0085552B3B /* Pods-SunWebApp_Family.modulemap */,
+				949F89584DACD392F08F38186BB1CB62 /* Pods-SunWebApp_Family-acknowledgements.markdown */,
+				1C9A7B4C923DB94FACE4AA1ADB4D2EAC /* Pods-SunWebApp_Family-acknowledgements.plist */,
+				3D9495B5C89F0FA62C2B951D836E9F28 /* Pods-SunWebApp_Family-dummy.m */,
+				1D1F68FD383B464B276149AE8400F0CD /* Pods-SunWebApp_Family-frameworks.sh */,
+				785479E416BF569163B980D5376D0B66 /* Pods-SunWebApp_Family-Info.plist */,
+				3F15C57D296A8111BFDE3CBDE0866784 /* Pods-SunWebApp_Family-umbrella.h */,
+				9D085F9547E75768BCE740834FD84628 /* Pods-SunWebApp_Family.debug.xcconfig */,
+				2C72C72BF95833C8C8F02113DB3487F1 /* Pods-SunWebApp_Family.release.xcconfig */,
 			);
 			name = "Pods-SunWebApp_Family";
 			path = "Target Support Files/Pods-SunWebApp_Family";
@@ -474,87 +464,106 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		585F600B9EA386B714A55A3A349CF363 /* Headers */ = {
+		10BF2A0E6B8C98356C776A9FA68A1ED3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D435DE1CE2DEF015DDF0D37C4E10BA9 /* Eureka-umbrella.h in Headers */,
+				42C8D74438F4D62F40D6E47F12905E3D /* Pods-SunWebApp_Family-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78C9E941A73DC2893969D3ADA11A448F /* Headers */ = {
+		E45881502EEFB7614ED99DA1D4EF3177 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891B2E38E6A9585B0B778E64462210DC /* Pods-SunWebApp_FamilyUITests-umbrella.h in Headers */,
+				68B2F2988A3DAFBAE4466807C2D33551 /* Pods-SunWebApp_FamilyTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7BFA3787EC92BA736F669CEA276AD57 /* Headers */ = {
+		F539CA98A424151F5E9C2831105EFA7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F74B5BDF56882973149D4476657F0E /* Pods-SunWebApp_Family-umbrella.h in Headers */,
+				2749A87DBECE3BC423A86D7160B928E7 /* Eureka-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBAAAAE67601FD193AB6376C21B4EB5E /* Headers */ = {
+		F9C57A795C69C241018041186462D24E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC8ED15DEF52B555388CB621B6FAD6B /* Pods-SunWebApp_FamilyTests-umbrella.h in Headers */,
+				5A9B3C952DAF0C010507BF196D97CE83 /* Pods-SunWebApp_FamilyUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8571B15B5FD07FB985D6BC10C2F15CC8 /* Pods-SunWebApp_Family */ = {
+		34E35D53F764682EB1C9A74FFEA9B7C0 /* Pods-SunWebApp_Family */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D30F1A2B77F0F7298404529DABAC62B /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_Family" */;
+			buildConfigurationList = 62C74A36E182F090E1280009A2EACBD0 /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_Family" */;
 			buildPhases = (
-				E7BFA3787EC92BA736F669CEA276AD57 /* Headers */,
-				267389CC27EC817085A7D14D1C68018A /* Sources */,
-				F8AAAC7435539FA03166CE84B5FA2A91 /* Frameworks */,
-				A63927C42D2009CE943F424155509ADA /* Resources */,
+				10BF2A0E6B8C98356C776A9FA68A1ED3 /* Headers */,
+				75181C7105DBDF712BC3D0A367679A5A /* Sources */,
+				D3F192A29775C04BDC54835E40B0EF10 /* Frameworks */,
+				4D969EE4F878EC814A63A483386AD841 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C3BEA74ACAE417004527D0DE29610075 /* PBXTargetDependency */,
+				0AA70E443DCC8069594E0E7998969563 /* PBXTargetDependency */,
 			);
 			name = "Pods-SunWebApp_Family";
 			productName = "Pods-SunWebApp_Family";
-			productReference = 5849005064DA8B0E66460BF523FBE650 /* Pods_SunWebApp_Family.framework */;
+			productReference = 2DB521C4A207061FB196E42E461070B7 /* Pods_SunWebApp_Family.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9EA9D1847F61DA9151C76EE7F7B87AF8 /* Pods-SunWebApp_FamilyUITests */ = {
+		3903FB8D89C123F393021B5B5D0B71B1 /* Pods-SunWebApp_FamilyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D796EF629184903319577DC347F145B4 /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyUITests" */;
+			buildConfigurationList = 2415A6309F5E74AC82D7CA3153F8C9FD /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyUITests" */;
 			buildPhases = (
-				78C9E941A73DC2893969D3ADA11A448F /* Headers */,
-				437B1D910109035A00B5E58424C43021 /* Sources */,
-				F6BC1EBB3EE67D70352917F3292B883E /* Frameworks */,
-				AEA047F7280B86A3EFAE29C9E875C80A /* Resources */,
+				F9C57A795C69C241018041186462D24E /* Headers */,
+				227AF37DD7FB3FFAFE26265BBF3E50BA /* Sources */,
+				9853E1725199072438499F81D15A4005 /* Frameworks */,
+				9E75BDF7FE9770D30A62176AA77993BF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1BBAFC5B680F9F85943E2EB85B5EBC3C /* PBXTargetDependency */,
+				A04B6979581032606E220FB7FD7CD74F /* PBXTargetDependency */,
 			);
 			name = "Pods-SunWebApp_FamilyUITests";
 			productName = "Pods-SunWebApp_FamilyUITests";
-			productReference = EA08F366A7B2D931102D2E91A1567154 /* Pods_SunWebApp_FamilyUITests.framework */;
+			productReference = CD942D96CAEDE7CE80A3A5E5DE65CAE3 /* Pods_SunWebApp_FamilyUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2D491F85C2F0E31F5BB90876BEEB149 /* Eureka */ = {
+		6B85E493F070C4A3D4C5D3664E18B254 /* Pods-SunWebApp_FamilyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 773FAE139B2680FA424F54CC31E8733B /* Build configuration list for PBXNativeTarget "Eureka" */;
+			buildConfigurationList = 2D25643F0258275526B222B3F85223AD /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyTests" */;
 			buildPhases = (
-				585F600B9EA386B714A55A3A349CF363 /* Headers */,
-				25676EE1EA681A32D44D2BE58A004CAF /* Sources */,
-				07DCA605F85BB7B97508DC0A96DFCDAA /* Frameworks */,
-				94F11F6ABF77339716A70A0A31EE71A6 /* Resources */,
+				E45881502EEFB7614ED99DA1D4EF3177 /* Headers */,
+				65A70D397F37CA24D6BF4CC5585234D9 /* Sources */,
+				5744ADCE5313511012F97B1DD31EE940 /* Frameworks */,
+				85CA058162BB9478BB1C3AD4D92AEAA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD54AF4F85EBF147C3031E14889CBBC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-SunWebApp_FamilyTests";
+			productName = "Pods-SunWebApp_FamilyTests";
+			productReference = 0BBAF5A9126C137B87B1B602457582D1 /* Pods_SunWebApp_FamilyTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88BE8BE7A2FE6CED4193CCD8FF3CBEF7 /* Eureka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51F1DBB0790CAAB7969B0131682376AE /* Build configuration list for PBXNativeTarget "Eureka" */;
+			buildPhases = (
+				F539CA98A424151F5E9C2831105EFA7A /* Headers */,
+				D0DE84351F71727FE9D38B7D2DBE0E8B /* Sources */,
+				975B7DD5926DC47DA511255E4BA83526 /* Frameworks */,
+				4029631B86D6BF5808623FD0C047DB64 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -562,82 +571,63 @@
 			);
 			name = Eureka;
 			productName = Eureka;
-			productReference = 10AE36B322ACF2A64E0D1EB8CFE924C8 /* Eureka.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B603E35498E4BE9D3C90313DC6502E07 /* Pods-SunWebApp_FamilyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0FF94AB207C578DC23D14F42DBB725A /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyTests" */;
-			buildPhases = (
-				FBAAAAE67601FD193AB6376C21B4EB5E /* Headers */,
-				D25BD8F03E910BA72356139606E7E124 /* Sources */,
-				CA74442548112FC87507568B4FD885DF /* Frameworks */,
-				7BF189E4D2BE41C96345AE6A5AB12124 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C10A19D3C4458B723E46319F15A4C7B0 /* PBXTargetDependency */,
-			);
-			name = "Pods-SunWebApp_FamilyTests";
-			productName = "Pods-SunWebApp_FamilyTests";
-			productReference = DAC9F0BC85EFC9CBD2815CF934B7DBB2 /* Pods_SunWebApp_FamilyTests.framework */;
+			productReference = 082977F3777A7D434AB35C357B487F83 /* Eureka.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5B9A715FD32763211089F9068A1DEFC5 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 13A41D8223E6842F23ADF1FC64508086 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2D491F85C2F0E31F5BB90876BEEB149 /* Eureka */,
-				8571B15B5FD07FB985D6BC10C2F15CC8 /* Pods-SunWebApp_Family */,
-				B603E35498E4BE9D3C90313DC6502E07 /* Pods-SunWebApp_FamilyTests */,
-				9EA9D1847F61DA9151C76EE7F7B87AF8 /* Pods-SunWebApp_FamilyUITests */,
+				88BE8BE7A2FE6CED4193CCD8FF3CBEF7 /* Eureka */,
+				34E35D53F764682EB1C9A74FFEA9B7C0 /* Pods-SunWebApp_Family */,
+				6B85E493F070C4A3D4C5D3664E18B254 /* Pods-SunWebApp_FamilyTests */,
+				3903FB8D89C123F393021B5B5D0B71B1 /* Pods-SunWebApp_FamilyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7BF189E4D2BE41C96345AE6A5AB12124 /* Resources */ = {
+		4029631B86D6BF5808623FD0C047DB64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82F729B7306AE1E7B9CD761E7FD4C43 /* Eureka.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D969EE4F878EC814A63A483386AD841 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94F11F6ABF77339716A70A0A31EE71A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DD807D03399E4F871565246D8874B0B /* Eureka.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A63927C42D2009CE943F424155509ADA /* Resources */ = {
+		85CA058162BB9478BB1C3AD4D92AEAA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEA047F7280B86A3EFAE29C9E875C80A /* Resources */ = {
+		9E75BDF7FE9770D30A62176AA77993BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,131 +637,131 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25676EE1EA681A32D44D2BE58A004CAF /* Sources */ = {
+		227AF37DD7FB3FFAFE26265BBF3E50BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D1601EB46373C91C3D44E5C4F05A0F4 /* ActionSheetRow.swift in Sources */,
-				3A3F708957DBC08B69F5EE0F8BEE4413 /* AlertOptionsRow.swift in Sources */,
-				662CC2772C3A840B267B1D2E6CACD975 /* AlertRow.swift in Sources */,
-				465FF044922BD97CDD8E0DAE430F3987 /* BaseRow.swift in Sources */,
-				A2C2A3E3F0656F66DADA3993DF6181DA /* ButtonRow.swift in Sources */,
-				5A24CB2C1453B843171D05D8E749A341 /* ButtonRowWithPresent.swift in Sources */,
-				21121B22EBCBD4494F10CC036DBAC5D7 /* Cell.swift in Sources */,
-				18CDD1F0E7F9AA25ECADC1320626B124 /* CellType.swift in Sources */,
-				2A0BE72DA673C1EF4880FF2AFA6AB577 /* CheckRow.swift in Sources */,
-				A7B3C701A152192D0200EC6C1AD5279F /* Core.swift in Sources */,
-				74AAC441F8314AAB593DAD04D14FADB1 /* DateFieldRow.swift in Sources */,
-				6925E50E1B809B77612081A00D2C015B /* DateInlineFieldRow.swift in Sources */,
-				225E72D019C290EAD753289664341309 /* DateInlineRow.swift in Sources */,
-				46B49C7D57358FFD621D1990A399CAD4 /* DatePickerRow.swift in Sources */,
-				7DC79BDD0CED3EA51E57194938634505 /* DateRow.swift in Sources */,
-				23525A665BD566E4A4F71C44D3DD4309 /* DecimalFormatter.swift in Sources */,
-				B378A8D88E49C93C8CE11D70321860CD /* DoublePickerInputRow.swift in Sources */,
-				908CCE3DD0ADFE66CA6B32E48824A245 /* DoublePickerRow.swift in Sources */,
-				D71C1A85A92B23EF9F872D7F2064B4CB /* Eureka-dummy.m in Sources */,
-				CC2678F317C5E091A7ED92CBA0FA48CF /* FieldRow.swift in Sources */,
-				B4A325D4D94AFC074CC4E01139DA6821 /* FieldsRow.swift in Sources */,
-				FC8D8DC7CA836D7E10E05BBFA959A24A /* Form.swift in Sources */,
-				A817A212A87442330FB8F4ABAF0E4C7A /* GenericMultipleSelectorRow.swift in Sources */,
-				7C51BB243F554835925B51187FF525C4 /* HeaderFooterView.swift in Sources */,
-				A29DF40C66286906A823F9560BA6B93E /* Helpers.swift in Sources */,
-				CDB8009489DFDF3486E130AE34D74522 /* InlineRowType.swift in Sources */,
-				7F57665798811D1A71A775369AB48170 /* LabelRow.swift in Sources */,
-				3402ED47211B1F8780FC165F5EEDF4B5 /* ListCheckRow.swift in Sources */,
-				6109CBAC0E43B87563BF7016B73B8593 /* MultipleSelectorRow.swift in Sources */,
-				08637327A1B947F786E7329849498723 /* MultipleSelectorViewController.swift in Sources */,
-				BD550738B5CDF7F224E22F7865FE2B62 /* NavigationAccessoryView.swift in Sources */,
-				DCF157055DBC3BEC0B04D68C371EBBB0 /* Operators.swift in Sources */,
-				F13627AD5E5536F7AB95E3EB88DA9B41 /* OptionsRow.swift in Sources */,
-				CEFFB8B19E87A32D6EC785DE66D490D6 /* PickerInlineRow.swift in Sources */,
-				2CA1807EDAA168F3F3CA6B5CB51CC19D /* PickerInputRow.swift in Sources */,
-				47A31CCD70A8B86F77CB958C70ADCCF1 /* PickerRow.swift in Sources */,
-				418B42828CA24A3F5F05AF586833C37A /* PopoverSelectorRow.swift in Sources */,
-				A5A8303F3BD06DDC92BF2D47C93A7FCB /* PresenterRowType.swift in Sources */,
-				A722D0D3C4CD2B8A351546B4B7CC3E95 /* Protocols.swift in Sources */,
-				0D8D9D97B5BA992AF39EA51E29397696 /* PushRow.swift in Sources */,
-				C75EC2691A9124A3FA3CA3FB58276168 /* Row.swift in Sources */,
-				34E6D14CEB75E0069E29F353473A35D7 /* RowControllerType.swift in Sources */,
-				5F09DB3E8490E6DAA9C569A8DBD2C99A /* RowProtocols.swift in Sources */,
-				6F7610DD59294A94104EBE3E788C052A /* RowType.swift in Sources */,
-				57B70D0DE2FA74B951C29B34562D6757 /* RuleClosure.swift in Sources */,
-				C2BA9731A0A8BB0DD928DE9917F2BBF2 /* RuleEmail.swift in Sources */,
-				F91B6DDEBF1645F7B4EDF96580BCBC5E /* RuleEqualsToRow.swift in Sources */,
-				63A966C679EF7B0B72F0B5B4B540CAA0 /* RuleLength.swift in Sources */,
-				B87B03EA84451302590C233256F79C3B /* RuleRange.swift in Sources */,
-				602F654E1858A3739DAFAE5F4F6FB855 /* RuleRegExp.swift in Sources */,
-				1BDAE6D08597702E349B622257E4A2FF /* RuleRequired.swift in Sources */,
-				83B777AB8FA653317065A81693549AC9 /* RuleURL.swift in Sources */,
-				F8269A7CC409F07D46388E5580366DDB /* Section.swift in Sources */,
-				C3C3C4940860F001DB6326E7876811BA /* SegmentedRow.swift in Sources */,
-				3D3AF0255DAF9598CC2F1107BC146CB2 /* SelectableRowType.swift in Sources */,
-				9BFD3CF198EC9ADF123706F2479F58CF /* SelectableSection.swift in Sources */,
-				457CA31810922EEB9AB4DD59823A41E6 /* SelectorAlertController.swift in Sources */,
-				375D5ACFA1C5A4A8D96955FBD8723069 /* SelectorRow.swift in Sources */,
-				753CD57C0B07DBFBD0D76B426E4E7AE3 /* SelectorViewController.swift in Sources */,
-				FEC3C521E7FB03989F082031EB79EFAD /* SliderRow.swift in Sources */,
-				21471B7A2110C28F32CD0D42ABC28BE2 /* StepperRow.swift in Sources */,
-				5A9D7717087024CD71CA46FB9EFAAF22 /* SwipeActions.swift in Sources */,
-				3002845D97318B9AE3F68614AC4B0BCB /* SwitchRow.swift in Sources */,
-				86425FCF0DF324CDEAEC7842765D0C8D /* TextAreaRow.swift in Sources */,
-				A1BA9894EF0F7F09DE290CCAF1ECD042 /* TriplePickerInputRow.swift in Sources */,
-				252D9DB2EAE189341EC7E3EB65D95D2B /* TriplePickerRow.swift in Sources */,
-				F33D0BCA099427EA28619B0B075C837B /* Validation.swift in Sources */,
+				A855A25564679F14AD2258E301461C22 /* Pods-SunWebApp_FamilyUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		267389CC27EC817085A7D14D1C68018A /* Sources */ = {
+		65A70D397F37CA24D6BF4CC5585234D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9514A8C18319295695EE5764B6878DDD /* Pods-SunWebApp_Family-dummy.m in Sources */,
+				8B1F12AFB26309F2CC1B0884A849D854 /* Pods-SunWebApp_FamilyTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		437B1D910109035A00B5E58424C43021 /* Sources */ = {
+		75181C7105DBDF712BC3D0A367679A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CA5248AC5825DB73D130D73B80F926 /* Pods-SunWebApp_FamilyUITests-dummy.m in Sources */,
+				2EFD2106770EC72E71FC8A6605C58EDF /* Pods-SunWebApp_Family-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D25BD8F03E910BA72356139606E7E124 /* Sources */ = {
+		D0DE84351F71727FE9D38B7D2DBE0E8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C14D21739F81BFCB29843B1FE5F581A /* Pods-SunWebApp_FamilyTests-dummy.m in Sources */,
+				1403D058DB3B385BC1FDBD887A4E9DDB /* ActionSheetRow.swift in Sources */,
+				199C393B0B93CFFCBA319836C9AD3BEF /* AlertOptionsRow.swift in Sources */,
+				FC2228334A37CC494639B1B072842A33 /* AlertRow.swift in Sources */,
+				3A0E2EB03E8956699AAA830BF1EDA198 /* BaseRow.swift in Sources */,
+				10693D69118D7F3DADCAE693FD2661B2 /* ButtonRow.swift in Sources */,
+				022F27838A7229356F7AD2D2F54C34F1 /* ButtonRowWithPresent.swift in Sources */,
+				880792C5150895A89D36C386978A5660 /* Cell.swift in Sources */,
+				8EC09B8AB158F8A9F9DBC1F9367A49A9 /* CellType.swift in Sources */,
+				63563AC430435FDBF2DF0900713B03A7 /* CheckRow.swift in Sources */,
+				1C4380F9A81F8ECB1343957E57373BB8 /* Core.swift in Sources */,
+				8AD08F5A10C61E8692117C649C53DA3F /* DateFieldRow.swift in Sources */,
+				70275F71BD44B31E751B30B26908005A /* DateInlineFieldRow.swift in Sources */,
+				AF5FD79CC433F64092E726FB31615978 /* DateInlineRow.swift in Sources */,
+				A1AA41858D8D2D1FA720C8AE6F8100D4 /* DatePickerRow.swift in Sources */,
+				21FD4D317464B14DC1D71431310E42B0 /* DateRow.swift in Sources */,
+				EBE35CB01E172041490718F3CDA17863 /* DecimalFormatter.swift in Sources */,
+				937B62E19FADB0B6967B77AFF4FE89F8 /* DoublePickerInputRow.swift in Sources */,
+				8DAA63F788A3AF70C911F34722696BA2 /* DoublePickerRow.swift in Sources */,
+				0BBD607C7E77C61B8E618103F30B811D /* Eureka-dummy.m in Sources */,
+				45D6B4B702A58F2892E178BEB8B5A7E4 /* FieldRow.swift in Sources */,
+				72C6EF82AD008B1F715DBCDEF85057A9 /* FieldsRow.swift in Sources */,
+				5C1C974798FD3758C1FA555CDBBBF1A2 /* Form.swift in Sources */,
+				51F17AFA8608E24BC1B1BD25BF43E43A /* GenericMultipleSelectorRow.swift in Sources */,
+				98780764041BEA997A77724C06C8299C /* HeaderFooterView.swift in Sources */,
+				753A706EF830D2B910615ECD1883B976 /* Helpers.swift in Sources */,
+				A329996E130F5B177C6CC8A52EA2EC77 /* InlineRowType.swift in Sources */,
+				C78CAB152D6FE02FF968478C75A3D38A /* LabelRow.swift in Sources */,
+				50FEA3AED9D73240616823FF0C7DA6EA /* ListCheckRow.swift in Sources */,
+				6FD48D16F94B692032F7A8880EBFB552 /* MultipleSelectorRow.swift in Sources */,
+				556C04B9F5950BB9C33ED9AC9E0E582D /* MultipleSelectorViewController.swift in Sources */,
+				0A3458656BB1C37BED2C984ED138DAD3 /* NavigationAccessoryView.swift in Sources */,
+				61122AD05E2E3456468A743367919F86 /* Operators.swift in Sources */,
+				98F7DB48D9818E33C803CC35ABCEBF29 /* OptionsRow.swift in Sources */,
+				8E55873C68650428EEA9368C626F9019 /* PickerInlineRow.swift in Sources */,
+				16142049712E34206202C05264DBC66F /* PickerInputRow.swift in Sources */,
+				BB4625522EE26C889AD12F0A5032E894 /* PickerRow.swift in Sources */,
+				93658B50B10FB4677626DA0F0679B2EE /* PopoverSelectorRow.swift in Sources */,
+				95951126A0530AA12C587FAF50FD9497 /* PresenterRowType.swift in Sources */,
+				E35368424AD8EB00ACF5F51377AC53C4 /* Protocols.swift in Sources */,
+				B019D57D8D53A20C817653F6D7FD65BD /* PushRow.swift in Sources */,
+				46AA44AAF04A799BCE087F3691F21AFF /* Row.swift in Sources */,
+				5784A6245646464E602E8A0EF385724E /* RowControllerType.swift in Sources */,
+				0224D121BECAB2E8F3BEF04201D4E094 /* RowProtocols.swift in Sources */,
+				9024D17F199BAD49063F3884A4C8CB94 /* RowType.swift in Sources */,
+				CD4FD7223DD8582266FE150F4938A52C /* RuleClosure.swift in Sources */,
+				47F43B2798A4E4EFCBE0664BC597BF76 /* RuleEmail.swift in Sources */,
+				42BDA64CEF25936A4D9E1DB68DDB5E80 /* RuleEqualsToRow.swift in Sources */,
+				B2345084A5156070B490993932A0C3B8 /* RuleLength.swift in Sources */,
+				50E2B9CEA7B0B100D46BB03F890ACD0B /* RuleRange.swift in Sources */,
+				807B560FBF7B3CA748B2860401CD7DE4 /* RuleRegExp.swift in Sources */,
+				4E31481DBB529F0532A87C1201C19959 /* RuleRequired.swift in Sources */,
+				EE47AF285C504BBB4741E221D4866E64 /* RuleURL.swift in Sources */,
+				433228CBBA87EA97A4631457A05D7927 /* Section.swift in Sources */,
+				A408AC62E1B5AA530CB080191592D1D6 /* SegmentedRow.swift in Sources */,
+				2F44B1C3CFDE6A8A0952AB3BAD6CC5BD /* SelectableRowType.swift in Sources */,
+				0C4F18415DC10B01D4C0FF60A36D6809 /* SelectableSection.swift in Sources */,
+				9450A15D43A97C5022CC8FF413209E22 /* SelectorAlertController.swift in Sources */,
+				657B55F28C4BDC2F057B0362BFCFD5B5 /* SelectorRow.swift in Sources */,
+				CC905B619FFDFC7AD0F92E00843FCB1B /* SelectorViewController.swift in Sources */,
+				F76ED548B7A2B9EDEB308D4B52C41967 /* SliderRow.swift in Sources */,
+				A52B2526DC9324A5AD9D4D667AC7B890 /* StepperRow.swift in Sources */,
+				FE3D5F1469168AD7A23703795674D259 /* SwipeActions.swift in Sources */,
+				AA60814619AF458475CF0A779F9C732A /* SwitchRow.swift in Sources */,
+				7D41156F88899B779A46A90BF8C4EAEB /* TextAreaRow.swift in Sources */,
+				6200C1F50A86238071BB19D383D24A4A /* TriplePickerInputRow.swift in Sources */,
+				DCADFB2CBD765A7C2AA616D610EBAC3E /* TriplePickerRow.swift in Sources */,
+				48C0093C6E65DC1D814BABF712D85A4E /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1BBAFC5B680F9F85943E2EB85B5EBC3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SunWebApp_Family";
-			target = 8571B15B5FD07FB985D6BC10C2F15CC8 /* Pods-SunWebApp_Family */;
-			targetProxy = 1B559606FCF8F464554C75ECAD5002E5 /* PBXContainerItemProxy */;
-		};
-		C10A19D3C4458B723E46319F15A4C7B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SunWebApp_Family";
-			target = 8571B15B5FD07FB985D6BC10C2F15CC8 /* Pods-SunWebApp_Family */;
-			targetProxy = 3CAC5F78BF16399E62E5F1EDD51D7F57 /* PBXContainerItemProxy */;
-		};
-		C3BEA74ACAE417004527D0DE29610075 /* PBXTargetDependency */ = {
+		0AA70E443DCC8069594E0E7998969563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Eureka;
-			target = A2D491F85C2F0E31F5BB90876BEEB149 /* Eureka */;
-			targetProxy = D0DB8CCA131375A1C881027D0F0DA463 /* PBXContainerItemProxy */;
+			target = 88BE8BE7A2FE6CED4193CCD8FF3CBEF7 /* Eureka */;
+			targetProxy = 97A74D040E1368AE38338661E37FB679 /* PBXContainerItemProxy */;
+		};
+		A04B6979581032606E220FB7FD7CD74F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SunWebApp_Family";
+			target = 34E35D53F764682EB1C9A74FFEA9B7C0 /* Pods-SunWebApp_Family */;
+			targetProxy = 1BF31F53C20E03D4D01A2E32E61B62A5 /* PBXContainerItemProxy */;
+		};
+		AD54AF4F85EBF147C3031E14889CBBC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SunWebApp_Family";
+			target = 34E35D53F764682EB1C9A74FFEA9B7C0 /* Pods-SunWebApp_Family */;
+			targetProxy = 757FD17E71F004EEB24C9D67535269A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07D6799694A58C2D55B66C83F9C5BE2A /* Debug */ = {
+		06745AEFC46C6374DA5706631E81B380 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00AF7CDABE611A60BBC50EBACEB65996 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */;
+			baseConfigurationReference = 0189129CD9B3FE7CD92D27E992C75DD7 /* Pods-SunWebApp_FamilyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -783,10 +773,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Pods-SunWebApp_FamilyUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Pods-SunWebApp_FamilyUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -802,7 +796,228 @@
 			};
 			name = Debug;
 		};
-		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
+		1BEB2C0F13A605C0FFDCBC5E8C0BFCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069211410BFCEB007DC9169CF5BE2580 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		460E37156541E68A2A70241CA8C9D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D085F9547E75768BCE740834FD84628 /* Pods-SunWebApp_Family.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_Family/Pods-SunWebApp_Family-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_Family/Pods-SunWebApp_Family.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CDD7C86946541AC47D16C49735DCA1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACA45DB0804D33DF406629C5FD0C5A9 /* Pods-SunWebApp_FamilyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96744B7E84ED4675595B3696BCF208A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDC4B0CB6CAFBE623AD8DA7B166E739 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Pods-SunWebApp_FamilyUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Pods-SunWebApp_FamilyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96EC1660C8BA133B3EE2633DFB2E3D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8147A42497197F69CC1B4F6F8B634A84 /* Eureka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Eureka-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				PRODUCT_MODULE_NAME = Eureka;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A03424AA11483B95AB6D29612E623C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8147A42497197F69CC1B4F6F8B634A84 /* Eureka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Eureka-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				PRODUCT_MODULE_NAME = Eureka;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -834,8 +1049,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -852,18 +1065,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -895,8 +1109,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -916,7 +1128,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -924,46 +1136,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		8EBC65FD773639CFED864A419FAC3754 /* Release */ = {
+		DFABE6B6CBBE9D907DFF9FBA14D89FEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34EB65EF2D084CDADBDDBE0B74154D4D /* Eureka.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
-				PRODUCT_MODULE_NAME = Eureka;
-				PRODUCT_NAME = Eureka;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9188E92D3898FD23876EA4E34CA0C7F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F2CDF4BF5FD187F801A9E648DFFD918 /* Pods-SunWebApp_FamilyTests.release.xcconfig */;
+			baseConfigurationReference = 2C72C72BF95833C8C8F02113DB3487F1 /* Pods-SunWebApp_Family.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -975,177 +1155,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_Family/Pods-SunWebApp_Family-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		945988D19E8AC46E38FD57CC5AE9A8CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3FEF25BE8418D945EDD6A0FBD1D0F91 /* Pods-SunWebApp_Family.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_Family/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_Family/Pods-SunWebApp_Family.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EBC4A9F3258B79232BBDD9027E7638AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 659552360BC4B1086B8B928FCBE234B7 /* Pods-SunWebApp_FamilyTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyTests/Pods-SunWebApp_FamilyTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EE6BBA40AE78ABEE85B8193CF0384473 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34EB65EF2D084CDADBDDBE0B74154D4D /* Eureka.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
-				PRODUCT_MODULE_NAME = Eureka;
-				PRODUCT_NAME = Eureka;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F5C57DCEB43120154F0840A092485DA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 550AD817AA9A2C65227A2121EC8F55BF /* Pods-SunWebApp_Family.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_Family/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_Family/Pods-SunWebApp_Family.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FF90EB8ED456D65FC9ADDE55059A049E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83945F07C664B26AB67C28B7B8651F15 /* Pods-SunWebApp_FamilyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SunWebApp_FamilyUITests/Pods-SunWebApp_FamilyUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1163,52 +1182,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		2415A6309F5E74AC82D7CA3153F8C9FD /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				858D01EEFE984249A9581D18DBEA53F1 /* Debug */,
-				5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */,
+				06745AEFC46C6374DA5706631E81B380 /* Debug */,
+				96744B7E84ED4675595B3696BCF208A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D30F1A2B77F0F7298404529DABAC62B /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_Family" */ = {
+		2D25643F0258275526B222B3F85223AD /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F5C57DCEB43120154F0840A092485DA5 /* Debug */,
-				945988D19E8AC46E38FD57CC5AE9A8CC /* Release */,
+				1BEB2C0F13A605C0FFDCBC5E8C0BFCCF /* Debug */,
+				7CDD7C86946541AC47D16C49735DCA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		773FAE139B2680FA424F54CC31E8733B /* Build configuration list for PBXNativeTarget "Eureka" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE6BBA40AE78ABEE85B8193CF0384473 /* Debug */,
-				8EBC65FD773639CFED864A419FAC3754 /* Release */,
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0FF94AB207C578DC23D14F42DBB725A /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyTests" */ = {
+		51F1DBB0790CAAB7969B0131682376AE /* Build configuration list for PBXNativeTarget "Eureka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBC4A9F3258B79232BBDD9027E7638AA /* Debug */,
-				9188E92D3898FD23876EA4E34CA0C7F1 /* Release */,
+				96EC1660C8BA133B3EE2633DFB2E3D68 /* Debug */,
+				A03424AA11483B95AB6D29612E623C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D796EF629184903319577DC347F145B4 /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_FamilyUITests" */ = {
+		62C74A36E182F090E1280009A2EACBD0 /* Build configuration list for PBXNativeTarget "Pods-SunWebApp_Family" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07D6799694A58C2D55B66C83F9C5BE2A /* Debug */,
-				FF90EB8ED456D65FC9ADDE55059A049E /* Release */,
+				460E37156541E68A2A70241CA8C9D670 /* Debug */,
+				DFABE6B6CBBE9D907DFF9FBA14D89FEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
